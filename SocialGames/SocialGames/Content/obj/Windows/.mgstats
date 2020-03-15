@@ -1,0 +1,4 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/Tommaso/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/dialog.spritefont","C:/Users/Tommaso/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/bin/Windows/dialog.xnb","FontDescriptionProcessor","SpriteFontContent",2011,21521,0,3658142
+"C:/Users/Tommaso/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/myAvatar.png","C:/Users/Tommaso/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/bin/Windows/myAvatar.xnb","TextureProcessor","Texture2DContent",254520,2560085,0,1049411
+"C:/Users/Tommaso/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/Park.png","C:/Users/Tommaso/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/bin/Windows/Park.xnb","TextureProcessor","Texture2DContent",840147,8294485,0,2998276

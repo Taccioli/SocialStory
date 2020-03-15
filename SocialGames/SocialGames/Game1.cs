@@ -14,6 +14,14 @@ namespace SocialGames
         Texture2D background;
         Texture2D avatar;
 
+        // Build a default font for the game
+        public SpriteFont DialogFont { get; private set; }
+
+        // Gestione keyboard
+        public KeyboardState KeyState { get; private set; }
+        public KeyboardState PreviousKeyState { get; private set; }
+
+        private DialogBox _dialogBox;
 
         public Game1()
         {
@@ -49,7 +57,19 @@ namespace SocialGames
             spriteBatch = new SpriteBatch(GraphicsDevice);
             avatar = Content.Load<Texture2D>("myAvatar");
             background = Content.Load<Texture2D>("Park");
-            // TODO: use this.Content to load your game content here
+
+            // Inizializzazione font
+            DialogFont = Content.Load<SpriteFont>("dialog");
+            // Come scrivere una dialogBox
+            _dialogBox = new DialogBox
+            {
+                Text = "Hello World! Press Enter or Button A to proceed.\n" +
+                       "I will be on the next pane! " +
+                       "And wordwrap will occur, especially if there are some longer words!\n" +
+                       "Monospace fonts work best but you might not want Courier New.\n" +
+                       "In this code sample, after this dialog box finishes, you can press the O key to open a new one."
+            };
+            _dialogBox.Initialize();
         }
 
         /// <summary>
@@ -70,6 +90,22 @@ namespace SocialGames
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
+            // Update DialogBox
+            _dialogBox.Update();
+
+            // Debug key to show opening a new dialog box on demand
+            if (Program.Game.KeyState.IsKeyDown(Keys.O))
+            {
+                if (!_dialogBox.Active)
+                {
+                    _dialogBox = new DialogBox { Text = "New dialog box!" };
+                    _dialogBox.Initialize();
+                }
+            }
+
+            // Update input states
+            PreviousKeyState = KeyState;
+            KeyState = Keyboard.GetState();
 
             // TODO: Add your update logic here
 
@@ -89,6 +125,9 @@ namespace SocialGames
             spriteBatch.Draw(background, new Vector2(0,0), Color.White);
             spriteBatch.Draw(avatar, new Vector2(0, 1080-800), Color.White);
             base.Draw(gameTime);
+
+            // Draw della DialogBox
+            _dialogBox.Draw(spriteBatch);
 
             spriteBatch.End();
 

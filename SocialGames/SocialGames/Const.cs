@@ -14,5 +14,8 @@ namespace SocialGames
         public static Vector2 DisplayDim = new Vector2(
                 GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height, 
                 GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width);
+        public static Vector2 CenterScreen
+            => new Vector2(GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width / 2f, 
+                GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height / 2f);
     }
 }
