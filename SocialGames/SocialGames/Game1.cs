@@ -1,8 +1,9 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System.Collections.Generic;
 
-namespace SocialGames
+namespace SocialGames_Locale
 {
     /// <summary>
     /// This is the main type for your game.
@@ -13,6 +14,9 @@ namespace SocialGames
         SpriteBatch spriteBatch;
         Texture2D background;
         Texture2D avatar;
+        Texture2D start, selGame, createAvatar;
+        Button startBtn, selGameBtn, createAvatarBtn;
+        private List<Button> buttons;
 
 
         public Game1()
@@ -31,7 +35,7 @@ namespace SocialGames
         {
             // TODO: Add your initialization logic here
             base.Initialize();
-            
+
             graphics.PreferredBackBufferHeight = (int)Const.DisplayDim.X;
             graphics.PreferredBackBufferWidth = (int)Const.DisplayDim.Y;
             graphics.IsFullScreen = true;
@@ -49,6 +53,18 @@ namespace SocialGames
             spriteBatch = new SpriteBatch(GraphicsDevice);
             avatar = Content.Load<Texture2D>("myAvatar");
             background = Content.Load<Texture2D>("Park");
+            start = Content.Load<Texture2D>("START");
+            selGame = Content.Load<Texture2D>("sel_gioco");
+            createAvatar = Content.Load<Texture2D>("crea_avatar");
+            startBtn = new Button("start", start, Const.LEFTMARGINBTN, Const.TOPMARGINBTN);
+            selGameBtn = new Button("selgame", selGame, Const.LEFTMARGINBTN, (Const.TOPMARGINBTN) + 100);
+            createAvatarBtn = new Button("createavatar", createAvatar, Const.LEFTMARGINBTN, (Const.TOPMARGINBTN) + 200);
+            buttons = new List<Button>()
+            {
+                startBtn,
+                selGameBtn,
+                createAvatarBtn,
+            };
             // TODO: use this.Content to load your game content here
         }
 
@@ -72,7 +88,8 @@ namespace SocialGames
                 Exit();
 
             // TODO: Add your update logic here
-
+            foreach (var button in buttons)
+                button.Update(gameTime);
             base.Update(gameTime);
         }
 
@@ -86,8 +103,14 @@ namespace SocialGames
             spriteBatch.Begin();
 
             // TODO: Add your drawing code here
-            spriteBatch.Draw(background, new Vector2(0,0), Color.White);
-            spriteBatch.Draw(avatar, new Vector2(0, 1080-800), Color.White);
+            spriteBatch.Draw(background, new Vector2(0, 0), Color.White);
+            //spriteBatch.Draw(avatar, new Vector2(0, 1080 - 800), Color.White);
+            //spriteBatch.Draw(start, new Vector2(Const.LEFTMARGINBTN, Const.TOPMARGINBTN), Color.White);
+            //spriteBatch.Draw(selGame, new Vector2(Const.LEFTMARGINBTN, (Const.TOPMARGINBTN) + 100), Color.White);
+            //spriteBatch.Draw(createAvatar, new Vector2(Const.LEFTMARGINBTN, (Const.TOPMARGINBTN) + 200), Color.White);
+            foreach (var button in buttons)
+                button.Draw(gameTime, spriteBatch);
+
             base.Draw(gameTime);
 
             spriteBatch.End();

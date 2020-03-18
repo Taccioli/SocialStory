@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/Tommaso/source/repos/SocialGames/SocialGames/Content/myAvatar.png</SourceFile>
-  <SourceTime>2020-03-14T11:47:00.3993748+01:00</SourceTime>
-  <DestFile>C:/Users/Tommaso/source/repos/SocialGames/SocialGames/Content/bin/Windows/myAvatar.xnb</DestFile>
-  <DestTime>2020-03-14T11:48:10.4342971+01:00</DestTime>
+  <SourceFile>C:/Users/simob/source/repos/SocialGames_Locale/SocialGames_Locale/Content/myAvatar.png</SourceFile>
+  <SourceTime>2020-03-14T18:45:45.7516837+01:00</SourceTime>
+  <DestFile>C:/Users/simob/source/repos/SocialGames_Locale/SocialGames_Locale/Content/bin/Windows/myAvatar.xnb</DestFile>
+  <DestTime>2020-03-15T16:27:46.8618403+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-08T17:35:54+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

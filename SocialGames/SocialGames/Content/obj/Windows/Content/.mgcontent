@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/simob/source/repos/SocialGames_Locale/SocialGames_Locale/Content/crea_avatar.png</File>
+    <File>C:/Users/simob/source/repos/SocialGames_Locale/SocialGames_Locale/Content/myAvatar.png</File>
+    <File>C:/Users/simob/source/repos/SocialGames_Locale/SocialGames_Locale/Content/Park.png</File>
+    <File>C:/Users/simob/source/repos/SocialGames_Locale/SocialGames_Locale/Content/sel_gioco.png</File>
+    <File>C:/Users/simob/source/repos/SocialGames_Locale/SocialGames_Locale/Content/START.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>

@@ -7,12 +7,14 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
-namespace SocialGames
+namespace SocialGames_Locale
 {
     public class Const
     {
         public static Vector2 DisplayDim = new Vector2(
                 GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height, 
                 GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width);
+        public const int TOPMARGINBTN = 301;
+        public const int LEFTMARGINBTN = 850;
     }
 }
