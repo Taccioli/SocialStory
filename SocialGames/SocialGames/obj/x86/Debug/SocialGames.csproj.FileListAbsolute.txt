@@ -23,12 +23,12 @@ C:\Users\Tommaso\source\repos\SocialGames\SocialGames\obj\x86\Debug\SocialGames.
 C:\Users\Tommaso\source\repos\SocialGames\SocialGames\obj\x86\Debug\SocialGames.pdb
 C:\Users\Tommaso\source\repos\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\Park.xnb
 C:\Users\Tommaso\source\repos\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\myAvatar.xnb
-C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\obj\x86\Debug\SocialGames.csprojAssemblyReference.cache
-C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\obj\x86\Debug\SocialGames.csproj.CoreCompileInputs.cache
-C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\obj\x86\Debug\SocialGames.exe
-C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\obj\x86\Debug\SocialGames.pdb
+C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\crea_avatar.xnb
+C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\dialog.xnb
 C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\myAvatar.xnb
 C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\Park.xnb
+C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\sel_gioco.xnb
+C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\START.xnb
 C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\SocialGames.exe
 C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\SocialGames.pdb
 C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\MonoGame.Framework.dll
@@ -47,5 +47,8 @@ C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGam
 C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
 C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
 C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\SharpDX.XInput.xml
+C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\obj\x86\Debug\SocialGames.csprojAssemblyReference.cache
+C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\obj\x86\Debug\SocialGames.csproj.CoreCompileInputs.cache
 C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\obj\x86\Debug\SocialGames.csproj.CopyComplete
-C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\dialog.xnb
+C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\obj\x86\Debug\SocialGames.exe
+C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\obj\x86\Debug\SocialGames.pdb

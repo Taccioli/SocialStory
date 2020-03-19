@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System.Collections.Generic;
 
 namespace SocialGames
 {
@@ -13,6 +14,9 @@ namespace SocialGames
         SpriteBatch spriteBatch;
         Texture2D background;
         Texture2D avatar;
+        Texture2D start, selGame, createAvatar;
+        Button startBtn, selGameBtn, createAvatarBtn;
+        private List<Button> buttons;
 
         // Build a default font for the game
         public SpriteFont DialogFont { get; private set; }
@@ -21,7 +25,7 @@ namespace SocialGames
         public KeyboardState KeyState { get; private set; }
         public KeyboardState PreviousKeyState { get; private set; }
 
-        private DialogBox _dialogBox;
+        //private DialogBox _dialogBox;
 
         public Game1()
         {
@@ -39,7 +43,7 @@ namespace SocialGames
         {
             // TODO: Add your initialization logic here
             base.Initialize();
-            
+
             graphics.PreferredBackBufferHeight = (int)Const.DisplayDim.X;
             graphics.PreferredBackBufferWidth = (int)Const.DisplayDim.Y;
             graphics.IsFullScreen = true;
@@ -61,15 +65,29 @@ namespace SocialGames
             // Inizializzazione font
             DialogFont = Content.Load<SpriteFont>("dialog");
             // Come scrivere una dialogBox
-            _dialogBox = new DialogBox
+            //_dialogBox = new DialogBox
+            //{
+            //    Text = "Hello World! Press Enter or Button A to proceed.\n" +
+            //           "I will be on the next pane! " +
+            //           "And wordwrap will occur, especially if there are some longer words!\n" +
+            //           "Monospace fonts work best but you might not want Courier New.\n" +
+            //           "In this code sample, after this dialog box finishes, you can press the O key to open a new one."
+            //};
+            //_dialogBox.Initialize();
+
+            start = Content.Load<Texture2D>("START");
+            selGame = Content.Load<Texture2D>("sel_gioco");
+            createAvatar = Content.Load<Texture2D>("crea_avatar");
+            startBtn = new Button("start", start, Const.LEFTMARGINBTN, Const.TOPMARGINBTN);
+            selGameBtn = new Button("selgame", selGame, Const.LEFTMARGINBTN, (Const.TOPMARGINBTN) + 100);
+            createAvatarBtn = new Button("createavatar", createAvatar, Const.LEFTMARGINBTN, (Const.TOPMARGINBTN) + 200);
+            buttons = new List<Button>()
             {
-                Text = "Hello World! Press Enter or Button A to proceed.\n" +
-                       "I will be on the next pane! " +
-                       "And wordwrap will occur, especially if there are some longer words!\n" +
-                       "Monospace fonts work best but you might not want Courier New.\n" +
-                       "In this code sample, after this dialog box finishes, you can press the O key to open a new one."
+                startBtn,
+                selGameBtn,
+                createAvatarBtn,
             };
-            _dialogBox.Initialize();
+            // TODO: use this.Content to load your game content here
         }
 
         /// <summary>
@@ -91,24 +109,25 @@ namespace SocialGames
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
             // Update DialogBox
-            _dialogBox.Update();
+            //_dialogBox.Update();
 
             // Debug key to show opening a new dialog box on demand
-            if (Program.Game.KeyState.IsKeyDown(Keys.O))
-            {
-                if (!_dialogBox.Active)
-                {
-                    _dialogBox = new DialogBox { Text = "New dialog box!" };
-                    _dialogBox.Initialize();
-                }
-            }
+            //if (Program.Game.KeyState.IsKeyDown(Keys.O))
+            //{
+            //    if (!_dialogBox.Active)
+            //    {
+            //        _dialogBox = new DialogBox { Text = "New dialog box!" };
+            //        _dialogBox.Initialize();
+            //    }
+            //}
 
             // Update input states
             PreviousKeyState = KeyState;
             KeyState = Keyboard.GetState();
 
             // TODO: Add your update logic here
-
+            foreach (var button in buttons)
+                button.Update(gameTime);
             base.Update(gameTime);
         }
 
@@ -122,12 +141,18 @@ namespace SocialGames
             spriteBatch.Begin();
 
             // TODO: Add your drawing code here
-            spriteBatch.Draw(background, new Vector2(0,0), Color.White);
-            spriteBatch.Draw(avatar, new Vector2(0, 1080-800), Color.White);
+            spriteBatch.Draw(background, new Vector2(0, 0), Color.White);
+            //spriteBatch.Draw(avatar, new Vector2(0, 1080 - 800), Color.White);
+            //spriteBatch.Draw(start, new Vector2(Const.LEFTMARGINBTN, Const.TOPMARGINBTN), Color.White);
+            //spriteBatch.Draw(selGame, new Vector2(Const.LEFTMARGINBTN, (Const.TOPMARGINBTN) + 100), Color.White);
+            //spriteBatch.Draw(createAvatar, new Vector2(Const.LEFTMARGINBTN, (Const.TOPMARGINBTN) + 200), Color.White);
+            foreach (var button in buttons)
+                button.Draw(gameTime, spriteBatch);
+
             base.Draw(gameTime);
 
             // Draw della DialogBox
-            _dialogBox.Draw(spriteBatch);
+            //_dialogBox.Draw(spriteBatch);
 
             spriteBatch.End();
 

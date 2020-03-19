@@ -4,11 +4,17 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
+    <File>C:/Users/Tommaso/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/crea_avatar.png</File>
     <File>C:/Users/Tommaso/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/dialog.spritefont</File>
     <File>C:/Users/Tommaso/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/myAvatar.png</File>
     <File>C:/Users/Tommaso/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/Park.png</File>
+    <File>C:/Users/Tommaso/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/sel_gioco.png</File>
+    <File>C:/Users/Tommaso/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/START.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

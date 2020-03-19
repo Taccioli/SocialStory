@@ -9,7 +9,7 @@ using Microsoft.Xna.Framework.Input;
 
 namespace SocialGames
 {
-    public class Const
+    public class Const : Game1
     {
         public static Vector2 DisplayDim = new Vector2(
                 GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height, 
@@ -17,5 +17,7 @@ namespace SocialGames
         public static Vector2 CenterScreen
             => new Vector2(GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width / 2f, 
                 GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height / 2f);
+        public const int TOPMARGINBTN = 301;
+        public const int LEFTMARGINBTN = 850;
     }
 }
