@@ -25,7 +25,6 @@ C:\Users\Tommaso\source\repos\SocialGames\SocialGames\bin\Windows\x86\Debug\Cont
 C:\Users\Tommaso\source\repos\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\myAvatar.xnb
 C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\crea_avatar.xnb
 C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\dialog.xnb
-C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\myAvatar.xnb
 C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\Park.xnb
 C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\sel_gioco.xnb
 C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\START.xnb
@@ -52,3 +51,14 @@ C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGam
 C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\obj\x86\Debug\SocialGames.csproj.CopyComplete
 C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\obj\x86\Debug\SocialGames.exe
 C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\obj\x86\Debug\SocialGames.pdb
+C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\avatar.xnb
+C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\Button.xnb
+C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\ButtonFont.xnb
+C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\buttonTexture.xnb
+C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\choiceTexture.xnb
+C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\CustomFont.xnb
+C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\prompt.xnb
+C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\story.xnb
+C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\crea_avatar_hover.xnb
+C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\sel_gioco_hover.xnb
+C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\start_hover.xnb

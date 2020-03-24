@@ -6,20 +6,26 @@ using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Content;
 
 
 namespace SocialGames
 {
     public class Button : Component
     {
+        private Game1 game;
+        private GraphicsDevice graphicsDevice;
+        private ContentManager contentManager;
         private string name;
-        private Texture2D texture;
+        private Texture2D texture, texture_hover;
         private Color penColour;
         private bool clicked;
         private MouseState currentMouseInput, previousMouseInput;
         private Vector2 position;
-        public EventHandler click;
+        public event EventHandler click;
         
+        public bool Clicked { get; private set; }
+
         public bool IsHovering()
         {
             if(currentMouseInput.Position.X < position.X + texture.Width &&
@@ -32,10 +38,14 @@ namespace SocialGames
             return false;
         }
 
-        public Button(string name, Texture2D texture, int positionX, int positionY)
+        public Button(Game1 game, GraphicsDevice graphicsDevice, ContentManager contentManager, string name, Texture2D texture, Texture2D texture_hover, int positionX, int positionY)
         {
+            this.game = game;
+            this.graphicsDevice = graphicsDevice;
+            this.contentManager = contentManager;
             this.name = name;
             this.texture = texture;
+            this.texture_hover = texture_hover;
             position.X = positionX;
             position.Y = positionY;
         }
@@ -43,11 +53,15 @@ namespace SocialGames
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
             Color colour = Color.White;
+            Texture2D current_texture = texture;
 
             if (IsHovering())
-                colour = Color.Gray;
+            {
+                //colour = Color.Gray;
+                current_texture = texture_hover;
+            }
 
-            spriteBatch.Draw(texture, position, colour);
+            spriteBatch.Draw(current_texture, position, colour);
         }
 
         public override void Update(GameTime gameTime)
@@ -59,14 +73,14 @@ namespace SocialGames
             {
                 switch (name)
                 {
-                    case "START":
-
+                    case "start":
+                        game.ChangeState(new GameState(game, graphicsDevice, contentManager));
                         break;
                     case "selgame":
-
+                        game.ChangeState(new GameState(game, graphicsDevice, contentManager));
                         break;
                     case "createavatar":
-
+                        game.ChangeState(new GameState(game, graphicsDevice, contentManager));
                         break;
                     default:
                         break;
