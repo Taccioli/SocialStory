@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SourceFile>C:/Users/simob/source/repos/SocialGames_Locale/SocialGames_Locale/Content/START.png</SourceFile>
-  <SourceTime>2020-03-15T16:16:31.6694206+01:00</SourceTime>
+  <SourceTime>2020-03-24T14:36:49.0049819+01:00</SourceTime>
   <DestFile>C:/Users/simob/source/repos/SocialGames_Locale/SocialGames_Locale/Content/bin/Windows/Content/START.xnb</DestFile>
-  <DestTime>2020-03-15T16:29:57.7770321+01:00</DestTime>
+  <DestTime>2020-03-24T14:42:35.954103+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-08T17:35:54+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

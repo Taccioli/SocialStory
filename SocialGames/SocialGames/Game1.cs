@@ -3,7 +3,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System.Collections.Generic;
 
-namespace SocialGames_Locale
+namespace SocialGames
 {
     /// <summary>
     /// This is the main type for your game.
@@ -12,11 +12,13 @@ namespace SocialGames_Locale
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        Texture2D background;
-        Texture2D avatar;
-        Texture2D start, selGame, createAvatar;
-        Button startBtn, selGameBtn, createAvatarBtn;
-        private List<Button> buttons;
+        private State currentState;
+        private State nextState;
+
+        public void ChangeState(State state)
+        {
+            nextState = state;
+        }
 
 
         public Game1()
@@ -51,21 +53,8 @@ namespace SocialGames_Locale
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            avatar = Content.Load<Texture2D>("myAvatar");
-            background = Content.Load<Texture2D>("Park");
-            start = Content.Load<Texture2D>("START");
-            selGame = Content.Load<Texture2D>("sel_gioco");
-            createAvatar = Content.Load<Texture2D>("crea_avatar");
-            startBtn = new Button("start", start, Const.LEFTMARGINBTN, Const.TOPMARGINBTN);
-            selGameBtn = new Button("selgame", selGame, Const.LEFTMARGINBTN, (Const.TOPMARGINBTN) + 100);
-            createAvatarBtn = new Button("createavatar", createAvatar, Const.LEFTMARGINBTN, (Const.TOPMARGINBTN) + 200);
-            buttons = new List<Button>()
-            {
-                startBtn,
-                selGameBtn,
-                createAvatarBtn,
-            };
             // TODO: use this.Content to load your game content here
+            currentState = new MenuState(this, graphics.GraphicsDevice, Content);
         }
 
         /// <summary>
@@ -88,8 +77,14 @@ namespace SocialGames_Locale
                 Exit();
 
             // TODO: Add your update logic here
-            foreach (var button in buttons)
-                button.Update(gameTime);
+            if(nextState != null)
+            {
+                currentState = nextState;
+                nextState = null;
+            }
+            currentState.Update(gameTime);
+            currentState.PostUpdate(gameTime);
+
             base.Update(gameTime);
         }
 
@@ -100,20 +95,10 @@ namespace SocialGames_Locale
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
-            spriteBatch.Begin();
 
             // TODO: Add your drawing code here
-            spriteBatch.Draw(background, new Vector2(0, 0), Color.White);
-            //spriteBatch.Draw(avatar, new Vector2(0, 1080 - 800), Color.White);
-            //spriteBatch.Draw(start, new Vector2(Const.LEFTMARGINBTN, Const.TOPMARGINBTN), Color.White);
-            //spriteBatch.Draw(selGame, new Vector2(Const.LEFTMARGINBTN, (Const.TOPMARGINBTN) + 100), Color.White);
-            //spriteBatch.Draw(createAvatar, new Vector2(Const.LEFTMARGINBTN, (Const.TOPMARGINBTN) + 200), Color.White);
-            foreach (var button in buttons)
-                button.Draw(gameTime, spriteBatch);
-
+            currentState.Draw(gameTime, spriteBatch);
             base.Draw(gameTime);
-
-            spriteBatch.End();
 
         }
     }

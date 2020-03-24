@@ -9,7 +9,7 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Content;
 using System.Collections.Generic;
 
-namespace SocialGames_Locale
+namespace SocialGames
 {
     public abstract class State
     {

@@ -5,12 +5,18 @@
   <Config />
   <SourceFiles>
     <File>C:/Users/simob/source/repos/SocialGames_Locale/SocialGames_Locale/Content/crea_avatar.png</File>
+    <File>C:/Users/simob/source/repos/SocialGames_Locale/SocialGames_Locale/Content/crea_avatar_hover.png</File>
     <File>C:/Users/simob/source/repos/SocialGames_Locale/SocialGames_Locale/Content/myAvatar.png</File>
     <File>C:/Users/simob/source/repos/SocialGames_Locale/SocialGames_Locale/Content/Park.png</File>
     <File>C:/Users/simob/source/repos/SocialGames_Locale/SocialGames_Locale/Content/sel_gioco.png</File>
+    <File>C:/Users/simob/source/repos/SocialGames_Locale/SocialGames_Locale/Content/sel_gioco_hover.png</File>
     <File>C:/Users/simob/source/repos/SocialGames_Locale/SocialGames_Locale/Content/START.png</File>
+    <File>C:/Users/simob/source/repos/SocialGames_Locale/SocialGames_Locale/Content/start_hover.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
