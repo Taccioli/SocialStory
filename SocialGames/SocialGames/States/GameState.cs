@@ -31,7 +31,9 @@ namespace SocialGames
         private Texture2D prompt;
         private Texture2D story;
         private Texture2D choiceTexture;
+        private Texture2D choiceHoverTexture;
         private Texture2D buttonTexture;
+        private Texture2D buttonHoverTexture;
         private Texture2D avatar;
         private List<Component> choices;
         private int state;
@@ -62,7 +64,9 @@ namespace SocialGames
             state = PrimoPrompt;
 
             choiceTexture = content.Load<Texture2D>("choiceTexture");
+            choiceHoverTexture = content.Load<Texture2D>("choiceHoverTexture");
             buttonTexture = content.Load<Texture2D>("buttonTexture");
+            // buttonHoverTexture = content.Load<Texture2D>("buttonHoverTexture");
             textFont = content.Load<SpriteFont>("CustomFont");
             buttonFont = content.Load<SpriteFont>("buttonFont");
             background = content.Load<Texture2D>(GameData.background);
@@ -87,7 +91,7 @@ namespace SocialGames
 
             #region Buttons
 
-            firstButton = new PlayButton(choiceTexture, buttonFont, false)
+            firstButton = new PlayButton(choiceTexture, choiceHoverTexture, buttonFont, false)
             {
                 Position = but1Pos,
                 Text = GameData.afp,
@@ -95,7 +99,7 @@ namespace SocialGames
 
             firstButton.Click += firstButton_Click;
 
-            secondButton = new PlayButton(choiceTexture, buttonFont, false)
+            secondButton = new PlayButton(choiceTexture, choiceHoverTexture, buttonFont, false)
             {
                 Position = but2Pos,
                 Text = GameData.bfp,
@@ -103,7 +107,7 @@ namespace SocialGames
 
             secondButton.Click += secondButton_Click;
 
-            thirdButton = new PlayButton(choiceTexture, buttonFont, false)
+            thirdButton = new PlayButton(choiceTexture, choiceHoverTexture, buttonFont, false)
             {
                 Position = but3Pos,
                 Text = GameData.cfp,
@@ -118,7 +122,7 @@ namespace SocialGames
                         thirdButton,
                      };
 
-            capitoButton = new PlayButton(buttonTexture, textFont, true)
+            capitoButton = new PlayButton(buttonTexture, textFont)
             {
                 Position = butHoCapPos,
                 Text = "Ho capito!",

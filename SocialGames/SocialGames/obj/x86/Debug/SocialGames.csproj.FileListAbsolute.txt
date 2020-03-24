@@ -62,3 +62,4 @@ C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGam
 C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\crea_avatar_hover.xnb
 C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\sel_gioco_hover.xnb
 C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\start_hover.xnb
+C:\Users\Tommaso\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\choiceHoverTexture.xnb
