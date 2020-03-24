@@ -384,14 +384,14 @@ namespace SocialGames
                     }
                 }
             }
-            GameData.firstPrompt = WrapText(textFont, GameData.firstPrompt, 500);
-            GameData.secondPrompt = WrapText(textFont, GameData.secondPrompt, 500);
-            GameData.oafp = WrapText(textFont, GameData.oafp, 500);
-            GameData.obfp = WrapText(textFont, GameData.obfp, 500);
-            GameData.ocfp = WrapText(textFont, GameData.ocfp, 500);
-            GameData.oasp = WrapText(textFont, GameData.oasp, 500);
-            GameData.obsp = WrapText(textFont, GameData.obsp, 500);
-            GameData.ocsp = WrapText(textFont, GameData.ocsp, 500);
+            GameData.firstPrompt = WrapText(textFont, GameData.firstPrompt, 490);
+            GameData.secondPrompt = WrapText(textFont, GameData.secondPrompt, 490);
+            GameData.oafp = WrapText(textFont, GameData.oafp, 490);
+            GameData.obfp = WrapText(textFont, GameData.obfp, 490);
+            GameData.ocfp = WrapText(textFont, GameData.ocfp, 490);
+            GameData.oasp = WrapText(textFont, GameData.oasp, 490);
+            GameData.obsp = WrapText(textFont, GameData.obsp, 490);
+            GameData.ocsp = WrapText(textFont, GameData.ocsp, 490);
         }
 
         public string WrapText(SpriteFont spriteFont, string text, float maxLineWidth)
