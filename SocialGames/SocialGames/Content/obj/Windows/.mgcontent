@@ -4,23 +4,31 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/Tommaso/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/ButtonFont.spritefont</File>
-    <File>C:/Users/Tommaso/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/buttonTexture.png</File>
-    <File>C:/Users/Tommaso/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/choiceHoverTexture.png</File>
-    <File>C:/Users/Tommaso/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/choiceTexture.png</File>
-    <File>C:/Users/Tommaso/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/crea_avatar.png</File>
-    <File>C:/Users/Tommaso/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/crea_avatar_hover.png</File>
-    <File>C:/Users/Tommaso/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/CustomFont.spritefont</File>
-    <File>C:/Users/Tommaso/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/dialog.spritefont</File>
-    <File>C:/Users/Tommaso/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/Park.png</File>
-    <File>C:/Users/Tommaso/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/prompt.png</File>
-    <File>C:/Users/Tommaso/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/sel_gioco.png</File>
-    <File>C:/Users/Tommaso/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/sel_gioco_hover.png</File>
-    <File>C:/Users/Tommaso/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/START.png</File>
-    <File>C:/Users/Tommaso/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/start_hover.png</File>
-    <File>C:/Users/Tommaso/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/story.png</File>
+    <File>C:/Users/simob/Desktop/SocialGame_Private/SocialGames/SocialGames/Content/ButtonFont.spritefont</File>
+    <File>C:/Users/simob/Desktop/SocialGame_Private/SocialGames/SocialGames/Content/buttonTexture.png</File>
+    <File>C:/Users/simob/Desktop/SocialGame_Private/SocialGames/SocialGames/Content/choiceHoverTexture.png</File>
+    <File>C:/Users/simob/Desktop/SocialGame_Private/SocialGames/SocialGames/Content/choiceTexture.png</File>
+    <File>C:/Users/simob/Desktop/SocialGame_Private/SocialGames/SocialGames/Content/crea_avatar.png</File>
+    <File>C:/Users/simob/Desktop/SocialGame_Private/SocialGames/SocialGames/Content/crea_avatar_hover.png</File>
+    <File>C:/Users/simob/Desktop/SocialGame_Private/SocialGames/SocialGames/Content/CustomFont.spritefont</File>
+    <File>C:/Users/simob/Desktop/SocialGame_Private/SocialGames/SocialGames/Content/dialog.spritefont</File>
+    <File>C:/Users/simob/Desktop/SocialGame_Private/SocialGames/SocialGames/Content/LeftArrow.png</File>
+    <File>C:/Users/simob/Desktop/SocialGame_Private/SocialGames/SocialGames/Content/Park.png</File>
+    <File>C:/Users/simob/Desktop/SocialGame_Private/SocialGames/SocialGames/Content/prompt.png</File>
+    <File>C:/Users/simob/Desktop/SocialGame_Private/SocialGames/SocialGames/Content/RightArrow.png</File>
+    <File>C:/Users/simob/Desktop/SocialGame_Private/SocialGames/SocialGames/Content/sel_gioco.png</File>
+    <File>C:/Users/simob/Desktop/SocialGame_Private/SocialGames/SocialGames/Content/sel_gioco_hover.png</File>
+    <File>C:/Users/simob/Desktop/SocialGame_Private/SocialGames/SocialGames/Content/SelStory1.png</File>
+    <File>C:/Users/simob/Desktop/SocialGame_Private/SocialGames/SocialGames/Content/SelStory2.png</File>
+    <File>C:/Users/simob/Desktop/SocialGame_Private/SocialGames/SocialGames/Content/START.png</File>
+    <File>C:/Users/simob/Desktop/SocialGame_Private/SocialGames/SocialGames/Content/start_hover.png</File>
+    <File>C:/Users/simob/Desktop/SocialGame_Private/SocialGames/SocialGames/Content/story.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

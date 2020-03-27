@@ -8,8 +8,6 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using System.Xml;
 using Microsoft.Xna.Framework.Input;
-using SocialGames.Commands;
-using SocialGames.Data;
 
 namespace SocialGames
 {

@@ -7,7 +7,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace SocialGames.Data
+namespace SocialGames
 {
     class GameData : Game1
     {
@@ -33,6 +33,9 @@ namespace SocialGames.Data
         // background e avatar non devono contenere l'estensione del file
         public static string background = "Park";
         public static string avatar = "prompt";
+
+        // Variabile utile a memorizzare la pagina di storie visualizzata in seleziona storia
+        public static int page = 1;
     }
 }
 

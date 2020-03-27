@@ -94,6 +94,18 @@
 /processorParam:TextureFormat=Compressed
 /build:dialog.spritefont
 
+#begin LeftArrow.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:LeftArrow.png
+
 #begin Park.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -118,6 +130,18 @@
 /processorParam:TextureFormat=Color
 /build:prompt.png
 
+#begin RightArrow.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:RightArrow.png
+
 #begin sel_gioco.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -141,6 +165,30 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:sel_gioco_hover.png
+
+#begin SelStory1.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:SelStory1.png
+
+#begin SelStory2.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:SelStory2.png
 
 #begin START.png
 /importer:TextureImporter

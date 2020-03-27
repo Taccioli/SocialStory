@@ -12,7 +12,7 @@ namespace SocialGames
 {
     public class MenuState : State
     {
-        private List<Button> buttons;
+        private List<MenuButton> buttons;
         private Texture2D background;
 
         public MenuState(Game1 game, GraphicsDevice graphicsDevice, ContentManager content)
@@ -26,11 +26,11 @@ namespace SocialGames
             Texture2D start_hover = content.Load<Texture2D>("start_hover");
             Texture2D selGame_hover = content.Load<Texture2D>("sel_gioco_hover");
             Texture2D createAvatar_hover = content.Load<Texture2D>("crea_avatar_hover");
-            Button startBtn = new Button(game, graphicsDevice, contentManager, "start", start, start_hover , Const.LEFTMARGINBTN, Const.TOPMARGINBTN);
-            Button selGameBtn = new Button(game, graphicsDevice, contentManager, "selgame", selGame, selGame_hover, Const.LEFTMARGINBTN, (Const.TOPMARGINBTN) + 100);
-            Button createAvatarBtn = new Button(game, graphicsDevice, contentManager, "createavatar", createAvatar, createAvatar_hover, Const.LEFTMARGINBTN, (Const.TOPMARGINBTN) + 200);
+            MenuButton startBtn = new MenuButton(game, graphicsDevice, contentManager, "start", start, start_hover , Const.LEFTMARGINBTN, Const.TOPMARGINBTN);
+            MenuButton selGameBtn = new MenuButton(game, graphicsDevice, contentManager, "selgame", selGame, selGame_hover, Const.LEFTMARGINBTN, (Const.TOPMARGINBTN) + 100);
+            MenuButton createAvatarBtn = new MenuButton(game, graphicsDevice, contentManager, "createavatar", createAvatar, createAvatar_hover, Const.LEFTMARGINBTN, (Const.TOPMARGINBTN) + 200);
 
-            buttons = new List<Button>()
+            buttons = new List<MenuButton>()
             {
                 startBtn,
                 selGameBtn,
@@ -44,7 +44,7 @@ namespace SocialGames
 
             spriteBatch.Draw(background, new Vector2(0, 0), Color.White);
 
-            foreach (Button button in buttons)
+            foreach (MenuButton button in buttons)
                 button.Draw(gameTime, spriteBatch);
 
             spriteBatch.End();
@@ -52,7 +52,7 @@ namespace SocialGames
 
         public override void Update(GameTime gameTime)
         {
-            foreach (Button button in buttons)
+            foreach (MenuButton button in buttons)
                 button.Update(gameTime);
         }
 

@@ -19,5 +19,6 @@ namespace SocialGames
                 GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height / 2f);
         public const int TOPMARGINBTN = 301;
         public const int LEFTMARGINBTN = 850;
+        public const int TOTALPAGES = 2;
     }
 }
