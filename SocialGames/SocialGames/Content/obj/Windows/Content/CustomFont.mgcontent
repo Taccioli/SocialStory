@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/simob/Desktop/Gioco autismo/SocialGame_Private/SocialGames/SocialGames/Content/CustomFont.spritefont</SourceFile>
+  <SourceFile>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/CustomFont.spritefont</SourceFile>
   <SourceTime>2020-04-22T21:05:40.5040072+02:00</SourceTime>
-  <DestFile>C:/Users/simob/Desktop/Gioco autismo/SocialGame_Private/SocialGames/SocialGames/Content/bin/Windows/Content/CustomFont.xnb</DestFile>
-  <DestTime>2020-04-23T15:14:01.1000236+02:00</DestTime>
+  <DestFile>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/bin/Windows/Content/CustomFont.xnb</DestFile>
+  <DestTime>2020-04-25T18:14:45.6204904+02:00</DestTime>
   <Importer>FontDescriptionImporter</Importer>
   <ImporterTime>2018-12-08T17:35:54+01:00</ImporterTime>
   <Processor>FontDescriptionProcessor</Processor>

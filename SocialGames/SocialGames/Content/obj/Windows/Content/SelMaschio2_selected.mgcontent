@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/simob/Desktop/Gioco autismo/SocialGame_Private/SocialGames/SocialGames/Content/SelMaschio2_selected.png</SourceFile>
+  <SourceFile>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelMaschio2_selected.png</SourceFile>
   <SourceTime>2020-04-22T21:05:40.5140837+02:00</SourceTime>
-  <DestFile>C:/Users/simob/Desktop/Gioco autismo/SocialGame_Private/SocialGames/SocialGames/Content/bin/Windows/Content/SelMaschio2_selected.xnb</DestFile>
-  <DestTime>2020-04-23T15:14:02.2015887+02:00</DestTime>
+  <DestFile>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/bin/Windows/Content/SelMaschio2_selected.xnb</DestFile>
+  <DestTime>2020-04-25T18:14:46.8482105+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-08T17:35:54+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
