@@ -12,13 +12,12 @@ namespace SocialGames
 {
     public class SelStoryButton : Component
     {
-        #region FIELDS
+        #region Fields
         private Game1 game;
         private GraphicsDevice graphicsDevice;
         private ContentManager contentManager;
         private string name;
         private Texture2D texture;
-        private bool clicked;
         private MouseState currentMouseInput, previousMouseInput;
         private Vector2 position;
         #endregion
@@ -65,44 +64,109 @@ namespace SocialGames
 
             if (IsHovering() && previousMouseInput.LeftButton == ButtonState.Released && currentMouseInput.LeftButton == ButtonState.Pressed)
             {
-                switch (name)
+                if(GameData.timeSpan < TimeSpan.Zero)
                 {
-                    case "story1":
-                        game.ChangeState(new MenuState(game, graphicsDevice, contentManager));
-                        break;
-                    case "story2":
-                        game.ChangeState(new MenuState(game, graphicsDevice, contentManager));
-                        break;
-                    case "story3":
-                        game.ChangeState(new MenuState(game, graphicsDevice, contentManager));
-                        break;
-                    case "story4":
-                        game.ChangeState(new MenuState(game, graphicsDevice, contentManager));
-                        break;
-                    case "story5":
-                        game.ChangeState(new MenuState(game, graphicsDevice, contentManager));
-                        break;
-                    case "story6":
-                        game.ChangeState(new MenuState(game, graphicsDevice, contentManager));
-                        break;
-                    case "story7":
-                        game.ChangeState(new MenuState(game, graphicsDevice, contentManager));
-                        break;
-                    case "story8":
-                        game.ChangeState(new MenuState(game, graphicsDevice, contentManager));
-                        break;
-                    case "leftArrow":
-                        if (GameData.page > 1)
-                            GameData.page -= 1;
-                        game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
-                        break;
-                    case "rightArrow":
-                        if (GameData.page < Const.TOTALPAGES)
-                            GameData.page += 1;
-                        game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
-                        break;
-                    default:
-                        break;
+                    switch (name)
+                    {
+                        case "story1":
+                            GameData.story = "story1";
+                            GameData.timeSpan = Const.TIMER;
+                            game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
+                            break;
+                        case "story2":
+                            GameData.story = "story2";
+                            GameData.timeSpan = Const.TIMER;
+                            game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
+                            break;
+                        case "story3":
+                            GameData.story = "story3";
+                            GameData.timeSpan = Const.TIMER;
+                            game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
+                            break;
+                        case "story4":
+                            GameData.story = "story4";
+                            GameData.timeSpan = Const.TIMER;
+                            game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
+                            break;
+                        case "story5":
+                            GameData.story = "story5";
+                            GameData.timeSpan = Const.TIMER;
+                            game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
+                            break;
+                        case "story6":
+                            GameData.story = "story6";
+                            GameData.timeSpan = Const.TIMER;
+                            game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
+                            break;
+                        case "story7":
+                            GameData.story = "story7";
+                            GameData.timeSpan = Const.TIMER;
+                            game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
+                            break;
+                        case "story8":
+                            GameData.story = "story8";
+                            GameData.timeSpan = Const.TIMER;
+                            game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
+                            break;
+                        case "story9":
+                            GameData.story = "story9";
+                            GameData.timeSpan = Const.TIMER;
+                            game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
+                            break;
+                        case "story10":
+                            GameData.story = "story10";
+                            GameData.timeSpan = Const.TIMER;
+                            game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
+                            break;
+                        case "story11":
+                            GameData.story = "story11";
+                            GameData.timeSpan = Const.TIMER;
+                            game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
+                            break;
+                        case "story12":
+                            GameData.story = "story12";
+                            GameData.timeSpan = Const.TIMER;
+                            game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
+                            break;
+                        case "story13":
+                            GameData.story = "story13";
+                            GameData.timeSpan = Const.TIMER;
+                            game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
+                            break;
+                        case "story14":
+                            GameData.story = "story14";
+                            GameData.timeSpan = Const.TIMER;
+                            game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
+                            break;
+                        case "story15":
+                            GameData.story = "story15";
+                            GameData.timeSpan = Const.TIMER;
+                            game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
+                            break;
+                        case "story16":
+                            GameData.story = "story16";
+                            GameData.timeSpan = Const.TIMER;
+                            game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
+                            break;
+                        case "leftArrow":
+                            if (GameData.page > 1)
+                                GameData.page -= 1;
+                            game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
+                            GameData.timeSpan = Const.TIMER;
+                            break;
+                        case "rightArrow":
+                            if (GameData.page < Const.TOTALPAGES)
+                                GameData.page += 1;
+                            game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
+                            GameData.timeSpan = Const.TIMER;
+                            break;
+                        case "home":
+                            game.ChangeState(new MenuState(game, graphicsDevice, contentManager));
+                            GameData.timeSpan = Const.TIMER;
+                            break;
+                        default:
+                            break;
+                    }
                 }
             }
         }

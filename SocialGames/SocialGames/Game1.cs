@@ -84,6 +84,8 @@ namespace SocialGames
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
+            GameData.timeSpan -= gameTime.ElapsedGameTime;
+
             // Update input states
             PreviousKeyState = KeyState;
             KeyState = Keyboard.GetState();

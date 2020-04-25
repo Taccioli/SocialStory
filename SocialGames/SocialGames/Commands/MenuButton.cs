@@ -19,8 +19,6 @@ namespace SocialGames
         private ContentManager contentManager;
         private string name;
         private Texture2D texture, texture_hover;
-        private Color penColour;
-        private bool clicked;
         private MouseState currentMouseInput, previousMouseInput;
         private Vector2 position;
         public event EventHandler click;
@@ -69,24 +67,47 @@ namespace SocialGames
             previousMouseInput = currentMouseInput;
             currentMouseInput = Mouse.GetState();
 
-            if(IsHovering() && previousMouseInput.LeftButton == ButtonState.Released && currentMouseInput.LeftButton == ButtonState.Pressed)
+            if (IsHovering() && previousMouseInput.LeftButton == ButtonState.Released && currentMouseInput.LeftButton == ButtonState.Pressed)
             {
-                switch (name)
+                if (GameData.timeSpan < TimeSpan.Zero)
                 {
-                    case "start":
-                        game.ChangeState(new GameState(game, graphicsDevice, contentManager));
-                        break;
-                    case "selgame":
-                        game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
-                        break;
-                    case "createavatar":
-                        game.ChangeState(new GameState(game, graphicsDevice, contentManager));
-                        break;
-                    case "story1":
-                        game.ChangeState(new MenuState(game, graphicsDevice, contentManager));
-                        break;
-                    default:
-                        break;
+                    switch (name)
+                    {
+                        case "start":
+                            GameData.timeSpan = Const.TIMER;
+                            GameData.isStart = true;
+                            if (GameData.avatar.Equals(""))
+                            {
+                                game.ChangeState(new SelAvatarState(game, graphicsDevice, contentManager));
+                            }
+                            else if (GameData.story.Equals(""))
+                            {
+                                game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
+                            }
+                            else
+                            {
+                                game.ChangeState(new GameState(game, graphicsDevice, contentManager));
+                            }
+                            break;
+                        case "selgame":
+                            GameData.timeSpan = Const.TIMER;
+                            game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
+                            break;
+                        case "createavatar":
+                            GameData.timeSpan = Const.TIMER;
+                            game.ChangeState(new SelAvatarState(game, graphicsDevice, contentManager));
+                            break;
+                        case "story1":
+                            GameData.timeSpan = Const.TIMER;
+                            game.ChangeState(new MenuState(game, graphicsDevice, contentManager));
+                            break;
+                        case "selStory":
+                            GameData.timeSpan = Const.TIMER;
+                            game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
+                            break;
+                        default:
+                            break;
+                    }
                 }
             }
         }
