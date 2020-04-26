@@ -8,8 +8,6 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using System.Xml;
 using Microsoft.Xna.Framework.Input;
-using SocialGames.Commands;
-using SocialGames.Data;
 
 namespace SocialGames
 {
@@ -79,11 +77,12 @@ namespace SocialGames
 
             // Load Texture diverse da gioco a gioco
             background = content.Load<Texture2D>(GameData.background);
-            avatar = content.Load<Texture2D>("GameState/Avatars/" + GameData.avatar);
-            normalAvatar = avatar;
+            normalAvatar = content.Load<Texture2D>("GameState/Avatars/" + GameData.avatar);
             angryAvatar = content.Load<Texture2D>("GameState/Avatars/" + "Angry" + GameData.avatar);
             cryingAvatar = content.Load<Texture2D>("GameState/Avatars/" + "Crying" + GameData.avatar);
-            // happyAvatar = content.Load<Texture2D>("GameState/Avatars/" + "Happy" + GameData.avatar);
+            happyAvatar = content.Load<Texture2D>("GameState/Avatars/" + "Happy" + GameData.avatar);
+            illAvatar = content.Load<Texture2D>("GameState/Avatars/" + "Ill" + GameData.avatar);
+            avatar = stringToAvatar(GameData.initEmotion);
 
             // Inizializzo i vettori di posizione delle Texture
             backPos = new Vector2(0, 0);
@@ -390,6 +389,8 @@ namespace SocialGames
                             GameData.title = reader.Value;
                             break;
                         case "fprompt":
+                            reader.MoveToNextAttribute();
+                            GameData.initEmotion = reader.Value;
                             reader.Read();
                             GameData.firstPrompt = reader.Value;
                             break;
@@ -480,7 +481,7 @@ namespace SocialGames
                     }
                 }
             }
-            if(!GameData.isCapital)
+            if (!GameData.isCapital)
             {
                 GameData.firstPrompt = WrapText(textFont, GameData.firstPrompt, story.Width - 10);
                 GameData.secondPrompt = WrapText(textFont, GameData.secondPrompt, story.Width - 10);
@@ -552,6 +553,8 @@ namespace SocialGames
                     return normalAvatar;
                 case "Ill":
                     return illAvatar;
+                default:
+                    return normalAvatar;
             }
             return null;
         }

@@ -2,7 +2,6 @@
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System.Collections.Generic;
-using SocialGames.Data;
 
 namespace SocialGames
 {
@@ -84,6 +83,8 @@ namespace SocialGames
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
+
+            GameData.timeSpan -= gameTime.ElapsedGameTime;
 
             // Update input states
             PreviousKeyState = KeyState;

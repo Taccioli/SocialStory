@@ -7,9 +7,9 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace SocialGames.Data
+namespace SocialGames
 {
-    class GameData : Game1
+    public class GameData : Game1
     {
         // nameFile è utilizzato per contenere il nome del file di gioco da caricare per i dialoghi
         // Deve contenere anche l'estensione del file
@@ -19,6 +19,7 @@ namespace SocialGames.Data
         public static string title = null;
         public static string firstPrompt = null;
         public static string firstQuest = null;
+        public static string initEmotion = null;
         public static Answer afp = new Answer();
         public static Answer bfp = new Answer();
         public static Answer cfp = new Answer();
@@ -35,6 +36,16 @@ namespace SocialGames.Data
         public static string background = "Park";
         public static string avatar = "Girl1";
         public static bool isCapital = true;
+        public static string story = "";
+
+        // Variabile utile a memorizzare la pagina di storie visualizzata in seleziona storia
+        public static int page = 1;
+
+        // Timer necessario per evitare la pressione ravvicinata di due tasti 
+        public static TimeSpan timeSpan = Const.TIMER;
+
+        // Variabile utile a determinare quando ci si trova alla selezione di storia/avatar dopo lo START
+        public static bool isStart = false;
     }
 }
 

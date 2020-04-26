@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/Tommaso/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/Park.png</SourceFile>
+  <SourceFile>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/Park.png</SourceFile>
   <SourceTime>2020-03-14T11:14:21.8911619+01:00</SourceTime>
-  <DestFile>C:/Users/Tommaso/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/bin/Windows/Park.xnb</DestFile>
-  <DestTime>2020-03-19T16:52:51.2117291+01:00</DestTime>
+  <DestFile>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/bin/Windows/Park.xnb</DestFile>
+  <DestTime>2020-04-26T15:40:03.6849449+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-08T17:35:54+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
