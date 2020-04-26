@@ -1,2 +1,2 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"C:/Users/Tommaso/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/choiceHoverTexture.png","C:/Users/Tommaso/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/bin/Windows/choiceHoverTexture.xnb","TextureProcessor","Texture2DContent",3651,14005,0,1309248
+"C:/Users/Tommaso/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/GameState/ButtonFont.spritefont","C:/Users/Tommaso/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/bin/Windows/GameState/ButtonFont.xnb","FontDescriptionProcessor","SpriteFontContent",2122,73479,0,3428041

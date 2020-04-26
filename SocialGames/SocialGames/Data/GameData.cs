@@ -19,20 +19,22 @@ namespace SocialGames.Data
         public static string title = null;
         public static string firstPrompt = null;
         public static string firstQuest = null;
-        public static string afp, bfp, cfp = null;
-        public static string oafp, obfp, ocfp = null;
+        public static Answer afp = new Answer();
+        public static Answer bfp = new Answer();
+        public static Answer cfp = new Answer();
         public static string secondPrompt = null;
         public static string secondQuest = null;
-        public static string asp, bsp, csp = null;
-        public static string oasp, obsp, ocsp = null;
-        public static int ans1, ans2 = 0;
+        public static Answer asp = new Answer();
+        public static Answer bsp = new Answer();
+        public static Answer csp = new Answer();
 
         public static int rewardAmount = 0;
         // background e avatar contengono il nome dei file di avatar e di sfondo
         // da caricare nel gioco
         // background e avatar non devono contenere l'estensione del file
         public static string background = "Park";
-        public static string avatar = "prompt";
+        public static string avatar = "Girl1";
+        public static bool isCapital = true;
     }
 }
 

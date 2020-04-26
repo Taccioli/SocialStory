@@ -44,6 +44,7 @@
     <Compile Include="Commands\Button.cs" />
     <Compile Include="Commands\Component.cs" />
     <Compile Include="Commands\PlayButton.cs" />
+    <Compile Include="Data\Answer.cs" />
     <Compile Include="Data\Const.cs" />
     <Compile Include="Data\GameData.cs" />
     <Compile Include="Game1.cs" />

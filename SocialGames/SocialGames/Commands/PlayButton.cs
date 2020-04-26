@@ -29,7 +29,8 @@ namespace SocialGames.Commands
         public bool Clicked { get; private set; }
         public Color PenColour { get; set; }
         public Vector2 Position { get; set; }
-        
+        public bool isActive;
+
         public Rectangle Rectangle
         {
             get
@@ -44,24 +45,23 @@ namespace SocialGames.Commands
 
         #region Methods
 
-        public PlayButton(Texture2D texture, Texture2D hoverTexture, SpriteFont font, bool textInside)
+        public PlayButton(Texture2D texture, Texture2D hoverTexture, SpriteFont font, bool textInside, bool isActive)
         {
             this.texture = texture;
             this.hoverTexture = hoverTexture;
             this.font = font;
             PenColour = Color.Black;
             this.textInside = textInside;
+            this.isActive = isActive;
         }
 
-        public PlayButton(Texture2D texture, SpriteFont font)
+        public PlayButton(Texture2D texture, SpriteFont font, bool isActive)
         {
             this.texture = texture;
-
             this.font = font;
-
             PenColour = Color.Black;
-
             textInside = true;
+            this.isActive = isActive;
         }
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
@@ -99,7 +99,7 @@ namespace SocialGames.Commands
 
             isHovering = false;
 
-            if (mouseRectangle.Intersects(Rectangle))
+            if (mouseRectangle.Intersects(Rectangle) && isActive)
             {
                 isHovering = true;
 
