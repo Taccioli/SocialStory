@@ -15,6 +15,7 @@ namespace SocialGames
         protected Game1 game;
         protected GraphicsDevice graphicsDevice;
         protected ContentManager contentManager;
+        protected Timer timer;
 
         public State(Game1 game, GraphicsDevice graphicsDevice, ContentManager content)
         {

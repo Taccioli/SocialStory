@@ -20,7 +20,7 @@ namespace SocialGames
         private Texture2D texture;
         private Texture2D hoverTexture;
         private bool textInside;
-
+        private bool hasHover;
         #endregion
 
         #region Properties
@@ -45,6 +45,7 @@ namespace SocialGames
 
         #region Methods
 
+        // Per buttons con il testo //
         public PlayButton(Texture2D texture, Texture2D hoverTexture, SpriteFont font, bool textInside, bool isActive)
         {
             this.texture = texture;
@@ -53,30 +54,29 @@ namespace SocialGames
             PenColour = Color.Black;
             this.textInside = textInside;
             this.isActive = isActive;
+            this.hasHover = true;
         }
-
-        public PlayButton(Texture2D texture, SpriteFont font, bool isActive)
+        // Per buttons senza testo //
+        public PlayButton(Texture2D texture, Texture2D hoverTexture, bool hasOver, bool isActive)
         {
             this.texture = texture;
-            this.font = font;
-            PenColour = Color.Black;
+            this.hoverTexture = hoverTexture;
             textInside = true;
             this.isActive = isActive;
+            this.hasHover = hasOver;
         }
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            var colour = Color.White;
-
             if (isHovering)
             {
-                if (!textInside)
-                    spriteBatch.Draw(hoverTexture, Rectangle, colour);
+                if (hasHover)
+                    spriteBatch.Draw(hoverTexture, Rectangle, Color.White);
                 else
                     spriteBatch.Draw(texture, Rectangle, Color.Gray);
             }
             else
-                spriteBatch.Draw(texture, Rectangle, colour);
+                spriteBatch.Draw(texture, Rectangle, Color.White);
 
             if (!string.IsNullOrEmpty(Text))
             {

@@ -19,11 +19,12 @@ namespace SocialGames
         private const int PrimaRisposta = 2;
         private const int SecondaRisposta = 4;
         private const int Fine = 5;
+        private const int Home = 0;
         #endregion
 
         #region Fields
 
-        private Texture2D background;
+        private Texture2D initBackground, endBackground;
         private SpriteFont textFont;
         private SpriteFont buttonFont;
         private Texture2D prompt;
@@ -31,17 +32,20 @@ namespace SocialGames
         private Texture2D choiceTexture;
         private Texture2D choiceHoverTexture;
         private Texture2D buttonTexture;
-
-        // private Texture2D buttonHoverTexture;
+        private Texture2D homeButText;
+        private List<Component> firstButtons, secondButtons, otherButtons;
+        private Texture2D buttonHoverTexture;
         private Texture2D avatar;
         private Texture2D angryAvatar, illAvatar, cryingAvatar, happyAvatar, normalAvatar;
-        private List<Component> firstButtons, secondButtons, otherButtons;
         private int state;
+
         private PlayButton firstAButton, firstBButton, firstCButton;
         private PlayButton secondAButton, secondBButton, secondCButton;
         private PlayButton capitoButton;
+        private PlayButton homeButton;
         private string testoRisposta = null;
         private bool correctAnswer;
+        private Reward reward;
 
         // Posizioni delle Texture
         private Vector2 backPos;
@@ -55,6 +59,7 @@ namespace SocialGames
         private Vector2 storyTextPos;
         private Vector2 questTextPos;
         private Vector2 titleTextPos;
+        private Vector2 homeButPos;
 
         #endregion
 
@@ -64,26 +69,34 @@ namespace SocialGames
             this.game = game;
             state = PrimoPrompt;
 
+            #region Texture Grafica
+
             choiceTexture = content.Load<Texture2D>("GameState/choiceTexture");
             choiceHoverTexture = content.Load<Texture2D>("GameState/choiceHoverTexture");
             buttonTexture = content.Load<Texture2D>("GameState/buttonTexture");
-            // buttonHoverTexture = content.Load<Texture2D>("buttonHoverTexture");
+            buttonHoverTexture = content.Load<Texture2D>("GameState/buttonHoverTexture");
+            homeButText = content.Load<Texture2D>("home");
             textFont = content.Load<SpriteFont>("GameState/CustomFont");
             buttonFont = content.Load<SpriteFont>("GameState/buttonFont");
             prompt = content.Load<Texture2D>("GameState/prompt");
             story = content.Load<Texture2D>("GameState/story");
+            #endregion
 
             this.Read(GameData.nameFile);
 
+            #region Texture Storia
             // Load Texture diverse da gioco a gioco
-            background = content.Load<Texture2D>(GameData.background);
+            initBackground = content.Load<Texture2D>(GameData.background);
+            endBackground = content.Load<Texture2D>("end" + GameData.background);
             normalAvatar = content.Load<Texture2D>("GameState/Avatars/" + GameData.avatar);
             angryAvatar = content.Load<Texture2D>("GameState/Avatars/" + "Angry" + GameData.avatar);
             cryingAvatar = content.Load<Texture2D>("GameState/Avatars/" + "Crying" + GameData.avatar);
             happyAvatar = content.Load<Texture2D>("GameState/Avatars/" + "Happy" + GameData.avatar);
             illAvatar = content.Load<Texture2D>("GameState/Avatars/" + "Ill" + GameData.avatar);
             avatar = stringToAvatar(GameData.initEmotion);
+            #endregion
 
+            #region Vettori Posizione Elementi
             // Inizializzo i vettori di posizione delle Texture
             backPos = new Vector2(0, 0);
             promptPos = new Vector2((Const.DisplayDim.Y - prompt.Width) / 2 + story.Height + 200, 3 * Const.DisplayDim.X / 4 - prompt.Height / 2);
@@ -95,7 +108,16 @@ namespace SocialGames
             butBPos = promptPos + new Vector2(10, 150);
             butCPos = promptPos + new Vector2(10, 230);
             butHoCapPos = storyPos + new Vector2(story.Width / 2 - buttonTexture.Width / 2, 280);
+            homeButPos = new Vector2(Const.MARGINHOMEBTN, Const.MARGINHOMEBTN);
             avatarPos = new Vector2(Const.DisplayDim.Y/4 - avatar.Width/2 - 100, Const.DisplayDim.X - 3*avatar.Height/4);
+            #endregion
+
+            #region Inizializzazione altri elementi
+
+            reward = new Reward(content);
+            reward.UpdateReward(0);
+
+            #endregion
 
             #region first Buttons
 
@@ -167,16 +189,22 @@ namespace SocialGames
             #endregion
 
             #region other Buttons
-            capitoButton = new PlayButton(buttonTexture, textFont, false)
+            capitoButton = new PlayButton(buttonTexture, buttonHoverTexture, true, false)
             {
                 Position = butHoCapPos,
-                Text = "Ho capito!",
             };
             capitoButton.Click += capitoButtonClick;
 
+            homeButton = new PlayButton(homeButText, null, false, true)
+            {
+                Position = homeButPos
+            };
+            homeButton.Click += homeButtonClick;
+
             otherButtons = new List<Component>()
                     {
-                        capitoButton
+                        capitoButton,
+                        homeButton
                      };
             #endregion
         }
@@ -193,7 +221,7 @@ namespace SocialGames
             if (GameData.afp.isCorrect)
             {
                 correctAnswer = true;
-                Reward();
+                reward.UpdateReward();
             }
         }
 
@@ -207,7 +235,7 @@ namespace SocialGames
             avatar = stringToAvatar(GameData.bfp.emotion);
             if (GameData.bfp.isCorrect)
             {
-                Reward();
+                reward.UpdateReward();
                 correctAnswer = true;
             }
         }
@@ -222,7 +250,7 @@ namespace SocialGames
             testoRisposta = GameData.cfp.answer;
             if (GameData.cfp.isCorrect)
             {
-                Reward();
+                reward.UpdateReward();
                 correctAnswer = true;
             }
         }
@@ -240,7 +268,7 @@ namespace SocialGames
             testoRisposta = GameData.asp.answer;
             if (GameData.asp.isCorrect)
             {
-                Reward();
+                reward.UpdateReward();
                 correctAnswer = true;
             }
         }
@@ -255,7 +283,7 @@ namespace SocialGames
             avatar = stringToAvatar(GameData.bsp.emotion);
             if (GameData.bsp.isCorrect)
             {
-                Reward();
+                reward.UpdateReward();
                 correctAnswer = true;
             }
         }
@@ -271,7 +299,7 @@ namespace SocialGames
             if (GameData.csp.isCorrect)
             {
                 correctAnswer = true;
-                Reward();
+                reward.UpdateReward();
             }
         }
 
@@ -311,24 +339,22 @@ namespace SocialGames
             correctAnswer = false;
         }
 
-        #endregion
-
-        private void Reward()
+        private void homeButtonClick(object sender, EventArgs e)
         {
-            GameData.rewardAmount += 1;
+            game.ChangeState(new MenuState(game, graphicsDevice, contentManager));
         }
+
+        #endregion
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
             spriteBatch.Begin();
-            spriteBatch.Draw(background, backPos, Color.White);
-            spriteBatch.Draw(avatar, avatarPos, Color.White);
-            spriteBatch.Draw(story, storyPos, Color.White);
-            spriteBatch.DrawString(textFont, GameData.title, titleTextPos, Color.Black);
-
+            
             switch (state)
             {
                 case PrimoPrompt:
+                    spriteBatch.Draw(initBackground, backPos, Color.White);
+                    spriteBatch.Draw(story, storyPos, Color.White);
                     spriteBatch.Draw(prompt, promptPos, Color.White);
                     spriteBatch.DrawString(textFont, GameData.firstQuest, questTextPos, Color.Black);
                     spriteBatch.DrawString(textFont, GameData.firstPrompt, storyTextPos, Color.Black);
@@ -336,10 +362,14 @@ namespace SocialGames
                         component.Draw(gameTime, spriteBatch);
                     break;
                 case PrimaRisposta:
+                    spriteBatch.Draw(endBackground, backPos, Color.White);
+                    spriteBatch.Draw(story, storyPos, Color.White);
                     spriteBatch.DrawString(textFont, testoRisposta, storyTextPos, Color.Black);
                     capitoButton.Draw(gameTime, spriteBatch);
                     break;
                 case SecondoPrompt:
+                    spriteBatch.Draw(initBackground, backPos, Color.White);
+                    spriteBatch.Draw(story, storyPos, Color.White);
                     spriteBatch.Draw(prompt, promptPos, Color.White);
                     spriteBatch.DrawString(textFont, GameData.secondQuest, questTextPos, Color.Black);
                     spriteBatch.DrawString(textFont, GameData.secondPrompt, storyTextPos, Color.Black);
@@ -347,16 +377,19 @@ namespace SocialGames
                         component.Draw(gameTime, spriteBatch);
                     break;
                 case SecondaRisposta:
+                    spriteBatch.Draw(endBackground, backPos, Color.White);
+                    spriteBatch.Draw(story, storyPos, Color.White);
                     spriteBatch.DrawString(textFont, testoRisposta, storyTextPos, Color.Black);
                     capitoButton.Draw(gameTime, spriteBatch);
                     break;
             }
+
+            spriteBatch.Draw(avatar, avatarPos, Color.White);
+            spriteBatch.DrawString(textFont, GameData.title, titleTextPos, Color.Black);
+            reward.Draw(spriteBatch);
+            homeButton.Draw(gameTime, spriteBatch);
+            
             spriteBatch.End();
-        }
-
-        public override void PostUpdate(GameTime gameTime)
-        {
-
         }
 
         public override void Update(GameTime gameTime)
@@ -513,6 +546,7 @@ namespace SocialGames
                 GameData.csp.answer = WrapText(textFont, GameData.csp.answer.ToUpper(), story.Width - 10);
             }
         }
+
         public string WrapText(SpriteFont spriteFont, string text, float maxLineWidth)
         {
             string[] words = text.Split(' ');
@@ -557,6 +591,11 @@ namespace SocialGames
                     return normalAvatar;
             }
             return null;
+        }
+
+        public override void PostUpdate(GameTime gameTime)
+        {
+
         }
     }
 }

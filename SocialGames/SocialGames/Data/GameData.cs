@@ -43,7 +43,8 @@ namespace SocialGames
 
         // Timer necessario per evitare la pressione ravvicinata di due tasti 
         public static TimeSpan timeSpan = Const.TIMER;
-
+        // Timer di interruzione del gioco, settabile dall'utente
+        public static Timer timer;
         // Variabile utile a determinare quando ci si trova alla selezione di storia/avatar dopo lo START
         public static bool isStart = false;
     }

@@ -22,7 +22,7 @@ namespace SocialGames
         private MouseState currentMouseInput, previousMouseInput;
         private Vector2 position;
         public event EventHandler click;
-        
+
         public bool Clicked { get; private set; }
 
         public bool IsHovering()

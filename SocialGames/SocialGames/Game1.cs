@@ -63,6 +63,7 @@ namespace SocialGames
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
             currentState = new MenuState(this, graphics.GraphicsDevice, Content);
+            GameData.timer = new Timer(60, this, graphics.GraphicsDevice, Content);
         }
 
         /// <summary>
@@ -99,6 +100,8 @@ namespace SocialGames
             currentState.Update(gameTime);
             currentState.PostUpdate(gameTime);
 
+            GameData.timer.Update(gameTime);
+
             base.Update(gameTime);
         }
 
@@ -112,6 +115,11 @@ namespace SocialGames
 
             currentState.Draw(gameTime, spriteBatch);
             base.Draw(gameTime);
+        }
+
+        public void Quit()
+        {
+            this.Exit();
         }
     }
 }

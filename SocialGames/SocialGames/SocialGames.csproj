@@ -43,20 +43,26 @@
   <ItemGroup>
     <Compile Include="Commands\Button.cs" />
     <Compile Include="Commands\Component.cs" />
+    <Compile Include="Commands\ExitButton.cs" />
     <Compile Include="Commands\MenuButton.cs" />
     <Compile Include="Commands\PlayButton.cs" />
     <Compile Include="Commands\SelAvatarButton.cs" />
     <Compile Include="Commands\SelStoryButton.cs" />
+    <Compile Include="Commands\TimeButton.cs" />
     <Compile Include="Data\Answer.cs" />
     <Compile Include="Data\Const.cs" />
     <Compile Include="Data\GameData.cs" />
+    <Compile Include="Data\Reward.cs" />
+    <Compile Include="Data\Timer.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="States\EndTimeState.cs" />
     <Compile Include="States\GameState.cs" />
     <Compile Include="States\MenuState.cs" />
     <Compile Include="States\SelAvatarState.cs" />
     <Compile Include="States\SelStoryState.cs" />
+    <Compile Include="States\SettingsState.cs" />
     <Compile Include="States\State.cs" />
   </ItemGroup>
   <ItemGroup>
