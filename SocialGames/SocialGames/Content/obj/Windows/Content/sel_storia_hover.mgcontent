@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/sel_storia_hover.png</SourceFile>
-  <SourceTime>2020-04-26T11:03:37.4322399+02:00</SourceTime>
-  <DestFile>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/bin/Windows/Content/sel_storia_hover.xnb</DestFile>
-  <DestTime>2020-04-26T12:13:26.017373+02:00</DestTime>
+  <SourceFile>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/sel_storia_hover.png</SourceFile>
+  <SourceTime>2020-05-08T17:20:06.5973718+02:00</SourceTime>
+  <DestFile>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/bin/Windows/Content/sel_storia_hover.xnb</DestFile>
+  <DestTime>2020-05-08T17:21:33.3504693+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-08T17:35:54+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

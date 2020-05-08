@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/GameState/Avatars/IllBoy1.png</SourceFile>
-  <SourceTime>2020-04-25T16:08:22.4687326+02:00</SourceTime>
-  <DestFile>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/bin/Windows/Content/GameState/Avatars/IllBoy1.xnb</DestFile>
-  <DestTime>2020-04-26T15:40:10.4564605+02:00</DestTime>
+  <SourceFile>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/GameState/Avatars/IllBoy1.png</SourceFile>
+  <SourceTime>2020-05-08T17:20:05.2187884+02:00</SourceTime>
+  <DestFile>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/bin/Windows/Content/GameState/Avatars/IllBoy1.xnb</DestFile>
+  <DestTime>2020-05-08T17:21:30.6576688+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-08T17:35:54+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
