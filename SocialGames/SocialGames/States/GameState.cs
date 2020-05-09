@@ -101,8 +101,8 @@ namespace SocialGames
             #region Vettori Posizione Elementi
             // Inizializzo i vettori di posizione delle Texture
             backPos = new Vector2(0, 0);
-            promptPos = new Vector2((Const.DisplayDim.Y - prompt.Width) / 2 + story.Height + 200, 3 * Const.DisplayDim.X / 4 - prompt.Height / 2);
             storyPos = new Vector2(Const.DisplayDim.Y / 4 - story.Width / 2, 3 * Const.DisplayDim.X / 4 - story.Height / 2);
+            promptPos = storyPos + new Vector2(story.Width + 10, 0);
             storyTextPos = storyPos + new Vector2(10, 70);
             questTextPos = promptPos + new Vector2(10, 10);
             titleTextPos = storyPos + new Vector2(10, 10);

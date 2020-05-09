@@ -104,6 +104,10 @@ namespace SocialGames
                             GameData.timeSpan = Const.TIMER;
                             game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
                             break;
+                        case "settings":
+                            GameData.timeSpan = Const.TIMER;
+                            game.ChangeState(new SettingsState(game, graphicsDevice, contentManager));
+                            break;
                         default:
                             break;
                     }

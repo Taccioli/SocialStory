@@ -13,30 +13,30 @@ namespace SocialGames
 {
     public class SettingsState : State
     {
-        private Texture2D timeSelection;
         private Texture2D time10, time20, time30, timeHov10, timeHov20,
                             timeHov30, timeSel10, timeSel20, timeSel30;
-        private Texture2D capital;
-        private Texture2D OnText, OffText;
-
-        private SpriteFont font;
+        private Texture2D onText, offText;
+        private Texture2D back, backHover, background;
+        private SpriteFont font,titleFont;
 
         private TimeButton timeB10, timeB20, timeB30;
         private List<TimeButton> timeButtons;
         private OnOffButton capitalOnOff;
         private OnOffButton saturationOnOff;
-        
+        private PlayButton backBut;
+
         private Vector2 time10ButPos;
         private Vector2 capitalButPos, saturationButPos;
-        private Vector2 capitalPos, saturationPos, timePos;
+        private Vector2 capitalPos, saturationPos, timePos, settingsPos;
+        private Vector2 backPos, backgroundPos;
 
-        private string timeLabel, capitalLabel, saturationLabel;
+        private string timeLabel, capitalLabel, saturationLabel, settings;
 
         public SettingsState(Game1 game, GraphicsDevice graphicsDevice, ContentManager content)
             : base(game, graphicsDevice, content)
         {
             #region Textures
-            timeSelection = content.Load<Texture2D>("SettingsState/timer");
+            //timeSelection = content.Load<Texture2D>("SettingsState/timer");
             time10 = content.Load<Texture2D>("SettingsState/NonSelected10");
             time20 = content.Load<Texture2D>("SettingsState/NonSelected20");
             time30 = content.Load<Texture2D>("SettingsState/NonSelected30");
@@ -46,25 +46,31 @@ namespace SocialGames
             timeSel10 = content.Load<Texture2D>("SettingsState/Selected10");
             timeSel20 = content.Load<Texture2D>("SettingsState/Selected20");
             timeSel30 = content.Load<Texture2D>("SettingsState/Selected30");
-            OnText = content.Load<Texture2D>("SettingsState/ON");
-            OffText = content.Load<Texture2D>("SettingsState/OFF");
+            onText = content.Load<Texture2D>("SettingsState/ON");
+            offText = content.Load<Texture2D>("SettingsState/OFF");
+            back = content.Load<Texture2D>("SettingsState/Indietro");
+            backHover = content.Load<Texture2D>("SettingsState/IndietroHover");
+            background = content.Load<Texture2D>("SettingsState/Background");
             #endregion
 
-            font = content.Load<SpriteFont>("GameState/Rewards/Font");
-
-            timeLabel = "Tempo di gioco";
+            font = content.Load<SpriteFont>("SettingsState/Font");
+            titleFont = content.Load<SpriteFont>("SettingsState/Font");
+            timeLabel = "Tempo di gioco:";
             capitalLabel = "Scritte maiuscole";
             saturationLabel = "Colori tenui";
+            settings = "IMPOSTAZIONI DI GIOCO";
 
             #region Vectors
 
-            time10ButPos = new Vector2(300,300);
-            capitalButPos = new Vector2(400,400);
-            saturationButPos = new Vector2(500, 500);
-            capitalPos = new Vector2(500, 500);
-            saturationPos = new Vector2(500, 500);
-            timePos = new Vector2(500, 500);
-
+            settingsPos = new Vector2(Const.DisplayDim.Y / 20, Const.DisplayDim.X / 20);
+            timePos = settingsPos + new Vector2(0, Const.DisplayDim.X / 10);
+            time10ButPos = timePos + new Vector2(100, Const.DisplayDim.X / 8);
+            capitalPos = time10ButPos + new Vector2(-100, Const.DisplayDim.X / 5);
+            capitalButPos = capitalPos + new Vector2(600,0);
+            saturationPos = capitalPos + new Vector2(0, Const.DisplayDim.X / 8);
+            saturationButPos = saturationPos + new Vector2(600,0);
+            backPos = saturationPos + new Vector2(100,Const.DisplayDim.X / 8);
+            backgroundPos = new Vector2(0, 0);
             #endregion
 
             #region Time Buttons definition
@@ -101,20 +107,33 @@ namespace SocialGames
 
             #region On/Off Buttons definition
 
-            capitalOnOff = new OnOffButton(OnText, OffText, GameData.isCapital)
+            capitalOnOff = new OnOffButton(onText, offText, GameData.isCapital)
             {
-                Position = capitalButPos,
+                Position = capitalButPos
             };
             capitalOnOff.Click += capitalOnOffClick;
 
-            saturationOnOff = new OnOffButton(OnText, OffText, GameData.isSaturated)
+            saturationOnOff = new OnOffButton(onText, offText, GameData.isSaturated)
             {
-                Position = saturationButPos,
+                Position = saturationButPos
             };
             saturationOnOff.Click += saturationOnOffClick;
 
             #endregion
+
+            backBut = new PlayButton(back, backHover, true, true)
+            {
+                Position = backPos
+            };
+            backBut.Click += backButClick;
         }
+
+        private void backButClick(object sender, EventArgs e)
+        {
+            game.ChangeState(new MenuState(game, graphicsDevice, contentManager));
+        }
+
+        #region OnOff Button Methods
 
         private void saturationOnOffClick(object sender, EventArgs e)
         {
@@ -125,6 +144,8 @@ namespace SocialGames
         {
             GameData.isCapital = !GameData.isCapital;
         }
+
+        #endregion
 
         #region Time Buttons methods
         private void timeB10Click(object sender, EventArgs e)
@@ -154,14 +175,24 @@ namespace SocialGames
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
+            spriteBatch.Begin();
+
+            spriteBatch.Draw(background, backgroundPos, Color.White);
+
             foreach (TimeButton button in timeButtons)
                 button.Draw(gameTime, spriteBatch);
             saturationOnOff.Draw(gameTime, spriteBatch);
+
             capitalOnOff.Draw(gameTime, spriteBatch);
 
-            spriteBatch.DrawString(font, capitalLabel, capitalPos, Color.White);
-            spriteBatch.DrawString(font, timeLabel, timePos, Color.White);
-            spriteBatch.DrawString(font, saturationLabel, saturationPos, Color.White);
+            backBut.Draw(gameTime, spriteBatch);
+
+            spriteBatch.DrawString(font, settings, settingsPos, Color.Black);
+            spriteBatch.DrawString(font, capitalLabel, capitalPos, Color.Black);
+            spriteBatch.DrawString(font, timeLabel, timePos, Color.Black);
+            spriteBatch.DrawString(font, saturationLabel, saturationPos, Color.Black);
+
+            spriteBatch.End();
         }
         
         public override void PostUpdate(GameTime gameTime){}
@@ -173,6 +204,8 @@ namespace SocialGames
 
             saturationOnOff.Update(gameTime);
             capitalOnOff.Update(gameTime);
+
+            backBut.Update(gameTime);
         }
     }
 }
