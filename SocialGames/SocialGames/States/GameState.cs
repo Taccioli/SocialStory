@@ -24,8 +24,8 @@ namespace SocialGames
 
         #region Fields
 
-        private Texture2D initBackground, endBackground;
-        private SpriteFont textFont;
+        private Texture2D initBackground, endBackground, background;
+        private SpriteFont textFont, titleFont;
         private SpriteFont buttonFont;
         private Texture2D prompt;
         private Texture2D story;
@@ -33,7 +33,7 @@ namespace SocialGames
         private Texture2D choiceHoverTexture;
         private Texture2D buttonTexture;
         private Texture2D homeButText;
-        private List<Component> firstButtons, secondButtons, otherButtons;
+        private List<Component> firstButtons, secondButtons, otherButtons, buttons;
         private Texture2D buttonHoverTexture;
         private Texture2D avatar;
         private Texture2D angryAvatar, illAvatar, cryingAvatar, happyAvatar, normalAvatar;
@@ -44,7 +44,8 @@ namespace SocialGames
         private PlayButton capitoButton;
         private PlayButton homeButton;
         private string testoRisposta = null;
-        private bool correctAnswer;
+        private string promptString, questString;
+        private bool correctAnswer, isPromptActive;
         private Reward reward;
 
         // Posizioni delle Texture
@@ -78,6 +79,7 @@ namespace SocialGames
             homeButText = content.Load<Texture2D>("home");
             textFont = content.Load<SpriteFont>("GameState/CustomFont");
             buttonFont = content.Load<SpriteFont>("GameState/buttonFont");
+            titleFont = content.Load<SpriteFont>("GameState/titleFont");
             prompt = content.Load<Texture2D>("GameState/prompt");
             story = content.Load<Texture2D>("GameState/story");
             #endregion
@@ -100,7 +102,7 @@ namespace SocialGames
             // Inizializzo i vettori di posizione delle Texture
             backPos = new Vector2(0, 0);
             promptPos = new Vector2((Const.DisplayDim.Y - prompt.Width) / 2 + story.Height + 200, 3 * Const.DisplayDim.X / 4 - prompt.Height / 2);
-            storyPos = new Vector2((Const.DisplayDim.Y - story.Width) / 2 - 100, 3 * Const.DisplayDim.X / 4 - story.Height / 2);
+            storyPos = new Vector2(Const.DisplayDim.Y / 4 - story.Width / 2, 3 * Const.DisplayDim.X / 4 - story.Height / 2);
             storyTextPos = storyPos + new Vector2(10, 70);
             questTextPos = promptPos + new Vector2(10, 10);
             titleTextPos = storyPos + new Vector2(10, 10);
@@ -109,13 +111,14 @@ namespace SocialGames
             butCPos = promptPos + new Vector2(10, 230);
             butHoCapPos = storyPos + new Vector2(story.Width / 2 - buttonTexture.Width / 2, 280);
             homeButPos = new Vector2(Const.MARGINHOMEBTN, Const.MARGINHOMEBTN);
-            avatarPos = new Vector2(Const.DisplayDim.Y/4 - avatar.Width/2 - 100, Const.DisplayDim.X - 3*avatar.Height/4);
+            avatarPos = new Vector2(0, 0); // Viene gestita la sua posizione nel metodo Update()
             #endregion
 
             #region Inizializzazione altri elementi
 
             reward = new Reward(content);
             reward.UpdateReward(0);
+            isPromptActive = true;
 
             #endregion
 
@@ -350,45 +353,25 @@ namespace SocialGames
         {
             spriteBatch.Begin();
             
-            switch (state)
-            {
-                case PrimoPrompt:
-                    spriteBatch.Draw(initBackground, backPos, Color.White);
-                    spriteBatch.Draw(story, storyPos, Color.White);
-                    spriteBatch.Draw(prompt, promptPos, Color.White);
-                    spriteBatch.DrawString(textFont, GameData.firstQuest, questTextPos, Color.Black);
-                    spriteBatch.DrawString(textFont, GameData.firstPrompt, storyTextPos, Color.Black);
-                    foreach (var component in firstButtons)
-                        component.Draw(gameTime, spriteBatch);
-                    break;
-                case PrimaRisposta:
-                    spriteBatch.Draw(endBackground, backPos, Color.White);
-                    spriteBatch.Draw(story, storyPos, Color.White);
-                    spriteBatch.DrawString(textFont, testoRisposta, storyTextPos, Color.Black);
-                    capitoButton.Draw(gameTime, spriteBatch);
-                    break;
-                case SecondoPrompt:
-                    spriteBatch.Draw(initBackground, backPos, Color.White);
-                    spriteBatch.Draw(story, storyPos, Color.White);
-                    spriteBatch.Draw(prompt, promptPos, Color.White);
-                    spriteBatch.DrawString(textFont, GameData.secondQuest, questTextPos, Color.Black);
-                    spriteBatch.DrawString(textFont, GameData.secondPrompt, storyTextPos, Color.Black);
-                    foreach (var component in secondButtons)
-                        component.Draw(gameTime, spriteBatch);
-                    break;
-                case SecondaRisposta:
-                    spriteBatch.Draw(endBackground, backPos, Color.White);
-                    spriteBatch.Draw(story, storyPos, Color.White);
-                    spriteBatch.DrawString(textFont, testoRisposta, storyTextPos, Color.Black);
-                    capitoButton.Draw(gameTime, spriteBatch);
-                    break;
-            }
-
+            spriteBatch.Draw(background, backPos, Color.White);
             spriteBatch.Draw(avatar, avatarPos, Color.White);
+            spriteBatch.Draw(story, storyPos, Color.White);
             spriteBatch.DrawString(textFont, GameData.title, titleTextPos, Color.Black);
+            spriteBatch.DrawString(textFont, promptString, storyTextPos, Color.Black);
+
+            if (isPromptActive)
+            {
+                spriteBatch.Draw(prompt, promptPos, Color.White);
+                spriteBatch.DrawString(textFont, questString, questTextPos, Color.Black);
+                foreach (var component in buttons)
+                    component.Draw(gameTime, spriteBatch);
+            }
+            else
+                capitoButton.Draw(gameTime, spriteBatch);
+
             reward.Draw(spriteBatch);
             homeButton.Draw(gameTime, spriteBatch);
-            
+
             spriteBatch.End();
         }
 
@@ -403,7 +386,37 @@ namespace SocialGames
             foreach (PlayButton button in otherButtons)
                 button.Update(gameTime);
 
-            avatarPos = new Vector2(Const.DisplayDim.Y / 4 - avatar.Width / 2 - 100, Const.DisplayDim.X - 3*avatar.Height/4);
+            avatarPos = new Vector2(Const.DisplayDim.Y / 4 - avatar.Width / 2, Const.DisplayDim.X/12);
+
+            switch (state)
+            {
+                case PrimoPrompt:
+                    background = initBackground;
+                    questString = GameData.firstQuest;
+                    promptString = GameData.firstPrompt;
+                    isPromptActive = true;
+                    buttons = firstButtons;
+                    break;
+                case PrimaRisposta:
+                    background = initBackground;
+                    questString = GameData.firstQuest;
+                    promptString = testoRisposta;
+                    isPromptActive = false;
+                    break;
+                case SecondoPrompt:
+                    background = endBackground;
+                    questString = GameData.secondQuest;
+                    promptString = GameData.secondPrompt;
+                    isPromptActive = true;
+                    buttons = secondButtons;
+                    break;
+                case SecondaRisposta:
+                    background = endBackground;
+                    questString = GameData.secondQuest;
+                    promptString = testoRisposta;
+                    isPromptActive = false;
+                    break;
+            }
         }
 
         // Il metodo mi legge il file XML

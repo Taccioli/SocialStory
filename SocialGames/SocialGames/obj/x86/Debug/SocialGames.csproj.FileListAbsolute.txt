@@ -128,3 +128,6 @@ D:\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows
 D:\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\SettingsState\Selected20.xnb
 D:\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\SettingsState\Selected30.xnb
 D:\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\SettingsState\Test.xnb
+D:\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\GameState\Rewards\LongReward.xnb
+D:\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\GameState\Rewards\ShortReward.xnb
+D:\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\GameState\TitleFont.xnb

@@ -682,6 +682,18 @@
 /processorParam:TextureFormat=Compressed
 /build:GameState/Rewards/Font.spritefont
 
+#begin GameState/Rewards/LongReward.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:GameState/Rewards/LongReward.png
+
 #begin GameState/Rewards/MAX.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -706,6 +718,18 @@
 /processorParam:TextureFormat=Color
 /build:GameState/Rewards/Reward.png
 
+#begin GameState/Rewards/ShortReward.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:GameState/Rewards/ShortReward.png
+
 #begin GameState/story.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -717,6 +741,13 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GameState/story.png
+
+#begin GameState/TitleFont.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:GameState/TitleFont.spritefont
 
 #begin gioca.png
 /importer:TextureImporter

@@ -45,6 +45,7 @@
     <Compile Include="Commands\Component.cs" />
     <Compile Include="Commands\ExitButton.cs" />
     <Compile Include="Commands\MenuButton.cs" />
+    <Compile Include="Commands\OnOffButton.cs" />
     <Compile Include="Commands\PlayButton.cs" />
     <Compile Include="Commands\SelAvatarButton.cs" />
     <Compile Include="Commands\SelStoryButton.cs" />

@@ -47,7 +47,7 @@ namespace SocialGames
         public void UpdateReward(int amount=1)
         {
             GameData.rewardAmount += amount;
-            if (GameData.rewardAmount < 1)
+            if (GameData.rewardAmount < 10)
             {
                 textPos = rewardPos + new Vector2(188, 20);
                 reward = GameData.rewardAmount.ToString();

@@ -35,20 +35,24 @@ namespace SocialGames
 
             backPos = new Vector2(0, 0);
             promptPos = Const.CenterScreen - new Vector2(story.Width / 2, story.Height / 2);
-            exitButPos = promptPos + new Vector2(story.Width / 2 - buttonTexture.Width / 2, 280);
+            exitButPos = promptPos + new Vector2(story.Width / 2 - buttonTexture.Width / 2, 260);
             textPromptPos = promptPos + new Vector2(10, 70);
             titlePromptPos = promptPos + new Vector2(10, 10);
-            message = "Sembra che sia finito il tempo per giocare! Sei stato molto bravo: hai vinto ben " + 
-                            GameData.rewardAmount.ToString() + " monete, ora è il momento di riposarsi un po'.";
 
-            if(GameData.isCapital)
+            if (GameData.rewardAmount <= 1)
+                message = "Sembra che sia finito il tempo per giocare! Sei stato molto bravo, ma ora è il momento di riposarsi un po'.";
+            else
+                message = "Sembra che sia finito il tempo per giocare! Sei stato molto bravo: hai vinto ben " +
+                                convertNumber(GameData.rewardAmount) + " monete, ora è il momento di riposarsi un po'.";
+
+            if (GameData.isCapital)
             {
                 message = WrapText(textFont, message.ToUpper(), story.Width - 10);
                 title = "TEMPO SCADUTO";
             }
             else
             {
-                message = WrapText(textFont, message.ToUpper(), story.Width - 10); ;
+                message = WrapText(textFont, message, story.Width - 10); ;
                 title = "Tempo scaduto!";
             }
 
@@ -111,6 +115,59 @@ namespace SocialGames
             }
 
             return sb.ToString();
+        }
+
+        public static string convertNumber(long num)
+        {
+            string result = "";
+            long mod = 0;
+            long i = 0;
+            string[] unita = { "zero", "uno", "due", "tre", "quattro", "cinque", "sei", "sette", "otto", "nove", "dieci", "undici", "dodici", "tredici", "quattordici", "quindici", "sedici", "diciassette", "diciotto", "diciannove" };
+            string[] decine = { "", "dieci", "venti", "trenta", "quaranta", "cinquanta", "sessanta", "settanta", "ottonta", "novanta" };
+            if (num > 0 && num < 20)
+            {
+
+                result = unita[num];
+            }
+            else
+            {
+                if (num < 100)
+                {
+                    mod = num % 10;
+                    i = num / 10;
+                    switch (mod)
+                    {
+                        case 0:
+                            result = decine[i];
+                            break;
+                        case 1:
+                            result = decine[i].Substring(0, decine[i].Length - 1) + unita[mod];
+                            break;
+                        case 8:
+                            result = decine[i].Substring(0, decine[i].Length - 1) + unita[mod];
+                            break;
+                        default:
+                            result = decine[i] + unita[mod];
+                            break;
+                    }
+                }
+                else
+                {
+                    mod = num % 100;
+                    i = (num - mod) / 100;
+                    switch (i)
+                    {
+                        case 1:
+                            result = "cento";
+                            break;
+                        default:
+                            result = unita[i] + "cento";
+                            break;
+                    }
+                    result = result + convertNumber(mod);
+                }
+            }
+            return result;
         }
     }
 }

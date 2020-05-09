@@ -35,7 +35,8 @@ namespace SocialGames
         // background e avatar non devono contenere l'estensione del file
         public static string background = "Park";
         public static string avatar = "Girl1";
-        public static bool isCapital = true;
+        public static bool isCapital = false;
+        public static bool isSaturated = true;
         public static string story = "";
 
         // Variabile utile a memorizzare la pagina di storie visualizzata in seleziona storia

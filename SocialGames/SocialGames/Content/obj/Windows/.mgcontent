@@ -61,9 +61,12 @@
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/GameState/Rewards/8.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/GameState/Rewards/9.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/GameState/Rewards/Font.spritefont</File>
+    <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/GameState/Rewards/LongReward.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/GameState/Rewards/MAX.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/GameState/Rewards/Reward.png</File>
+    <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/GameState/Rewards/ShortReward.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/GameState/story.png</File>
+    <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/GameState/TitleFont.spritefont</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/gioca.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/gioca_hover.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/home.png</File>
@@ -111,6 +114,9 @@
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/start_hover.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
