@@ -123,8 +123,6 @@ namespace SocialGames
         {
             Vector2 position;
 
-            spriteBatch.Begin();
-
             switch (GameData.story)
             {
                 case "story1":
@@ -232,8 +230,6 @@ namespace SocialGames
 
             if (GameData.isStart)
                 giocaButton.Draw(gameTime, spriteBatch);
-
-            spriteBatch.End();
         }
 
         public override void Update(GameTime gameTime)

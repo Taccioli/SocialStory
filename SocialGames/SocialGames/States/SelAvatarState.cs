@@ -109,8 +109,6 @@ namespace SocialGames
         {
             Vector2 position;
 
-            spriteBatch.Begin();
-
             switch (GameData.avatar)
             {
                 case "Boy1":
@@ -154,8 +152,6 @@ namespace SocialGames
                 selStoryButton.Draw(gameTime, spriteBatch);
             else if (GameData.isStart && !(GameData.story.Equals("")))
                 giocaButton.Draw(gameTime, spriteBatch);
-
-            spriteBatch.End();
         }
 
         public override void Update(GameTime gameTime)

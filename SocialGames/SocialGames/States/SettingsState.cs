@@ -62,6 +62,7 @@ namespace SocialGames
             saturationLabel = "Colori tenui";
             settings = "IMPOSTAZIONI DI GIOCO";
 
+
             #region Vectors
 
             settingsPos = new Vector2(Const.DisplayDim.Y / 20, Const.DisplayDim.X / 20);
@@ -177,8 +178,6 @@ namespace SocialGames
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            spriteBatch.Begin();
-
             spriteBatch.Draw(background, backgroundPos, Color.White);
 
             foreach (TimeButton button in timeButtons)
@@ -189,12 +188,14 @@ namespace SocialGames
 
             backBut.Draw(gameTime, spriteBatch);
 
+            spriteBatch.End();
+
+            spriteBatch.Begin();
+
             spriteBatch.DrawString(font, settings, settingsPos, Color.Black);
             spriteBatch.DrawString(font, capitalLabel, capitalPos, Color.Black);
             spriteBatch.DrawString(font, timeLabel, timePos, Color.Black);
             spriteBatch.DrawString(font, saturationLabel, saturationPos, Color.Black);
-
-            spriteBatch.End();
         }
         
         public override void PostUpdate(GameTime gameTime){}

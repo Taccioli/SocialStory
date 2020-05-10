@@ -70,15 +70,11 @@ namespace SocialGames
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            spriteBatch.Begin();
-
             spriteBatch.Draw(background, backPos, Color.White);
             spriteBatch.Draw(story, promptPos, Color.White);
             exitButton.Draw(gameTime, spriteBatch);
             spriteBatch.DrawString(textFont, message, textPromptPos, Color.Black);
             spriteBatch.DrawString(textFont, title, titlePromptPos, Color.Black);
-
-            spriteBatch.End();
         }
 
         public override void PostUpdate(GameTime gameTime)

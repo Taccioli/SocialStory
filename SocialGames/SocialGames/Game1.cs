@@ -15,6 +15,8 @@ namespace SocialGames
         private State currentState;
         private State nextState;
 
+        private Effect effect;
+
         public void ChangeState(State state)
         {
             nextState = state;
@@ -64,6 +66,8 @@ namespace SocialGames
             spriteBatch = new SpriteBatch(GraphicsDevice);
             currentState = new MenuState(this, graphics.GraphicsDevice, Content);
             GameData.timer = new Timer(600, this, graphics.GraphicsDevice, Content);
+
+            effect = Content.Load<Effect>("Desaturation");
         }
 
         /// <summary>
@@ -111,10 +115,17 @@ namespace SocialGames
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
+            if (GameData.isSaturated)
+                spriteBatch.Begin(effect: effect);
+            else
+                spriteBatch.Begin();
+
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             currentState.Draw(gameTime, spriteBatch);
             base.Draw(gameTime);
+
+            spriteBatch.End();
         }
 
         public void Quit()

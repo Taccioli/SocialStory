@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Xna.Framework.Content;
 
 namespace SocialGames
 {
@@ -21,6 +22,7 @@ namespace SocialGames
         private Texture2D hoverTexture;
         private bool textInside;
         private bool hasHover;
+        public static Effect effect;
         #endregion
 
         #region Properties
@@ -46,7 +48,7 @@ namespace SocialGames
         #region Methods
 
         // Per buttons con il testo //
-        public PlayButton(Texture2D texture, Texture2D hoverTexture, SpriteFont font, bool textInside, bool isActive)
+        public PlayButton(Texture2D texture, Texture2D hoverTexture, SpriteFont font, ContentManager content, bool textInside, bool isActive)
         {
             this.texture = texture;
             this.hoverTexture = hoverTexture;
@@ -55,6 +57,7 @@ namespace SocialGames
             this.textInside = textInside;
             this.isActive = isActive;
             this.hasHover = true;
+            effect = content.Load<Effect>("Desaturation");
         }
         // Per buttons senza testo //
         public PlayButton(Texture2D texture, Texture2D hoverTexture, bool hasOver, bool isActive)
@@ -112,6 +115,8 @@ namespace SocialGames
 
         static public void DrawString(SpriteBatch spriteBatch, SpriteFont font, string strToDraw, Rectangle boundaries)
         {
+            spriteBatch.End();
+            spriteBatch.Begin();
             Vector2 size = font.MeasureString(strToDraw);
 
 
@@ -138,6 +143,13 @@ namespace SocialGames
 
             // Draw the string to the sprite batch!
             spriteBatch.DrawString(font, strToDraw, position, Color.Black, rotation, spriteOrigin, scale, spriteEffects, spriteLayer);
+
+            spriteBatch.End();
+
+            if(GameData.isSaturated)
+                spriteBatch.Begin(effect: PlayButton.effect);
+            else
+                spriteBatch.Begin();
         }
         #endregion
     }

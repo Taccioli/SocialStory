@@ -132,7 +132,6 @@ D:\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\obj\x86\Deb
 D:\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\obj\x86\Debug\SocialGames.csproj.CopyComplete
 D:\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\obj\x86\Debug\SocialGames.exe
 D:\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\obj\x86\Debug\SocialGames.pdb
-D:\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\obj\x86\Debug\SocialGames.csprojAssemblyReference.cache
 D:\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\SettingsState\TitleFont.xnb
 D:\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\SettingsState\Font.xnb
 D:\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\SettingsState\Indietro.xnb
@@ -140,3 +139,4 @@ D:\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows
 D:\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\SettingsState\Background.xnb
 D:\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\SettingsState\OFFHover.xnb
 D:\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\SettingsState\ONHover.xnb
+D:\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\Desaturation.xnb

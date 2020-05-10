@@ -124,7 +124,7 @@ namespace SocialGames
 
             #region first Buttons
 
-            firstAButton = new PlayButton(choiceTexture, choiceHoverTexture, buttonFont, false, true)
+            firstAButton = new PlayButton(choiceTexture, choiceHoverTexture, buttonFont, content, false, true)
             {
                 Position = butAPos,
                 Text = GameData.afp.phrase,
@@ -132,7 +132,7 @@ namespace SocialGames
 
             firstAButton.Click += firstAButtonClick;
 
-            firstBButton = new PlayButton(choiceTexture, choiceHoverTexture, buttonFont, false, true)
+            firstBButton = new PlayButton(choiceTexture, choiceHoverTexture, buttonFont, content, false, true)
             {
                 Position = butBPos,
                 Text = GameData.bfp.phrase,
@@ -140,7 +140,7 @@ namespace SocialGames
 
             firstBButton.Click += firstBButtonClick;
 
-            firstCButton = new PlayButton(choiceTexture, choiceHoverTexture, buttonFont, false, true)
+            firstCButton = new PlayButton(choiceTexture, choiceHoverTexture, buttonFont, content, false, true)
             {
                 Position = butCPos,
                 Text = GameData.cfp.phrase,
@@ -158,7 +158,7 @@ namespace SocialGames
 
             #region second Buttons
 
-            secondAButton = new PlayButton(choiceTexture, choiceHoverTexture, buttonFont, false, false)
+            secondAButton = new PlayButton(choiceTexture, choiceHoverTexture, buttonFont, content, false, false)
             {
                 Position = butAPos,
                 Text = GameData.asp.phrase,
@@ -166,7 +166,7 @@ namespace SocialGames
 
             secondAButton.Click += secondAButtonClick;
 
-            secondBButton = new PlayButton(choiceTexture, choiceHoverTexture, buttonFont, false, false)
+            secondBButton = new PlayButton(choiceTexture, choiceHoverTexture, buttonFont, content, false, false)
             {
                 Position = butBPos,
                 Text = GameData.bsp.phrase,
@@ -174,7 +174,7 @@ namespace SocialGames
 
             secondBButton.Click += secondBButtonClick;
 
-            secondCButton = new PlayButton(choiceTexture, choiceHoverTexture, buttonFont, false, false)
+            secondCButton = new PlayButton(choiceTexture, choiceHoverTexture, buttonFont, content, false, false)
             {
                 Position = butCPos,
                 Text = GameData.csp.phrase,
@@ -351,18 +351,13 @@ namespace SocialGames
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            spriteBatch.Begin();
-            
             spriteBatch.Draw(background, backPos, Color.White);
             spriteBatch.Draw(avatar, avatarPos, Color.White);
             spriteBatch.Draw(story, storyPos, Color.White);
-            spriteBatch.DrawString(textFont, GameData.title, titleTextPos, Color.Black);
-            spriteBatch.DrawString(textFont, promptString, storyTextPos, Color.Black);
-
+            
             if (isPromptActive)
             {
                 spriteBatch.Draw(prompt, promptPos, Color.White);
-                spriteBatch.DrawString(textFont, questString, questTextPos, Color.Black);
                 foreach (var component in buttons)
                     component.Draw(gameTime, spriteBatch);
             }
@@ -373,6 +368,12 @@ namespace SocialGames
             homeButton.Draw(gameTime, spriteBatch);
 
             spriteBatch.End();
+            spriteBatch.Begin();
+
+            spriteBatch.DrawString(textFont, GameData.title, titleTextPos, Color.Black);
+            spriteBatch.DrawString(textFont, promptString, storyTextPos, Color.Black);
+            if(isPromptActive)
+                spriteBatch.DrawString(textFont, questString, questTextPos, Color.Black);
         }
 
         public override void Update(GameTime gameTime)

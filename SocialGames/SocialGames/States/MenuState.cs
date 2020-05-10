@@ -44,14 +44,10 @@ namespace SocialGames
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            spriteBatch.Begin();
-
             spriteBatch.Draw(background, new Vector2(0, 0), Color.White);
 
             foreach (MenuButton button in buttons)
                 button.Draw(gameTime, spriteBatch);
-
-            spriteBatch.End();
         }
 
         public override void Update(GameTime gameTime)
