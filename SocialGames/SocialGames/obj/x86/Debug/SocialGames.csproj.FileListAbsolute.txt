@@ -138,3 +138,5 @@ D:\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows
 D:\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\SettingsState\Indietro.xnb
 D:\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\SettingsState\IndietroHover.xnb
 D:\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\SettingsState\Background.xnb
+D:\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\SettingsState\OFFHover.xnb
+D:\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\SettingsState\ONHover.xnb

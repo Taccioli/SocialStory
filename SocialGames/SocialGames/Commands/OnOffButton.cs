@@ -15,7 +15,7 @@ namespace SocialGames
     {
         #region Fields
 
-        private Texture2D onTexture, offTexture, selectedTexture;
+        private Texture2D onTexture, offTexture, onHover, offHover, selectedTexture, selectedHover;
         private MouseState currentMouse, previousMouse;
         private bool isHovering;
         #endregion
@@ -36,20 +36,28 @@ namespace SocialGames
 
         #endregion
 
-        public OnOffButton(Texture2D texture, Texture2D hoverTexture, bool variable)
+        public OnOffButton(Texture2D textureON, Texture2D textureONHover, Texture2D textureOFF, Texture2D textureOFFHover, bool variable)
         {
-            this.onTexture = texture;
-            this.offTexture = hoverTexture;
+            this.onTexture = textureON;
+            this.offTexture = textureOFF;
+            this.onHover = textureONHover;
+            this.offHover = textureOFFHover;
             if (variable)
+            {
                 selectedTexture = onTexture;
+                selectedHover = onHover;
+            }
             else
+            {
                 selectedTexture = offTexture;
+                selectedHover = offHover;
+            }
         }
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
             if (isHovering)
-                spriteBatch.Draw(selectedTexture, Rectangle, Color.Gray);
+                spriteBatch.Draw(selectedHover, Rectangle, Color.White);
             else
                 spriteBatch.Draw(selectedTexture, Rectangle, Color.White);
         }
@@ -68,9 +76,15 @@ namespace SocialGames
                 if (currentMouse.LeftButton == ButtonState.Released && previousMouse.LeftButton == ButtonState.Pressed)
                 {
                     if (selectedTexture == onTexture)
+                    {
                         selectedTexture = offTexture;
+                        selectedHover = offHover;
+                    }
                     else
+                    {
                         selectedTexture = onTexture;
+                        selectedHover = onHover;
+                    }
 
                     Click?.Invoke(this, new EventArgs());
                 }

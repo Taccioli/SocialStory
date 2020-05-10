@@ -102,26 +102,24 @@
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SettingsState/Font.spritefont</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SettingsState/Indietro.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SettingsState/IndietroHover.png</File>
-    <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SettingsState/NonSelected.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SettingsState/NonSelected10.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SettingsState/NonSelected20.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SettingsState/NonSelected30.png</File>
-    <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SettingsState/NonSelectedHover.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SettingsState/NonSelectedHover10.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SettingsState/NonSelectedHover20.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SettingsState/NonSelectedHover30.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SettingsState/OFF.png</File>
+    <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SettingsState/OFFHover.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SettingsState/ON.png</File>
+    <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SettingsState/ONHover.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SettingsState/Selected10.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SettingsState/Selected20.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SettingsState/Selected30.png</File>
-    <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SettingsState/Test.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SettingsState/TitleFont.spritefont</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/START.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/start_hover.png</File>
   </SourceFiles>
   <DestFiles>
-    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SourceFile>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SettingsState/ON.png</SourceFile>
-  <SourceTime>2020-05-03T17:59:59.1302738+02:00</SourceTime>
+  <SourceTime>2020-05-10T11:48:37.354441+02:00</SourceTime>
   <DestFile>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/bin/Windows/SettingsState/ON.xnb</DestFile>
-  <DestTime>2020-05-09T18:04:21.592274+02:00</DestTime>
+  <DestTime>2020-05-10T11:54:22.55597+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-08T17:35:54+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

@@ -15,7 +15,7 @@ namespace SocialGames
     {
         private Texture2D time10, time20, time30, timeHov10, timeHov20,
                             timeHov30, timeSel10, timeSel20, timeSel30;
-        private Texture2D onText, offText;
+        private Texture2D onText, offText, onHoverText, offHoverText;
         private Texture2D back, backHover, background;
         private SpriteFont font,titleFont;
 
@@ -48,6 +48,8 @@ namespace SocialGames
             timeSel30 = content.Load<Texture2D>("SettingsState/Selected30");
             onText = content.Load<Texture2D>("SettingsState/ON");
             offText = content.Load<Texture2D>("SettingsState/OFF");
+            onHoverText = content.Load<Texture2D>("SettingsState/ONHover");
+            offHoverText = content.Load<Texture2D>("SettingsState/OFFHover");
             back = content.Load<Texture2D>("SettingsState/Indietro");
             backHover = content.Load<Texture2D>("SettingsState/IndietroHover");
             background = content.Load<Texture2D>("SettingsState/Background");
@@ -66,9 +68,9 @@ namespace SocialGames
             timePos = settingsPos + new Vector2(0, Const.DisplayDim.X / 10);
             time10ButPos = timePos + new Vector2(100, Const.DisplayDim.X / 8);
             capitalPos = time10ButPos + new Vector2(-100, Const.DisplayDim.X / 5);
-            capitalButPos = capitalPos + new Vector2(600,0);
+            capitalButPos = capitalPos + new Vector2(600,-20);
             saturationPos = capitalPos + new Vector2(0, Const.DisplayDim.X / 8);
-            saturationButPos = saturationPos + new Vector2(600,0);
+            saturationButPos = saturationPos + new Vector2(600, -10);
             backPos = saturationPos + new Vector2(100,Const.DisplayDim.X / 8);
             backgroundPos = new Vector2(0, 0);
             #endregion
@@ -107,13 +109,13 @@ namespace SocialGames
 
             #region On/Off Buttons definition
 
-            capitalOnOff = new OnOffButton(onText, offText, GameData.isCapital)
+            capitalOnOff = new OnOffButton(onText, onHoverText, offText, offHoverText, GameData.isCapital)
             {
                 Position = capitalButPos
             };
             capitalOnOff.Click += capitalOnOffClick;
 
-            saturationOnOff = new OnOffButton(onText, offText, GameData.isSaturated)
+            saturationOnOff = new OnOffButton(onText, onHoverText, offText, offHoverText, GameData.isSaturated)
             {
                 Position = saturationButPos
             };

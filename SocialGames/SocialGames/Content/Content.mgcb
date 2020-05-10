@@ -1164,18 +1164,6 @@
 /processorParam:TextureFormat=Color
 /build:SettingsState/IndietroHover.png
 
-#begin SettingsState/NonSelected.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:SettingsState/NonSelected.png
-
 #begin SettingsState/NonSelected10.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -1211,18 +1199,6 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:SettingsState/NonSelected30.png
-
-#begin SettingsState/NonSelectedHover.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:SettingsState/NonSelectedHover.png
 
 #begin SettingsState/NonSelectedHover10.png
 /importer:TextureImporter
@@ -1272,6 +1248,18 @@
 /processorParam:TextureFormat=Color
 /build:SettingsState/OFF.png
 
+#begin SettingsState/OFFHover.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:SettingsState/OFFHover.png
+
 #begin SettingsState/ON.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -1283,6 +1271,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:SettingsState/ON.png
+
+#begin SettingsState/ONHover.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:SettingsState/ONHover.png
 
 #begin SettingsState/Selected10.png
 /importer:TextureImporter
@@ -1319,18 +1319,6 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:SettingsState/Selected30.png
-
-#begin SettingsState/Test.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:SettingsState/Test.png
 
 #begin SettingsState/TitleFont.spritefont
 /importer:FontDescriptionImporter
