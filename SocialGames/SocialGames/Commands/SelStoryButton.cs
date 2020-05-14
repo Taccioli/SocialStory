@@ -68,83 +68,63 @@ namespace SocialGames
                 {
                     switch (name)
                     {
-                        case "story1":
-                            GameData.story = "story1";
+                        case "agito":
+                            GameData.story = "agito";
                             GameData.timeSpan = Const.TIMER;
                             game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
                             break;
-                        case "story2":
-                            GameData.story = "story2";
+                        case "bagno":
+                            GameData.story = "bagno";
                             GameData.timeSpan = Const.TIMER;
                             game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
                             break;
-                        case "story3":
-                            GameData.story = "story3";
+                        case "camera":
+                            GameData.story = "camera";
                             GameData.timeSpan = Const.TIMER;
                             game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
                             break;
-                        case "story4":
-                            GameData.story = "story4";
+                        case "classe":
+                            GameData.story = "classe";
                             GameData.timeSpan = Const.TIMER;
                             game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
                             break;
-                        case "story5":
-                            GameData.story = "story5";
+                        case "conversazione":
+                            GameData.story = "conversazione";
                             GameData.timeSpan = Const.TIMER;
                             game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
                             break;
-                        case "story6":
-                            GameData.story = "story6";
+                        case "fidanzamento":
+                            GameData.story = "fidanzamento";
                             GameData.timeSpan = Const.TIMER;
                             game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
                             break;
-                        case "story7":
-                            GameData.story = "story7";
+                        case "fidanzata":
+                            GameData.story = "fidanzata";
                             GameData.timeSpan = Const.TIMER;
                             game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
                             break;
-                        case "story8":
-                            GameData.story = "story8";
+                        case "fidanzato":
+                            GameData.story = "fidanzato";
                             GameData.timeSpan = Const.TIMER;
                             game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
                             break;
-                        case "story9":
-                            GameData.story = "story9";
+                        case "fila":
+                            GameData.story = "fila";
                             GameData.timeSpan = Const.TIMER;
                             game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
                             break;
-                        case "story10":
-                            GameData.story = "story10";
+                        case "rumori":
+                            GameData.story = "rumori";
                             GameData.timeSpan = Const.TIMER;
                             game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
                             break;
-                        case "story11":
-                            GameData.story = "story11";
+                        case "spazio":
+                            GameData.story = "spazio";
                             GameData.timeSpan = Const.TIMER;
                             game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
                             break;
-                        case "story12":
-                            GameData.story = "story12";
-                            GameData.timeSpan = Const.TIMER;
-                            game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
-                            break;
-                        case "story13":
-                            GameData.story = "story13";
-                            GameData.timeSpan = Const.TIMER;
-                            game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
-                            break;
-                        case "story14":
-                            GameData.story = "story14";
-                            GameData.timeSpan = Const.TIMER;
-                            game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
-                            break;
-                        case "story15":
-                            GameData.story = "story15";
-                            GameData.timeSpan = Const.TIMER;
-                            game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
-                            break;
-                        case "story16":
-                            GameData.story = "story16";
+                        case "indipendenza":
+                            GameData.story = "indipendenza";
                             GameData.timeSpan = Const.TIMER;
                             game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
                             break;

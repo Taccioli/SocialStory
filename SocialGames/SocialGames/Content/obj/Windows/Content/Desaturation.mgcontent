@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/Desaturation.fx</SourceFile>
-  <SourceTime>2020-05-10T18:33:05.9441505+02:00</SourceTime>
-  <DestFile>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/bin/Windows/Content/Desaturation.xnb</DestFile>
-  <DestTime>2020-05-10T18:33:57.9413663+02:00</DestTime>
+  <SourceFile>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/Desaturation.fx</SourceFile>
+  <SourceTime>2020-05-12T16:57:03.1342655+02:00</SourceTime>
+  <DestFile>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/bin/Windows/Content/Desaturation.xnb</DestFile>
+  <DestTime>2020-05-12T16:57:25.4549788+02:00</DestTime>
   <Importer>EffectImporter</Importer>
   <ImporterTime>2018-12-08T17:35:54+01:00</ImporterTime>
   <Processor>EffectProcessor</Processor>

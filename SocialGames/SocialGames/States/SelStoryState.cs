@@ -13,15 +13,16 @@ namespace SocialGames
     {
         #region Fields
         //private Texture2D background;
-        private Texture2D story1, story2;
+        private Texture2D agito, bagno, camera, classe, conversazione, fidanzamento;
+        private Texture2D fidanzata, fidanzato, fila, indipendenza, rumori, spazio;
         private Texture2D storySel1, storySel2;
         private Texture2D leftArrow, rightArrow;
         private Texture2D gioca, gioca_hover;
         private Texture2D home;
-        private SelStoryButton storyBtn1, storyBtn2, storyBtn3, storyBtn4;
-        private SelStoryButton storyBtn5, storyBtn6, storyBtn7, storyBtn8;
-        private SelStoryButton storyBtn9, storyBtn10, storyBtn11, storyBtn12;
-        private SelStoryButton storyBtn13, storyBtn14, storyBtn15, storyBtn16;
+        private SelStoryButton agitoBtn, bagnoBtn, cameraBtn;
+        private SelStoryButton classeBtn, conversazioneBtn, fidanzamentoBtn;
+        private SelStoryButton fidanzataBtn, fidanzatoBtn, filaBtn;
+        private SelStoryButton indipendenzaBtn, rumoriBtn, spazioBtn;
         private SelStoryButton leftArrowBtn, rightArrowBtn;
         private SelStoryButton homeButton;
         private MenuButton giocaButton;
@@ -33,8 +34,18 @@ namespace SocialGames
           : base(game, graphicsDevice, content)
         {
             //background = content.Load<Texture2D>("Park");
-            story1 = content.Load<Texture2D>("SelStory1");
-            story2 = content.Load<Texture2D>("SelStory2");
+            agito = content.Load<Texture2D>("SelStoryState/Agito");
+            bagno = content.Load<Texture2D>("SelStoryState/Bagno");
+            camera = content.Load<Texture2D>("SelStoryState/Camera");
+            classe = content.Load<Texture2D>("SelStoryState/Classe");
+            conversazione = content.Load<Texture2D>("SelStoryState/Conversazione");
+            fidanzamento = content.Load<Texture2D>("SelStoryState/Fidanzamento");
+            fidanzata = content.Load<Texture2D>("SelStoryState/Fidanzata");
+            fidanzato = content.Load<Texture2D>("SelStoryState/Fidanzato");
+            fila = content.Load<Texture2D>("SelStoryState/Fila");
+            rumori = content.Load<Texture2D>("SelStoryState/Rumori");
+            spazio = content.Load<Texture2D>("SelStoryState/Spazio");
+            indipendenza = content.Load<Texture2D>("SelStoryState/Indipendenza");
             storySel1 = content.Load<Texture2D>("SelStory1_selected");
             storySel2 = content.Load<Texture2D>("SelStory2_selected");
             leftArrow = content.Load<Texture2D>("LeftArrow");
@@ -56,52 +67,45 @@ namespace SocialGames
             if (GameData.page == 1)
             {
                 // First line first page
-                storyBtn1 = new SelStoryButton(game, graphicsDevice, contentManager, "story1", story1, 120, 259);
-                storyBtn2 = new SelStoryButton(game, graphicsDevice, contentManager, "story2", story1, 140 + story1.Width, 259);
-                storyBtn3 = new SelStoryButton(game, graphicsDevice, contentManager, "story3", story1, 160 + 2 * (story1.Width), 259);
-                storyBtn4 = new SelStoryButton(game, graphicsDevice, contentManager, "story4", story1, 180 + 3 * (story1.Width), 259);
+                agitoBtn = new SelStoryButton(game, graphicsDevice, contentManager, "agito", agito, 95, 201);
+                bagnoBtn = new SelStoryButton(game, graphicsDevice, contentManager, "bagno", bagno, 190 + agito.Width, 201);
+                cameraBtn = new SelStoryButton(game, graphicsDevice, contentManager, "camera", camera, 285 + 2 * (agito.Width), 201);
                 // Second Line first page
-                storyBtn5 = new SelStoryButton(game, graphicsDevice, contentManager, "story5", story1, 120, 359 + story1.Height);
-                storyBtn6 = new SelStoryButton(game, graphicsDevice, contentManager, "story6", story1, 140 + story1.Width, 359 + story1.Height);
-                storyBtn7 = new SelStoryButton(game, graphicsDevice, contentManager, "story7", story1, 160 + 2 * (story1.Width), 359 + story1.Height);
-                storyBtn8 = new SelStoryButton(game, graphicsDevice, contentManager, "story8", story1, 180 + 3 * (story1.Width), 359 + story1.Height);
+                classeBtn = new SelStoryButton(game, graphicsDevice, contentManager, "classe", classe, 95, 301 + agito.Height);
+                conversazioneBtn = new SelStoryButton(game, graphicsDevice, contentManager, "conversazione", conversazione, 190 + agito.Width, 301 + agito.Height);
+                fidanzamentoBtn = new SelStoryButton(game, graphicsDevice, contentManager, "fidanzamento", fidanzamento, 285 + 2 * (agito.Width), 301 + agito.Height);
                 // List of all story buttons
                 buttons = new List<SelStoryButton>
             {
-                storyBtn1,
-                storyBtn2,
-                storyBtn3,
-                storyBtn4,
-                storyBtn5,
-                storyBtn6,
-                storyBtn7,
-                storyBtn8,
+                agitoBtn,
+                bagnoBtn,
+                cameraBtn,
+                classeBtn,
+                conversazioneBtn,
+                fidanzamentoBtn,
                 homeButton
             };
             }
             else if (GameData.page == 2)
             {
                 // First line second page
-                storyBtn9 = new SelStoryButton(game, graphicsDevice, contentManager, "story9", story2, 120, 259);
-                storyBtn10 = new SelStoryButton(game, graphicsDevice, contentManager, "story10", story2, 140 + story1.Width, 259);
-                storyBtn11 = new SelStoryButton(game, graphicsDevice, contentManager, "story11", story2, 160 + 2 * (story1.Width), 259);
-                storyBtn12 = new SelStoryButton(game, graphicsDevice, contentManager, "story12", story2, 180 + 3 * (story1.Width), 259);
+                fidanzataBtn = new SelStoryButton(game, graphicsDevice, contentManager, "fidanzata", fidanzata, 105, 201);
+                fidanzatoBtn = new SelStoryButton(game, graphicsDevice, contentManager, "fidanzato", fidanzato, 210 + agito.Width, 201);
+                filaBtn = new SelStoryButton(game, graphicsDevice, contentManager, "fila", fila, 315 + 2 * (agito.Width), 201);
                 // Second Line second page
-                storyBtn13 = new SelStoryButton(game, graphicsDevice, contentManager, "story13", story2, 120, 359 + story1.Height);
-                storyBtn14 = new SelStoryButton(game, graphicsDevice, contentManager, "story14", story2, 140 + story1.Width, 359 + story1.Height);
-                storyBtn15 = new SelStoryButton(game, graphicsDevice, contentManager, "story15", story2, 160 + 2 * (story1.Width), 359 + story1.Height);
-                storyBtn16 = new SelStoryButton(game, graphicsDevice, contentManager, "story16", story2, 180 + 3 * (story1.Width), 359 + story1.Height);
+                indipendenzaBtn = new SelStoryButton(game, graphicsDevice, contentManager, "indipendenza", indipendenza, 105, 301 + agito.Height);
+                rumoriBtn = new SelStoryButton(game, graphicsDevice, contentManager, "rumori", rumori, 210 + agito.Width, 301 + agito.Height);
+                spazioBtn = new SelStoryButton(game, graphicsDevice, contentManager, "spazio", spazio, 315 + 2 * (agito.Width), 301 + agito.Height);
                 // List of all story buttons
                 buttons = new List<SelStoryButton>
             {
-                storyBtn9,
-                storyBtn10,
-                storyBtn11,
-                storyBtn12,
-                storyBtn13,
-                storyBtn14,
-                storyBtn15,
-                storyBtn16,
+                fidanzataBtn,
+                fidanzatoBtn,
+                filaBtn,
+                indipendenzaBtn,
+                indipendenzaBtn,
+                rumoriBtn,
+                spazioBtn,
                 homeButton
             };
             }
@@ -125,100 +129,76 @@ namespace SocialGames
 
             switch (GameData.story)
             {
-                case "story1":
-                    buttons.Remove(storyBtn1);
+                case "agito":
+                    buttons.Remove(agitoBtn);
                     position.X = 120;
                     position.Y = 259;
                     spriteBatch.Draw(storySel1, position, Color.White);
                     break;
-                case "story2":
-                    buttons.Remove(storyBtn2);
-                    position.X = 140 + story1.Width;
+                case "bagno":
+                    buttons.Remove(bagnoBtn);
+                    position.X = 140 + agito.Width;
                     position.Y = 259;
                     spriteBatch.Draw(storySel1, position, Color.White);
                     break;
-                case "story3":
-                    buttons.Remove(storyBtn3);
-                    position.X = 160 + 2 * (story1.Width);
+                case "camera":
+                    buttons.Remove(cameraBtn);
+                    position.X = 160 + 2 * (agito.Width);
                     position.Y = 259;
                     spriteBatch.Draw(storySel1, position, Color.White);
                     break;
-                case "story4":
-                    buttons.Remove(storyBtn4);
-                    position.X = 180 + 3 * (story1.Width);
+                case "classe":
+                    buttons.Remove(classeBtn);
+                    position.X = 180 + 3 * (agito.Width);
                     position.Y = 259;
                     spriteBatch.Draw(storySel1, position, Color.White);
                     break;
-                case "story5":
-                    buttons.Remove(storyBtn5);
+                case "conversazione":
+                    buttons.Remove(conversazioneBtn);
                     position.X = 120;
-                    position.Y = 359 + story1.Height;
+                    position.Y = 359 + agito.Height;
                     spriteBatch.Draw(storySel1, position, Color.White);
                     break;
-                case "story6":
-                    buttons.Remove(storyBtn6);
-                    position.X = 140 + story1.Width;
-                    position.Y = 359 + story1.Height;
+                case "fidanzamento":
+                    buttons.Remove(fidanzamentoBtn);
+                    position.X = 140 + agito.Width;
+                    position.Y = 359 + agito.Height;
                     spriteBatch.Draw(storySel1, position, Color.White);
                     break;
-                case "story7":
-                    buttons.Remove(storyBtn7);
-                    position.X = 160 + 2 * (story1.Width);
-                    position.Y = 359 + story1.Height;
-                    spriteBatch.Draw(storySel1, position, Color.White);
-                    break;
-                case "story8":
-                    buttons.Remove(storyBtn8);
-                    position.X = 180 + 3 * (story1.Width);
-                    position.Y = 359 + story1.Height;
-                    spriteBatch.Draw(storySel1, position, Color.White);
-                    break;
-                case "story9":
-                    buttons.Remove(storyBtn9);
+                case "fidanzata":
+                    buttons.Remove(fidanzataBtn);
                     position.X = 120;
                     position.Y = 259;
                     spriteBatch.Draw(storySel2, position, Color.White);
                     break;
-                case "story10":
-                    buttons.Remove(storyBtn10);
-                    position.X = 140 + story1.Width;
+                case "fidanzato":
+                    buttons.Remove(fidanzatoBtn);
+                    position.X = 140 + agito.Width;
                     position.Y = 259;
                     spriteBatch.Draw(storySel2, position, Color.White);
                     break;
-                case "story11":
-                    buttons.Remove(storyBtn11);
-                    position.X = 160 + 2 * (story1.Width);
+                case "fila":
+                    buttons.Remove(filaBtn);
+                    position.X = 160 + 2 * (agito.Width);
                     position.Y = 259;
                     spriteBatch.Draw(storySel2, position, Color.White);
                     break;
-                case "story12":
-                    buttons.Remove(storyBtn12);
-                    position.X = 180 + 3 * (story1.Width);
+                case "rumori":
+                    buttons.Remove(rumoriBtn);
+                    position.X = 180 + 3 * (agito.Width);
                     position.Y = 259;
                     spriteBatch.Draw(storySel2, position, Color.White);
                     break;
-                case "story13":
-                    buttons.Remove(storyBtn13);
+                case "spazio":
+                    buttons.Remove(spazioBtn);
                     position.X = 120;
-                    position.Y = 359 + story1.Height;
+                    position.Y = 359 + agito.Height;
                     spriteBatch.Draw(storySel2, position, Color.White);
                     break;
-                case "story14":
-                    buttons.Remove(storyBtn14);
-                    position.X = 140 + story1.Width;
-                    position.Y = 359 + story1.Height;
-                    spriteBatch.Draw(storySel2, position, Color.White);
-                    break;
-                case "story15":
-                    buttons.Remove(storyBtn15);
-                    position.X = 160 + 2 * (story1.Width);
-                    position.Y = 359 + story1.Height;
-                    spriteBatch.Draw(storySel2, position, Color.White);
-                    break;
-                case "story16":
-                    buttons.Remove(storyBtn16);
-                    position.X = 180 + 3 * (story1.Width);
-                    position.Y = 359 + story1.Height;
+                case "indipendenza":
+                    buttons.Remove(indipendenzaBtn);
+                    position.X = 140 + agito.Width;
+                    position.Y = 359 + agito.Height;
                     spriteBatch.Draw(storySel2, position, Color.White);
                     break;
                 default:
