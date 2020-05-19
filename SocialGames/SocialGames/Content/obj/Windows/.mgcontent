@@ -98,17 +98,29 @@
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStory2.png</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStory2_selected.png</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/Agito.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/AgitoSel.png</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/Bagno.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/BagnoSel.png</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/Camera.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/CameraSel.png</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/Classe.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/ClasseSel.png</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/Conversazione.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/ConversazioneSel.png</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/Fidanzamento.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/FidanzamentoSel.png</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/Fidanzata.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/FidanzataSel.png</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/Fidanzato.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/FidanzatoSel.png</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/Fila.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/FilaSel.png</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/Indipendenza.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/IndipendenzaSel.png</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/Rumori.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/RumoriSel.png</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/Spazio.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/SpazioSel.png</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/settings.png</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/settings_hover.png</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SettingsState/Background.png</File>
@@ -131,8 +143,68 @@
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SettingsState/TitleFont.spritefont</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/START.png</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/start_hover.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/StoriesBackground/Agito.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/StoriesBackground/Bagno.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/StoriesBackground/Camera.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/StoriesBackground/Classe.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/StoriesBackground/Conversazione.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/StoriesBackground/endAgito.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/StoriesBackground/endBagno.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/StoriesBackground/endCamera.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/StoriesBackground/endClasse.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/StoriesBackground/endConversazione.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/StoriesBackground/endFidanzamento.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/StoriesBackground/endFidanzata.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/StoriesBackground/endFidanzato.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/StoriesBackground/endFila.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/StoriesBackground/endIndipendenza.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/StoriesBackground/endRumori.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/StoriesBackground/endSpazio.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/StoriesBackground/Fidanzamento.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/StoriesBackground/Fidanzata.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/StoriesBackground/Fidanzato.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/StoriesBackground/Fila.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/StoriesBackground/Indipendenza.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/StoriesBackground/Rumori.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/StoriesBackground/Spazio.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

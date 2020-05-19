@@ -1,11 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
+using System.Collections.Generic;
 
 namespace SocialGames
 {
@@ -15,6 +11,8 @@ namespace SocialGames
         //private Texture2D background;
         private Texture2D agito, bagno, camera, classe, conversazione, fidanzamento;
         private Texture2D fidanzata, fidanzato, fila, indipendenza, rumori, spazio;
+        private Texture2D agitoSel, bagnoSel, cameraSel, classeSel, conversazioneSel, fidanzamentoSel;
+        private Texture2D fidanzataSel, fidanzatoSel, filaSel, indipendenzaSel, rumoriSel, spazioSel;
         private Texture2D storySel1, storySel2;
         private Texture2D leftArrow, rightArrow;
         private Texture2D gioca, gioca_hover;
@@ -46,6 +44,18 @@ namespace SocialGames
             rumori = content.Load<Texture2D>("SelStoryState/Rumori");
             spazio = content.Load<Texture2D>("SelStoryState/Spazio");
             indipendenza = content.Load<Texture2D>("SelStoryState/Indipendenza");
+            agitoSel = content.Load<Texture2D>("SelStoryState/AgitoSel");
+            bagnoSel = content.Load<Texture2D>("SelStoryState/BagnoSel");
+            cameraSel = content.Load<Texture2D>("SelStoryState/CameraSel");
+            classeSel = content.Load<Texture2D>("SelStoryState/ClasseSel");
+            conversazioneSel = content.Load<Texture2D>("SelStoryState/ConversazioneSel");
+            fidanzamentoSel = content.Load<Texture2D>("SelStoryState/FidanzamentoSel");
+            fidanzataSel = content.Load<Texture2D>("SelStoryState/FidanzataSel");
+            fidanzatoSel = content.Load<Texture2D>("SelStoryState/FidanzatoSel");
+            filaSel = content.Load<Texture2D>("SelStoryState/FilaSel");
+            rumoriSel = content.Load<Texture2D>("SelStoryState/RumoriSel");
+            spazioSel = content.Load<Texture2D>("SelStoryState/SpazioSel");
+            indipendenzaSel = content.Load<Texture2D>("SelStoryState/IndipendenzaSel");
             storySel1 = content.Load<Texture2D>("SelStory1_selected");
             storySel2 = content.Load<Texture2D>("SelStory2_selected");
             leftArrow = content.Load<Texture2D>("LeftArrow");
@@ -127,79 +137,79 @@ namespace SocialGames
         {
             Vector2 position;
 
-            switch (GameData.story)
+            switch (GameData.background)
             {
-                case "agito":
+                case "Agito":
                     buttons.Remove(agitoBtn);
-                    position.X = 120;
-                    position.Y = 259;
-                    spriteBatch.Draw(storySel1, position, Color.White);
+                    position.X = 95;
+                    position.Y = 201;
+                    spriteBatch.Draw(agitoSel, position, Color.White);
                     break;
-                case "bagno":
+                case "Bagno":
                     buttons.Remove(bagnoBtn);
-                    position.X = 140 + agito.Width;
-                    position.Y = 259;
-                    spriteBatch.Draw(storySel1, position, Color.White);
+                    position.X = 190 + agito.Width;
+                    position.Y = 201;
+                    spriteBatch.Draw(bagnoSel, position, Color.White);
                     break;
-                case "camera":
+                case "Camera":
                     buttons.Remove(cameraBtn);
-                    position.X = 160 + 2 * (agito.Width);
-                    position.Y = 259;
-                    spriteBatch.Draw(storySel1, position, Color.White);
+                    position.X = 285 + 2 * (agito.Width);
+                    position.Y = 201;
+                    spriteBatch.Draw(cameraSel, position, Color.White);
                     break;
-                case "classe":
+                case "Classe":
                     buttons.Remove(classeBtn);
-                    position.X = 180 + 3 * (agito.Width);
-                    position.Y = 259;
-                    spriteBatch.Draw(storySel1, position, Color.White);
+                    position.X = 95;
+                    position.Y = 301 + agito.Height;
+                    spriteBatch.Draw(classeSel, position, Color.White);
                     break;
-                case "conversazione":
+                case "Conversazione":
                     buttons.Remove(conversazioneBtn);
-                    position.X = 120;
-                    position.Y = 359 + agito.Height;
-                    spriteBatch.Draw(storySel1, position, Color.White);
+                    position.X = 190 + agito.Width;
+                    position.Y = 301 + agito.Height;
+                    spriteBatch.Draw(conversazioneSel, position, Color.White);
                     break;
-                case "fidanzamento":
+                case "Fidanzamento":
                     buttons.Remove(fidanzamentoBtn);
-                    position.X = 140 + agito.Width;
-                    position.Y = 359 + agito.Height;
-                    spriteBatch.Draw(storySel1, position, Color.White);
+                    position.X = 285 + 2 * (agito.Width);
+                    position.Y = 301 + agito.Height;
+                    spriteBatch.Draw(fidanzamentoSel, position, Color.White);
                     break;
-                case "fidanzata":
+                case "Fidanzata":
                     buttons.Remove(fidanzataBtn);
-                    position.X = 120;
-                    position.Y = 259;
-                    spriteBatch.Draw(storySel2, position, Color.White);
+                    position.X = 105;
+                    position.Y = 201;
+                    spriteBatch.Draw(fidanzataSel, position, Color.White);
                     break;
-                case "fidanzato":
+                case "Fidanzato":
                     buttons.Remove(fidanzatoBtn);
                     position.X = 140 + agito.Width;
-                    position.Y = 259;
-                    spriteBatch.Draw(storySel2, position, Color.White);
+                    position.Y = 210 + agito.Width;
+                    spriteBatch.Draw(fidanzatoSel, position, Color.White);
                     break;
-                case "fila":
+                case "Fila":
                     buttons.Remove(filaBtn);
-                    position.X = 160 + 2 * (agito.Width);
-                    position.Y = 259;
-                    spriteBatch.Draw(storySel2, position, Color.White);
+                    position.X = 315 + 2 * (agito.Width);
+                    position.Y = 201;
+                    spriteBatch.Draw(filaSel, position, Color.White);
                     break;
-                case "rumori":
+                case "Rumori":
                     buttons.Remove(rumoriBtn);
-                    position.X = 180 + 3 * (agito.Width);
-                    position.Y = 259;
-                    spriteBatch.Draw(storySel2, position, Color.White);
-                    break;
-                case "spazio":
-                    buttons.Remove(spazioBtn);
-                    position.X = 120;
-                    position.Y = 359 + agito.Height;
-                    spriteBatch.Draw(storySel2, position, Color.White);
-                    break;
-                case "indipendenza":
-                    buttons.Remove(indipendenzaBtn);
                     position.X = 140 + agito.Width;
-                    position.Y = 359 + agito.Height;
-                    spriteBatch.Draw(storySel2, position, Color.White);
+                    position.Y = 301 + agito.Height;
+                    spriteBatch.Draw(rumoriSel, position, Color.White);
+                    break;
+                case "Spazio":
+                    buttons.Remove(spazioBtn);
+                    position.X = 315 + 2 * (agito.Width);
+                    position.Y = 301 + agito.Height;
+                    spriteBatch.Draw(spazioSel, position, Color.White);
+                    break;
+                case "Indipendenza":
+                    buttons.Remove(indipendenzaBtn);
+                    position.X = 105;
+                    position.Y = 301 + agito.Height;
+                    spriteBatch.Draw(indipendenzaSel, position, Color.White);
                     break;
                 default:
                     break;

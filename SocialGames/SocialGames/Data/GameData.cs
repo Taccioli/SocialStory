@@ -37,7 +37,6 @@ namespace SocialGames
         public static string avatar = "Girl1";
         public static bool isCapital = false;
         public static bool isSaturated = true;
-        public static string story = "";
 
         // Variabile utile a memorizzare la pagina di storie visualizzata in seleziona storia
         public static int page = 1;

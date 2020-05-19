@@ -88,8 +88,8 @@ namespace SocialGames
 
             #region Texture Storia
             // Load Texture diverse da gioco a gioco
-            initBackground = content.Load<Texture2D>(GameData.background);
-            endBackground = content.Load<Texture2D>("end" + GameData.background);
+            initBackground = content.Load<Texture2D>("StoriesBackground/" + GameData.background);
+            endBackground = content.Load<Texture2D>("StoriesBackground/end" + GameData.background);
             normalAvatar = content.Load<Texture2D>("GameState/Avatars/" + GameData.avatar);
             angryAvatar = content.Load<Texture2D>("GameState/Avatars/" + "Angry" + GameData.avatar);
             cryingAvatar = content.Load<Texture2D>("GameState/Avatars/" + "Crying" + GameData.avatar);
@@ -423,7 +423,8 @@ namespace SocialGames
         // Il metodo mi legge il file XML
         void Read(string nameOfFile)
         {
-            XmlTextReader reader = new XmlTextReader("Gioco.xml");
+            //XmlTextReader reader = new XmlTextReader("Gioco.xml");
+            XmlTextReader reader = new XmlTextReader(nameOfFile);
 
             while (reader.Read())
             {

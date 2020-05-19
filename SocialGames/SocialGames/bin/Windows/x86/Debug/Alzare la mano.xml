@@ -1,0 +1,22 @@
+<story name='Alzare la mano'>
+	<title>Alzare la mano</title>
+	<fprompt>A volte capita che l'insegnante dia un compito troppo difficile e questo può rendermi agitato e confuso.</fprompt>
+	<fquest emotion='Confused'>Come posso farmi aiutare?</fquest>
+	<afp isCorrect='false'>Piangendo</afp>
+	<bfp isCorrect='false'>Gridando</bfp>
+	<cfp isCorrect='true'>Alzando la mano</cfp>
+
+	<oafp emotion='Crying'>Quando un bambino urla o piange i compagni sono dispiaciuti e provano molto fastidio, perché si confondono e si distraggono per il rumore.</oafp>
+	<obfp emotion='Angry'>Quando un bambino urla o piange i compagni sono dispiaciuti e provano molto fastidio, perché si confondono e si distraggono per il rumore.</obfp>
+	<ocfp emotion='Happy'>Bravissimo! Alzare la mano è il modo migliore per chiedere aiuto all'insegnante.</ocfp>
+
+	<sprompt>Ho alzato la mano ma l'insegnante non viene ad aiutarmi, perché è impegnata con altri bambini o non mi vede.</sprompt>
+	<squest>Come posso comportarmi?</squest>
+	<asp isCorrect='true'>Chiedo aiuto a bassa voce</asp>
+	<bsp isCorrect='false'>Grido</bsp>
+	<csp isCorrect='true'>Aspetto il mio turno</csp>
+
+	<oasp emotion='Happy'>Ottimo! Gli insegnanti possono essere distratti: per farsi notare si può chiedere aiuto a bassa voce. Così non distraggo i miei compagni!</oasp>
+	<obsp emotion='Angry'>Se la maestra è impegnata con altri bambini, bisgona aspettare con pazienza che abbia finito, così sarà felice di aiutarmi!</obsp>
+	<ocsp emotion='Happy'>Ottimo! Gli insegnanti spesso sono impegnati con altri bambini, se aspetti il tuo turno con pazienza saranno molto felici di aiutarti!</ocsp>
+</story>
