@@ -20,6 +20,8 @@ namespace SocialGames
         private const int SecondaRisposta = 4;
         private const int Fine = 5;
         private const int Home = 0;
+        private const bool Boy = true;
+        private const bool Girl = false;
         #endregion
 
         #region Fields
@@ -37,6 +39,7 @@ namespace SocialGames
         private Texture2D buttonHoverTexture;
         private Texture2D avatar;
         private Texture2D angryAvatar, illAvatar, cryingAvatar, happyAvatar, normalAvatar;
+        private bool sex;
         private int state;
 
         private PlayButton firstAButton, firstBButton, firstCButton;
@@ -69,6 +72,7 @@ namespace SocialGames
         {
             this.game = game;
             state = PrimoPrompt;
+            sex = GameData.avatar.Contains("Boy");
 
             #region Texture Grafica
 
@@ -88,6 +92,14 @@ namespace SocialGames
 
             #region Texture Storia
             // Load Texture diverse da gioco a gioco
+            if (GameData.story == "Fidanzamento")
+            {
+                if (sex == Boy)
+                    GameData.background = "Fidanzata";
+                else
+                    GameData.background = "Fidanzato";
+            }
+
             initBackground = content.Load<Texture2D>(GameData.background);
             endBackground = content.Load<Texture2D>("end" + GameData.background);
             normalAvatar = content.Load<Texture2D>("GameState/Avatars/" + GameData.avatar);
@@ -119,7 +131,7 @@ namespace SocialGames
             reward = new Reward(content);
             reward.UpdateReward(0);
             isPromptActive = true;
-
+            
             #endregion
 
             #region first Buttons
@@ -604,7 +616,6 @@ namespace SocialGames
                 default:
                     return normalAvatar;
             }
-            return null;
         }
 
         public override void PostUpdate(GameTime gameTime)

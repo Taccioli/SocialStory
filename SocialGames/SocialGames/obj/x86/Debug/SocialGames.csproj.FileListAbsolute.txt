@@ -140,3 +140,4 @@ D:\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows
 D:\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\SettingsState\OFFHover.xnb
 D:\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\SettingsState\ONHover.xnb
 D:\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\Desaturation.xnb
+D:\Desktop\Università\Grafica2D\SocialStory\SocialGames\SocialGames\obj\x86\Debug\SocialGames.csprojAssemblyReference.cache
