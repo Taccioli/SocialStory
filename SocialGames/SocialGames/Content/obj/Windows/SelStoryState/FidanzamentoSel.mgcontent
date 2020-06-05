@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SourceFile>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/FidanzamentoSel.png</SourceFile>
-  <SourceTime>2020-05-17T01:02:54.0050559+02:00</SourceTime>
+  <SourceTime>2020-05-27T17:14:11.7406522+02:00</SourceTime>
   <DestFile>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/bin/Windows/SelStoryState/FidanzamentoSel.xnb</DestFile>
-  <DestTime>2020-05-17T16:50:51.9221894+02:00</DestTime>
+  <DestTime>2020-05-27T17:56:49.1230899+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-08T17:35:54+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

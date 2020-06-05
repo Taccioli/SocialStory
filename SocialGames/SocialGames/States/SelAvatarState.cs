@@ -19,6 +19,7 @@ namespace SocialGames
         private Texture2D gioca, gioca_hover;
         private Texture2D selStory, selStory_hover;
         private Texture2D home;
+        private Texture2D background;
         private SelAvatarButton homeButton;
         private SelAvatarButton maleAvatarButton1, maleAvatarButton2, maleAvatarButton3;
         private SelAvatarButton femaleAvatarButton1, femaleAvatarButton2, femaleAvatarButton3;
@@ -52,6 +53,8 @@ namespace SocialGames
             // Tasto per selezionare la storia, nel caso in cui non sia stata ancora selezionata
             selStory = content.Load<Texture2D>("sel_storia");
             selStory_hover = content.Load<Texture2D>("sel_storia_hover");
+            // Background della pagina
+            background = content.Load<Texture2D>("SelBackground");
 
             #region BUTTONS
             // Bottone home 
@@ -108,6 +111,8 @@ namespace SocialGames
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
             Vector2 position;
+
+            spriteBatch.Draw(background, new Vector2(0, 0), Color.White);
 
             switch (GameData.avatar)
             {

@@ -331,3 +331,12 @@ C:\Users\simob\Desktop\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug
 C:\Users\simob\Desktop\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\SelStoryState\IndipendenzaSel.xnb
 C:\Users\simob\Desktop\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\SelStoryState\RumoriSel.xnb
 C:\Users\simob\Desktop\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\SelStoryState\SpazioSel.xnb
+C:\Users\simob\Desktop\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\SelBackground.xnb
+C:\Users\simob\Desktop\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\SelStoryState\camera_cartello.xnb
+C:\Users\simob\Desktop\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\SelStoryState\agito_cartello.xnb
+C:\Users\simob\Desktop\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\SelStoryState\classe_cartello.xnb
+C:\Users\simob\Desktop\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\SelStoryState\fila_cartello.xnb
+C:\Users\simob\Desktop\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\SelStoryState\bagno_cartello.xnb
+C:\Users\simob\Desktop\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\SelStoryState\rumori_cartello.xnb
+C:\Users\simob\Desktop\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\SelStoryState\indipendenza_cartello.xnb
+C:\Users\simob\Desktop\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\SelStoryState\spazio_cartello.xnb
