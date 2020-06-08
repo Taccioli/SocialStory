@@ -340,3 +340,9 @@ C:\Users\simob\Desktop\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug
 C:\Users\simob\Desktop\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\SelStoryState\rumori_cartello.xnb
 C:\Users\simob\Desktop\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\SelStoryState\indipendenza_cartello.xnb
 C:\Users\simob\Desktop\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\SelStoryState\spazio_cartello.xnb
+C:\Users\simob\Desktop\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\SelStoryState\Park.xnb
+C:\Users\simob\Desktop\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\SelStoryState\ParkSel.xnb
+C:\Users\simob\Desktop\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\SelStoryState\park_cartello.xnb
+C:\Users\simob\Desktop\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\SelStoryState\alzareMano_cartello.xnb
+C:\Users\simob\Desktop\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\SelStoryState\fidanzamento_cartello.xnb
+C:\Users\simob\Desktop\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\SelStoryState\conversazione_cartello.xnb

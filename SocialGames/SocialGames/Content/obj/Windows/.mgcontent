@@ -101,6 +101,7 @@
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/Agito.png</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/agito_cartello.png</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/AgitoSel.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/alzareMano_cartello.png</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/Bagno.png</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/bagno_cartello.png</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/BagnoSel.png</File>
@@ -111,8 +112,10 @@
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/classe_cartello.png</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/ClasseSel.png</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/Conversazione.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/conversazione_cartello.png</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/ConversazioneSel.png</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/Fidanzamento.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/fidanzamento_cartello.png</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/FidanzamentoSel.png</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/Fidanzata.png</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/FidanzataSel.png</File>
@@ -124,6 +127,9 @@
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/Indipendenza.png</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/indipendenza_cartello.png</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/IndipendenzaSel.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/Park.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/park_cartello.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/ParkSel.png</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/Rumori.png</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/rumori_cartello.png</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/RumoriSel.png</File>
@@ -178,6 +184,12 @@
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/StoriesBackground/Spazio.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

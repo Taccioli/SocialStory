@@ -69,7 +69,7 @@ namespace SocialGames
             // Bottone per iniziare il gioco 
             giocaButton = new MenuButton(game, graphicsDevice, contentManager, "start", gioca, gioca_hover, 1670, 969);
             // Bottone per selezionare la storia
-            selStoryButton = new MenuButton(game, graphicsDevice, contentManager, "selStory", selStory, selStory_hover, 1670, 969);
+            selStoryButton = new MenuButton(game, graphicsDevice, contentManager, "selStory", selStory, selStory_hover, 1670, 1000);
 
             buttons = new List<SelAvatarButton>
             {
@@ -153,9 +153,9 @@ namespace SocialGames
             foreach (SelAvatarButton button in buttons)
                 button.Draw(gameTime, spriteBatch);
 
-            if (GameData.isStart && (GameData.nameFile.Equals("Gioco.xml")))
+            if (GameData.isStart && (GameData.nameFile.Equals("")))
                 selStoryButton.Draw(gameTime, spriteBatch);
-            else if (GameData.isStart && !(GameData.nameFile.Equals("Gioco.xml")))
+            else if (GameData.isStart && !(GameData.nameFile.Equals("")))
                 giocaButton.Draw(gameTime, spriteBatch);
         }
 

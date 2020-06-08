@@ -79,12 +79,19 @@ namespace SocialGames
                             {
                                 game.ChangeState(new SelAvatarState(game, graphicsDevice, contentManager));
                             }
-                            else if (GameData.nameFile.Equals("Gioco.xml"))
+                            else if (GameData.nameFile.Equals(""))
                             {
                                 game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
                             }
                             else
                             {
+                                if (GameData.isFidanz)
+                                {
+                                    if (GameData.isMale)
+                                        GameData.background = "Fidanzata";
+                                    else
+                                        GameData.background = "Fidanzato";
+                                }
                                 game.ChangeState(new GameState(game, graphicsDevice, contentManager));
                             }
                             break;
@@ -102,7 +109,14 @@ namespace SocialGames
                             break;
                         case "selStory":
                             GameData.timeSpan = Const.TIMER;
-                            game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
+                            if (GameData.avatar.Equals(""))
+                            {
+                                game.ChangeState(new SelAvatarState(game, graphicsDevice, contentManager));
+                            }
+                            else
+                            {
+                                game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
+                            }
                             break;
                         case "settings":
                             GameData.timeSpan = Const.TIMER;
