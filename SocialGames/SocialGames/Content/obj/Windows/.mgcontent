@@ -5,8 +5,6 @@
   <Config />
   <SourceFiles>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/Button.png</File>
-    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/crea_avatar.png</File>
-    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/crea_avatar_hover.png</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/Desaturation.fx</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/endPark.png</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/EndTimeState/buttonHoverTexture.png</File>
@@ -77,6 +75,8 @@
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/Maschio3.png</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/Park.png</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/RightArrow.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/sel_avatar.png</File>
+    <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/sel_avatar_hover.png</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/sel_gioco.png</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/sel_gioco_hover.png</File>
     <File>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/sel_storia.png</File>

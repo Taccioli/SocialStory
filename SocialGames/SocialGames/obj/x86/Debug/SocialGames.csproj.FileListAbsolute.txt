@@ -220,8 +220,6 @@ C:\Users\simob\Desktop\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug
 C:\Users\simob\Desktop\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\GameState\story.xnb
 C:\Users\simob\Desktop\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\GameState\TitleFont.xnb
 C:\Users\simob\Desktop\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\Button.xnb
-C:\Users\simob\Desktop\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\crea_avatar.xnb
-C:\Users\simob\Desktop\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\crea_avatar_hover.xnb
 C:\Users\simob\Desktop\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\Desaturation.xnb
 C:\Users\simob\Desktop\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\endPark.xnb
 C:\Users\simob\Desktop\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\Femmina1.xnb
@@ -346,3 +344,5 @@ C:\Users\simob\Desktop\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug
 C:\Users\simob\Desktop\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\SelStoryState\alzareMano_cartello.xnb
 C:\Users\simob\Desktop\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\SelStoryState\fidanzamento_cartello.xnb
 C:\Users\simob\Desktop\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\SelStoryState\conversazione_cartello.xnb
+C:\Users\simob\Desktop\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\sel_avatar.xnb
+C:\Users\simob\Desktop\SocialStory\SocialGames\SocialGames\bin\Windows\x86\Debug\Content\sel_avatar_hover.xnb
