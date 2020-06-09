@@ -64,77 +64,94 @@ namespace SocialGames
 
             if (IsHovering() && previousMouseInput.LeftButton == ButtonState.Released && currentMouseInput.LeftButton == ButtonState.Pressed)
             {
-                if(GameData.timeSpan < TimeSpan.Zero)
+                if (GameData.timeSpan < TimeSpan.Zero)
                 {
                     switch (name)
                     {
                         case "agito":
+                            GameData.isFidanz = false;
                             GameData.background = "Agito";
                             GameData.nameFile = "Agito.xml";
                             GameData.timeSpan = Const.TIMER;
                             game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
                             break;
                         case "bagno":
+                            GameData.isFidanz = false;
                             GameData.background = "Bagno";
                             GameData.nameFile = "Usare il bagno.xml";
                             GameData.timeSpan = Const.TIMER;
                             game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
                             break;
                         case "camera":
+                            GameData.isFidanz = false;
                             GameData.background = "Camera";
                             GameData.nameFile = "Coprirsi la bocca.xml";
                             GameData.timeSpan = Const.TIMER;
                             game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
                             break;
-                        case "classe":
+                        case "rispSbagliato":
+                            GameData.isFidanz = false;
                             GameData.background = "Classe";
-                            GameData.nameFile = "Alzare la mano.xml";
+                            GameData.nameFile = "Risposta Sbagliata.xml";
+                            if (GameData.isAlzare)
+                            {
+                                GameData.isAlzare = false;
+                            }
                             GameData.timeSpan = Const.TIMER;
                             game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
                             break;
                         case "conversazione":
+                            GameData.isFidanz = false;
                             GameData.background = "Conversazione";
                             GameData.nameFile = "Conversazione.xml";
                             GameData.timeSpan = Const.TIMER;
                             game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
                             break;
                         case "fidanzamento":
+                            GameData.isFidanz = true;
                             GameData.background = "Fidanzamento";
                             GameData.nameFile = "Fidanzamento.xml";
                             GameData.timeSpan = Const.TIMER;
                             game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
                             break;
-                        case "fidanzata":
-                            GameData.background = "Fidanzata";
-                            GameData.nameFile = "Fidanzamento.xml";
+                        case "parco":
+                            GameData.isFidanz = false;
+                            GameData.background = "Park";
+                            GameData.nameFile = "Gioco.xml";
                             GameData.timeSpan = Const.TIMER;
                             game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
                             break;
-                        case "fidanzato":
-                            GameData.background = "Fidanzato";
-                            GameData.nameFile = "Fidanzamento.xml";
+                        case "alzareMano":
+                            GameData.isFidanz = false;
+                            GameData.background = "Classe";
+                            GameData.nameFile = "Alzare la mano.xml";
+                            GameData.isAlzare = true;
                             GameData.timeSpan = Const.TIMER;
                             game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
                             break;
                         case "fila":
+                            GameData.isFidanz = false;
                             GameData.background = "Fila";
                             GameData.nameFile = "La fila.xml";
                             GameData.timeSpan = Const.TIMER;
                             game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
                             break;
                         case "rumori":
+                            GameData.isFidanz = false;
                             GameData.background = "Rumori";
                             GameData.nameFile = "Rumori forti.xml";
                             GameData.timeSpan = Const.TIMER;
                             game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
                             break;
                         case "spazio":
+                            GameData.isFidanz = false;
                             GameData.background = "Spazio";
                             GameData.nameFile = "Spazio personale.xml";
                             GameData.timeSpan = Const.TIMER;
                             game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
                             break;
                         case "indipendenza":
+                            GameData.isFidanz = false;
                             GameData.background = "Indipendenza";
                             GameData.nameFile = "Indipendenza.xml";
                             GameData.timeSpan = Const.TIMER;

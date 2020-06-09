@@ -27,10 +27,10 @@ namespace SocialGames
 
         private Vector2 time10ButPos;
         private Vector2 capitalButPos, saturationButPos;
-        private Vector2 capitalPos, saturationPos, timePos, settingsPos;
+        private Vector2 capitalPos, saturationPos, timePos;
         private Vector2 backPos, backgroundPos;
 
-        private string timeLabel, capitalLabel, saturationLabel, settings;
+        private string timeLabel, capitalLabel, saturationLabel;
 
         public SettingsState(Game1 game, GraphicsDevice graphicsDevice, ContentManager content)
             : base(game, graphicsDevice, content)
@@ -60,13 +60,10 @@ namespace SocialGames
             timeLabel = "Tempo di gioco:";
             capitalLabel = "Scritte maiuscole";
             saturationLabel = "Colori tenui";
-            settings = "IMPOSTAZIONI DI GIOCO";
 
 
             #region Vectors
-
-            settingsPos = new Vector2(Const.DisplayDim.Y / 20, Const.DisplayDim.X / 20);
-            timePos = settingsPos + new Vector2(0, Const.DisplayDim.X / 10);
+            timePos = new Vector2(Const.DisplayDim.Y / 20, Const.DisplayDim.X / 5);
             time10ButPos = timePos + new Vector2(100, Const.DisplayDim.X / 8);
             capitalPos = time10ButPos + new Vector2(-100, Const.DisplayDim.X / 5);
             capitalButPos = capitalPos + new Vector2(600,-20);
@@ -192,7 +189,7 @@ namespace SocialGames
 
             spriteBatch.Begin();
 
-            spriteBatch.DrawString(font, settings, settingsPos, Color.Black);
+            //spriteBatch.DrawString(font, settings, settingsPos, Color.Black);
             spriteBatch.DrawString(font, capitalLabel, capitalPos, Color.Black);
             spriteBatch.DrawString(font, timeLabel, timePos, Color.Black);
             spriteBatch.DrawString(font, saturationLabel, saturationPos, Color.Black);

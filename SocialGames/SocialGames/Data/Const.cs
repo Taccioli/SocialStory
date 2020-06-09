@@ -22,7 +22,7 @@ namespace SocialGames
         public const int TOTALPAGES = 2;
         public const int LEFTMARGINSELAVATAR = 380;
         public const int TOPMARGINSELAVATAR = 240;
-        public const int MARGINHOMEBTN = 50;
+        public const int MARGINHOMEBTN = 20;
         public static TimeSpan TIMER = TimeSpan.FromMilliseconds(200);
     }
 }

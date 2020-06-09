@@ -13,7 +13,7 @@ namespace SocialGames
     {
         // nameFile è utilizzato per contenere il nome del file di gioco da caricare per i dialoghi
         // Deve contenere anche l'estensione del file
-        public static string nameFile = "Gioco.xml";
+        public static string nameFile = "";
 
         // Questi sono i dialoghi del gioco, sono aggiornati quando viene avviato un nuovo gioco
         public static string title = null;
@@ -33,8 +33,8 @@ namespace SocialGames
         // background e avatar contengono il nome dei file di avatar e di sfondo
         // da caricare nel gioco
         // background e avatar non devono contenere l'estensione del file
-        public static string background = "Park";
-        public static string avatar = "Girl1";
+        public static string background = "";
+        public static string avatar = "";
         public static bool isCapital = false;
         public static bool isSaturated = true;
 
@@ -47,6 +47,12 @@ namespace SocialGames
         public static Timer timer;
         // Variabile utile a determinare quando ci si trova alla selezione di storia/avatar dopo lo START
         public static bool isStart = false;
+        // Variabile utile a distinguere se il background "class" si riferisce a "Rispondere sbagliato" o "Alzare la mano"
+        public static bool isAlzare = false;
+        // Variabile utile a gestire la storia "Fidanzamento"
+        public static bool isFidanz = false;
+        // Variabile utile a conoscere il sesso dell'avatar
+        public static bool isMale = false;
     }
 }
 

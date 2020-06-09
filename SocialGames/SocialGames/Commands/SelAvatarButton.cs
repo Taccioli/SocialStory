@@ -69,26 +69,32 @@ namespace SocialGames
                     {
                         case "male1":
                             GameData.avatar = "Boy1";
+                            GameData.isMale = true;
                             game.ChangeState(new SelAvatarState(game, graphicsDevice, contentManager));
                             break;
                         case "male2":
                             GameData.avatar = "Boy2";
+                            GameData.isMale = true;
                             game.ChangeState(new SelAvatarState(game, graphicsDevice, contentManager));
                             break;
                         case "male3":
                             GameData.avatar = "Boy3";
+                            GameData.isMale = true;
                             game.ChangeState(new SelAvatarState(game, graphicsDevice, contentManager));
                             break;
                         case "female1":
                             GameData.avatar = "Girl1";
+                            GameData.isMale = false;
                             game.ChangeState(new SelAvatarState(game, graphicsDevice, contentManager));
                             break;
                         case "female2":
                             GameData.avatar = "Girl2";
+                            GameData.isMale = false;
                             game.ChangeState(new SelAvatarState(game, graphicsDevice, contentManager));
                             break;
                         case "female3":
                             GameData.avatar = "Girl3";
+                            GameData.isMale = false;
                             game.ChangeState(new SelAvatarState(game, graphicsDevice, contentManager));
                             break;
                         case "home":

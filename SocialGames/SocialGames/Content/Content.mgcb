@@ -25,6 +25,150 @@
 /processorParam:TextureFormat=Color
 /build:Button.png
 
+#begin CompletedBackground/Agito.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:CompletedBackground/Agito.png
+
+#begin CompletedBackground/Bagno.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:CompletedBackground/Bagno.png
+
+#begin CompletedBackground/Camera.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:CompletedBackground/Camera.png
+
+#begin CompletedBackground/Classe.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:CompletedBackground/Classe.png
+
+#begin CompletedBackground/Conversazione.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:CompletedBackground/Conversazione.png
+
+#begin CompletedBackground/Fidanzata.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:CompletedBackground/Fidanzata.png
+
+#begin CompletedBackground/Fidanzato.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:CompletedBackground/Fidanzato.png
+
+#begin CompletedBackground/Fila.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:CompletedBackground/Fila.png
+
+#begin CompletedBackground/Indipendenza.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:CompletedBackground/Indipendenza.png
+
+#begin CompletedBackground/Park.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:CompletedBackground/Park.png
+
+#begin CompletedBackground/Rumori.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:CompletedBackground/Rumori.png
+
+#begin CompletedBackground/Spazio.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:CompletedBackground/Spazio.png
+
 #begin crea_avatar.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -102,6 +246,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:EndGameState/MenuButtonHover.png
+
+#begin EndGameState/StoriaCompletata.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:EndGameState/StoriaCompletata.png
 
 #begin endPark.png
 /importer:TextureImporter
@@ -959,6 +1115,18 @@
 /processorParam:TextureFormat=Color
 /build:sel_storia_hover.png
 
+#begin SelBackground.jpg
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:SelBackground.jpg
+
 #begin SelFemmina1.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -1163,6 +1331,18 @@
 /processorParam:TextureFormat=Color
 /build:SelStoryState/Agito.png
 
+#begin SelStoryState/agito_cartello.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:SelStoryState/agito_cartello.png
+
 #begin SelStoryState/AgitoSel.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -1175,6 +1355,18 @@
 /processorParam:TextureFormat=Color
 /build:SelStoryState/AgitoSel.png
 
+#begin SelStoryState/alzareMano_cartello.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:SelStoryState/alzareMano_cartello.png
+
 #begin SelStoryState/Bagno.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -1186,6 +1378,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:SelStoryState/Bagno.png
+
+#begin SelStoryState/bagno_cartello.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:SelStoryState/bagno_cartello.png
 
 #begin SelStoryState/BagnoSel.png
 /importer:TextureImporter
@@ -1211,6 +1415,18 @@
 /processorParam:TextureFormat=Color
 /build:SelStoryState/Camera.png
 
+#begin SelStoryState/camera_cartello.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:SelStoryState/camera_cartello.png
+
 #begin SelStoryState/CameraSel.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -1234,6 +1450,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:SelStoryState/Classe.png
+
+#begin SelStoryState/classe_cartello.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:SelStoryState/classe_cartello.png
 
 #begin SelStoryState/ClasseSel.png
 /importer:TextureImporter
@@ -1259,6 +1487,18 @@
 /processorParam:TextureFormat=Color
 /build:SelStoryState/Conversazione.png
 
+#begin SelStoryState/conversazione_cartello.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:SelStoryState/conversazione_cartello.png
+
 #begin SelStoryState/ConversazioneSel.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -1282,6 +1522,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:SelStoryState/Fidanzamento.png
+
+#begin SelStoryState/fidanzamento_cartello.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:SelStoryState/fidanzamento_cartello.png
 
 #begin SelStoryState/FidanzamentoSel.png
 /importer:TextureImporter
@@ -1355,6 +1607,18 @@
 /processorParam:TextureFormat=Color
 /build:SelStoryState/Fila.png
 
+#begin SelStoryState/fila_cartello.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:SelStoryState/fila_cartello.png
+
 #begin SelStoryState/FilaSel.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -1379,6 +1643,18 @@
 /processorParam:TextureFormat=Color
 /build:SelStoryState/Indipendenza.png
 
+#begin SelStoryState/indipendenza_cartello.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:SelStoryState/indipendenza_cartello.png
+
 #begin SelStoryState/IndipendenzaSel.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -1391,6 +1667,42 @@
 /processorParam:TextureFormat=Color
 /build:SelStoryState/IndipendenzaSel.png
 
+#begin SelStoryState/Park.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:SelStoryState/Park.png
+
+#begin SelStoryState/park_cartello.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:SelStoryState/park_cartello.png
+
+#begin SelStoryState/ParkSel.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:SelStoryState/ParkSel.png
+
 #begin SelStoryState/Rumori.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -1402,6 +1714,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:SelStoryState/Rumori.png
+
+#begin SelStoryState/rumori_cartello.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:SelStoryState/rumori_cartello.png
 
 #begin SelStoryState/RumoriSel.png
 /importer:TextureImporter
@@ -1426,6 +1750,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:SelStoryState/Spazio.png
+
+#begin SelStoryState/spazio_cartello.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:SelStoryState/spazio_cartello.png
 
 #begin SelStoryState/SpazioSel.png
 /importer:TextureImporter
@@ -1873,6 +2209,18 @@
 /processorParam:TextureFormat=Color
 /build:StoriesBackground/endIndipendenza.png
 
+#begin StoriesBackground/endPark.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:StoriesBackground/endPark.png
+
 #begin StoriesBackground/endRumori.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -1956,6 +2304,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:StoriesBackground/Indipendenza.png
+
+#begin StoriesBackground/Park.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:StoriesBackground/Park.png
 
 #begin StoriesBackground/Rumori.png
 /importer:TextureImporter

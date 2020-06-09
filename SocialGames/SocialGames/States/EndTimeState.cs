@@ -27,7 +27,7 @@ namespace SocialGames
         {
             this.game = game;
 
-            background = content.Load<Texture2D>("StoriesBackground/" + GameData.background);
+            background = content.Load<Texture2D>("CompletedBackground/" + GameData.background);
             story = content.Load<Texture2D>("GameState/story");
             buttonTexture = content.Load<Texture2D>("EndTimeState/buttonTexture");
             buttonHoverTexture = content.Load<Texture2D>("EndTimeState/buttonHoverTexture");

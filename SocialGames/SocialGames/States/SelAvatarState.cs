@@ -19,6 +19,7 @@ namespace SocialGames
         private Texture2D gioca, gioca_hover;
         private Texture2D selStory, selStory_hover;
         private Texture2D home;
+        private Texture2D background;
         private SelAvatarButton homeButton;
         private SelAvatarButton maleAvatarButton1, maleAvatarButton2, maleAvatarButton3;
         private SelAvatarButton femaleAvatarButton1, femaleAvatarButton2, femaleAvatarButton3;
@@ -52,6 +53,8 @@ namespace SocialGames
             // Tasto per selezionare la storia, nel caso in cui non sia stata ancora selezionata
             selStory = content.Load<Texture2D>("sel_storia");
             selStory_hover = content.Load<Texture2D>("sel_storia_hover");
+            // Background della pagina
+            background = content.Load<Texture2D>("SelBackground");
 
             #region BUTTONS
             // Bottone home 
@@ -66,7 +69,7 @@ namespace SocialGames
             // Bottone per iniziare il gioco 
             giocaButton = new MenuButton(game, graphicsDevice, contentManager, "start", gioca, gioca_hover, 1670, 969);
             // Bottone per selezionare la storia
-            selStoryButton = new MenuButton(game, graphicsDevice, contentManager, "selStory", selStory, selStory_hover, 1670, 969);
+            selStoryButton = new MenuButton(game, graphicsDevice, contentManager, "selStory", selStory, selStory_hover, 1670, 1000);
 
             buttons = new List<SelAvatarButton>
             {
@@ -109,6 +112,8 @@ namespace SocialGames
         {
             Vector2 position;
 
+            spriteBatch.Draw(background, new Vector2(0, 0), Color.White);
+
             switch (GameData.avatar)
             {
                 case "Boy1":
@@ -148,9 +153,9 @@ namespace SocialGames
             foreach (SelAvatarButton button in buttons)
                 button.Draw(gameTime, spriteBatch);
 
-            if (GameData.isStart && (GameData.nameFile.Equals("Gioco.xml")))
+            if (GameData.isStart && (GameData.nameFile.Equals("")))
                 selStoryButton.Draw(gameTime, spriteBatch);
-            else if (GameData.isStart && !(GameData.nameFile.Equals("Gioco.xml")))
+            else if (GameData.isStart && !(GameData.nameFile.Equals("")))
                 giocaButton.Draw(gameTime, spriteBatch);
         }
 

@@ -9,6 +9,7 @@ using Microsoft.Xna.Framework.Graphics;
 using System.Xml;
 using Microsoft.Xna.Framework.Input;
 using System.Drawing;
+using System.Windows.Media;
 
 namespace SocialGames
 {
@@ -385,7 +386,7 @@ namespace SocialGames
 
             spriteBatch.DrawString(textFont, GameData.title, titleTextPos, Color.Black);
             spriteBatch.DrawString(textFont, promptString, storyTextPos, Color.Black,
-                        0.0f, new Vector2(0, 0), AdaptiveText(textFont, promptString, new Rectangle(0, 0, story.Width - 10, story.Height - 100)), new SpriteEffects(), 0.0f);
+                            0.0f, new Vector2(0, 0), AdaptiveText(textFont, promptString, new Rectangle(0, 0, story.Width - 10, story.Height - 100)), new SpriteEffects(), 0.0f);
             if (isPromptActive)
                 spriteBatch.DrawString(textFont, questString, questTextPos, Color.Black);
         }
@@ -582,7 +583,7 @@ namespace SocialGames
             // Tengo in considerazione anche lo spazio che mi occuperanno le righe
             float approximateNumberOfLine = spriteFont.MeasureString(text).X/rectangle.Width;
             // Ottenuto con trial and error
-            Vector2 size = new Vector2(0,approximateNumberOfLine + 2) + spriteFont.MeasureString(text);
+            Vector2 size = new Vector2(0,approximateNumberOfLine) + spriteFont.MeasureString(text);
             float area = rectangle.Width * rectangle.Height;
             float fontArea = size.X * size.Y;
 

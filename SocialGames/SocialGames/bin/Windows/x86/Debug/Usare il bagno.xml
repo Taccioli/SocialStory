@@ -14,7 +14,7 @@
 
 	<sprompt>Una volta che sono dentro e ho chiuso la porta, potrebbe capitare che qualcuno arrivato dopo bussi alla porta.</sprompt>
 	<squest>Se capitasse dovrei:</squest>
-	<asp isCorrect='false'>Rispondere: "Occupato!"</asp>
+	<asp isCorrect='true'>Rispondere: "Occupato!"</asp>
 	<bsp isCorrect='false'>Non rispondere</bsp>
 	<csp isCorrect='false'>Aprire la porta</csp>
 

@@ -5,6 +5,18 @@
   <Config />
   <SourceFiles>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/Button.png</File>
+    <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/CompletedBackground/Agito.png</File>
+    <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/CompletedBackground/Bagno.png</File>
+    <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/CompletedBackground/Camera.png</File>
+    <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/CompletedBackground/Classe.png</File>
+    <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/CompletedBackground/Conversazione.png</File>
+    <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/CompletedBackground/Fidanzata.png</File>
+    <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/CompletedBackground/Fidanzato.png</File>
+    <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/CompletedBackground/Fila.png</File>
+    <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/CompletedBackground/Indipendenza.png</File>
+    <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/CompletedBackground/Park.png</File>
+    <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/CompletedBackground/Rumori.png</File>
+    <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/CompletedBackground/Spazio.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/crea_avatar.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/crea_avatar_hover.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/Desaturation.fx</File>
@@ -12,6 +24,7 @@
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/EndGameState/ContinuaButtonHover.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/EndGameState/MenuButton.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/EndGameState/MenuButtonHover.png</File>
+    <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/EndGameState/StoriaCompletata.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/endPark.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/EndTimeState/buttonHoverTexture.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/EndTimeState/ButtonTexture.png</File>
@@ -85,6 +98,7 @@
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/sel_gioco_hover.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/sel_storia.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/sel_storia_hover.png</File>
+    <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelBackground.jpg</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelFemmina1.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelFemmina1_selected.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelFemmina2.png</File>
@@ -102,28 +116,42 @@
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStory2.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStory2_selected.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStoryState/Agito.png</File>
+    <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStoryState/agito_cartello.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStoryState/AgitoSel.png</File>
+    <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStoryState/alzareMano_cartello.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStoryState/Bagno.png</File>
+    <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStoryState/bagno_cartello.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStoryState/BagnoSel.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStoryState/Camera.png</File>
+    <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStoryState/camera_cartello.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStoryState/CameraSel.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStoryState/Classe.png</File>
+    <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStoryState/classe_cartello.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStoryState/ClasseSel.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStoryState/Conversazione.png</File>
+    <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStoryState/conversazione_cartello.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStoryState/ConversazioneSel.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStoryState/Fidanzamento.png</File>
+    <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStoryState/fidanzamento_cartello.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStoryState/FidanzamentoSel.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStoryState/Fidanzata.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStoryState/FidanzataSel.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStoryState/Fidanzato.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStoryState/FidanzatoSel.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStoryState/Fila.png</File>
+    <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStoryState/fila_cartello.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStoryState/FilaSel.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStoryState/Indipendenza.png</File>
+    <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStoryState/indipendenza_cartello.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStoryState/IndipendenzaSel.png</File>
+    <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStoryState/Park.png</File>
+    <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStoryState/park_cartello.png</File>
+    <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStoryState/ParkSel.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStoryState/Rumori.png</File>
+    <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStoryState/rumori_cartello.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStoryState/RumoriSel.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStoryState/Spazio.png</File>
+    <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStoryState/spazio_cartello.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStoryState/SpazioSel.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/settings.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/settings_hover.png</File>
@@ -162,6 +190,7 @@
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/StoriesBackground/endFidanzato.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/StoriesBackground/endFila.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/StoriesBackground/endIndipendenza.png</File>
+    <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/StoriesBackground/endPark.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/StoriesBackground/endRumori.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/StoriesBackground/endSpazio.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/StoriesBackground/Fidanzamento.png</File>
@@ -169,10 +198,41 @@
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/StoriesBackground/Fidanzato.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/StoriesBackground/Fila.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/StoriesBackground/Indipendenza.png</File>
+    <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/StoriesBackground/Park.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/StoriesBackground/Rumori.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/StoriesBackground/Spazio.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

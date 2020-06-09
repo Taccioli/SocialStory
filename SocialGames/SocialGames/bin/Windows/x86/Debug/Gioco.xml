@@ -1,27 +1,24 @@
 <!-- sample story -->
-<story name='play'>
+<story name='Al parco'>
 
-	<fprompt>A volte vedo gli altri bambini giocare e vorrei giocare anche io con loro, allora mi avvicino. Cosa posso fare? </fprompt>
-	<!-- afp = Risposta a al first prompt -->
-
-	<afp>Giocare con loro senza chiedere il permesso.</afp>
-	<bfp>Chiedere: "Posso giocare con voi?".</bfp>
-	<cfp>Urlare.</cfp>
+	<title>Al parco</title>
+	<fprompt>A volte vedo gli altri bambini giocare e vorrei giocare anche io con loro, allora mi avvicino.</fprompt>
+	<fquest>Cosa posso fare?</fquest>
+	<afp isCorrect = 'false'>Giocare con loro senza chiedere il permesso.</afp>
+	<bfp isCorrect='true'>Chiedere: "Posso giocare con voi?".</bfp>
+	<cfp isCorrect='false'>Urlare.</cfp>
 	
-	<oafp>Devo chiedere il permesso per giocare con altri bambini, altrimenti loro non saranno felici di giocare con me</oafp>
-	<obfp>Bravo! Bisogna sempre chiedere il permesso per giocare con altri bambini!</obfp>
-	<ocfp>Devo chiedere il permesso per giocare con altri bambini, altrimenti non potranno capire che voglio divertirmi con loro.</ocfp>
+	<oafp emotion='Normal'>Devo chiedere il permesso per giocare con altri bambini, altrimenti loro non saranno felici di giocare con me</oafp>
+	<obfp emotion='Happy'>Bravo! Bisogna sempre chiedere il permesso per giocare con altri bambini!</obfp>
+	<ocfp emotion='Happy'>Devo chiedere il permesso per giocare con altri bambini, altrimenti non potranno capire che voglio divertirmi con loro.</ocfp>
 
-	<sprompt>Se dicono "Sì!" potrò giocare con loro e divertirmi! Ma se dicessero di no, invece, potrei..</sprompt>
+	<sprompt>Se dicono "Sì!" potrò giocare con loro e divertirmi! Ma se dicessero di no..</sprompt>
+	<squest>..Cosa potrei fare?</squest>
+	<asp isCorrect='false'>Arrabbiarmi.</asp>
+	<bsp isCorrect='false'>Piangere.</bsp>
+	<csp isCorrect='true'>Accettarlo e dire: "Magari la prossima volta giocheremo assieme!".</csp>
 
-	<asp>Arrabbiarmi.</asp>
-	<bsp>Piangere.</bsp>
-	<csp>Accettarlo e dire: "Magari la prossima volta giocheremo assieme!".</csp>
-
-	<oasp>Bisogna accettare che qualcuno non voglia giocare con noi. Puoi divertirti con altre persone o anche da solo.</oasp>
-	<obsp>Bisogna accettare che qualcuno non voglia giocare con noi. Puoi divertirti con altre persone o anche da solo.</obsp>
-	<ocsp>Così si fa! Ora puoi giocare un po' da solo oppure chiedere ad altri bambini di giocare con te!</ocsp>
-
-	<ans1>2</ans1>
-	<ans2>3</ans2>
+	<oasp emotion='Angry'>Bisogna accettare che qualcuno non voglia giocare con noi. Puoi divertirti con altre persone o anche da solo.</oasp>
+	<obsp emotion='Crying'>Bisogna accettare che qualcuno non voglia giocare con noi. Puoi divertirti con altre persone o anche da solo.</obsp>
+	<ocsp emotion='Happy'>Così si fa! Ora puoi giocare un po' da solo oppure chiedere ad altri bambini di giocare con te!</ocsp>
 </story>
