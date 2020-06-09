@@ -23,14 +23,14 @@ namespace SocialGames
             Texture2D start = content.Load<Texture2D>("start");
             Texture2D selGame = content.Load<Texture2D>("sel_gioco");
             Texture2D settings = content.Load<Texture2D>("settings");
-            Texture2D createAvatar = content.Load<Texture2D>("crea_avatar");
+            Texture2D selAvatar = content.Load<Texture2D>("sel_avatar");
             Texture2D start_hover = content.Load<Texture2D>("start_hover");
             Texture2D selGame_hover = content.Load<Texture2D>("sel_gioco_hover");
-            Texture2D createAvatar_hover = content.Load<Texture2D>("crea_avatar_hover");
+            Texture2D selAvatar_hover = content.Load<Texture2D>("sel_avatar_hover");
             Texture2D settings_hover = content.Load<Texture2D>("settings_hover");
             MenuButton startBtn = new MenuButton(game, graphicsDevice, contentManager, "start", start, start_hover, Const.LEFTMARGINBTN, Const.TOPMARGINBTN);
             MenuButton selGameBtn = new MenuButton(game, graphicsDevice, contentManager, "selgame", selGame, selGame_hover, Const.LEFTMARGINBTN, (Const.TOPMARGINBTN) + 100);
-            MenuButton createAvatarBtn = new MenuButton(game, graphicsDevice, contentManager, "createavatar", createAvatar, createAvatar_hover, Const.LEFTMARGINBTN, (Const.TOPMARGINBTN) + 200);
+            MenuButton createAvatarBtn = new MenuButton(game, graphicsDevice, contentManager, "createavatar", selAvatar, selAvatar_hover, Const.LEFTMARGINBTN, (Const.TOPMARGINBTN) + 200);
             MenuButton settingsBtn = new MenuButton(game, graphicsDevice, contentManager, "settings", settings, settings_hover, Const.LEFTMARGINBTN, (Const.TOPMARGINBTN) + 300);
 
             buttons = new List<MenuButton>()

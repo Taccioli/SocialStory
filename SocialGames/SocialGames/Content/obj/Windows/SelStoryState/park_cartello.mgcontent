@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SourceFile>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStoryState/park_cartello.png</SourceFile>
@@ -39,4 +40,47 @@
   <Dependencies />
   <BuildAsset />
   <BuildOutput />
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SourceFile>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/park_cartello.png</SourceFile>
+  <SourceTime>2020-06-07T16:39:10.7075749+02:00</SourceTime>
+  <DestFile>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/bin/Windows/SelStoryState/park_cartello.xnb</DestFile>
+  <DestTime>2020-06-09T12:53:45.9853197+02:00</DestTime>
+  <Importer>TextureImporter</Importer>
+  <ImporterTime>2018-12-08T17:35:54+01:00</ImporterTime>
+  <Processor>TextureProcessor</Processor>
+  <ProcessorTime>2018-12-08T17:35:54+01:00</ProcessorTime>
+  <Parameters>
+    <Key>ColorKeyColor</Key>
+    <Value>255,0,255,255</Value>
+  </Parameters>
+  <Parameters>
+    <Key>ColorKeyEnabled</Key>
+    <Value>True</Value>
+  </Parameters>
+  <Parameters>
+    <Key>GenerateMipmaps</Key>
+    <Value>False</Value>
+  </Parameters>
+  <Parameters>
+    <Key>PremultiplyAlpha</Key>
+    <Value>True</Value>
+  </Parameters>
+  <Parameters>
+    <Key>ResizeToPowerOfTwo</Key>
+    <Value>False</Value>
+  </Parameters>
+  <Parameters>
+    <Key>MakeSquare</Key>
+    <Value>False</Value>
+  </Parameters>
+  <Parameters>
+    <Key>TextureFormat</Key>
+    <Value>Color</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+>>>>>>> b50a589376d5390a70ddd62c723cf17e811d4e95
 </PipelineBuildEvent>
