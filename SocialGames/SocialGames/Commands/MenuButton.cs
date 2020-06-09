@@ -79,7 +79,7 @@ namespace SocialGames
                             {
                                 game.ChangeState(new SelAvatarState(game, graphicsDevice, contentManager));
                             }
-                            else if (GameData.story.Equals(""))
+                            else if (GameData.nameFile.Equals("Gioco.xml"))
                             {
                                 game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
                             }

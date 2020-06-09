@@ -8,6 +8,7 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using System.Xml;
 using Microsoft.Xna.Framework.Input;
+using System.Drawing;
 
 namespace SocialGames
 {
@@ -92,16 +93,16 @@ namespace SocialGames
 
             #region Texture Storia
             // Load Texture diverse da gioco a gioco
-            if (GameData.story == "Fidanzamento")
+            if (GameData.nameFile == "Fidanzamento.xml")
             {
                 if (sex == Boy)
                     GameData.background = "Fidanzata";
                 else
                     GameData.background = "Fidanzato";
             }
+            initBackground = content.Load<Texture2D>("StoriesBackground/" + GameData.background);
+            endBackground = content.Load<Texture2D>("StoriesBackground/end" + GameData.background);
 
-            initBackground = content.Load<Texture2D>(GameData.background);
-            endBackground = content.Load<Texture2D>("end" + GameData.background);
             normalAvatar = content.Load<Texture2D>("GameState/Avatars/" + GameData.avatar);
             angryAvatar = content.Load<Texture2D>("GameState/Avatars/" + "Angry" + GameData.avatar);
             cryingAvatar = content.Load<Texture2D>("GameState/Avatars/" + "Crying" + GameData.avatar);
@@ -113,7 +114,7 @@ namespace SocialGames
             #region Vettori Posizione Elementi
             // Inizializzo i vettori di posizione delle Texture
             backPos = new Vector2(0, 0);
-            storyPos = new Vector2(Const.DisplayDim.Y / 4 - story.Width / 2, 3 * Const.DisplayDim.X / 4 - story.Height / 2);
+            storyPos = new Vector2(Const.DisplayDim.Y / 5 - story.Width / 2, 3 * Const.DisplayDim.X / 4 - story.Height / 2);
             promptPos = storyPos + new Vector2(story.Width + 10, 0);
             storyTextPos = storyPos + new Vector2(10, 70);
             questTextPos = promptPos + new Vector2(10, 10);
@@ -343,7 +344,7 @@ namespace SocialGames
             else if (state == SecondaRisposta)
             {
                 if (correctAnswer)
-                    game.ChangeState(new MenuState(game, graphicsDevice, contentManager));
+                    game.ChangeState(new EndGameState(game, graphicsDevice, contentManager));
                 else
                 {
                     state = SecondoPrompt;
@@ -383,8 +384,9 @@ namespace SocialGames
             spriteBatch.Begin();
 
             spriteBatch.DrawString(textFont, GameData.title, titleTextPos, Color.Black);
-            spriteBatch.DrawString(textFont, promptString, storyTextPos, Color.Black);
-            if(isPromptActive)
+            spriteBatch.DrawString(textFont, promptString, storyTextPos, Color.Black,
+                        0.0f, new Vector2(0, 0), AdaptiveText(textFont, promptString, new Rectangle(0, 0, story.Width - 10, story.Height - 100)), new SpriteEffects(), 0.0f);
+            if (isPromptActive)
                 spriteBatch.DrawString(textFont, questString, questTextPos, Color.Black);
         }
 
@@ -399,7 +401,7 @@ namespace SocialGames
             foreach (PlayButton button in otherButtons)
                 button.Update(gameTime);
 
-            avatarPos = new Vector2(Const.DisplayDim.Y / 4 - avatar.Width / 2, Const.DisplayDim.X/12);
+            avatarPos = new Vector2(Const.DisplayDim.Y / 5 - avatar.Width / 2, Const.DisplayDim.X/12);
 
             switch (state)
             {
@@ -435,7 +437,8 @@ namespace SocialGames
         // Il metodo mi legge il file XML
         void Read(string nameOfFile)
         {
-            XmlTextReader reader = new XmlTextReader("Gioco.xml");
+            //XmlTextReader reader = new XmlTextReader("Gioco.xml");
+            XmlTextReader reader = new XmlTextReader(nameOfFile);
 
             while (reader.Read())
             {
@@ -573,18 +576,41 @@ namespace SocialGames
             }
         }
 
+        // La funzione mi regola la dimensione della scritta di modo che non ecceda la dimensione del rettangolo
+        public float AdaptiveText(SpriteFont spriteFont, string text, Rectangle rectangle)
+        {
+            // Tengo in considerazione anche lo spazio che mi occuperanno le righe
+            float approximateNumberOfLine = spriteFont.MeasureString(text).X/rectangle.Width;
+            // Ottenuto con trial and error
+            Vector2 size = new Vector2(0,approximateNumberOfLine + 2) + spriteFont.MeasureString(text);
+            float area = rectangle.Width * rectangle.Height;
+            float fontArea = size.X * size.Y;
+
+            float ratio = area / fontArea;
+
+            // Se il testo mi occupa meno spazio dell'area disponibile
+            if (ratio > 1)
+                return 1f;
+            else
+                return ratio;
+        }
+
         public string WrapText(SpriteFont spriteFont, string text, float maxLineWidth)
         {
+            float relativeLineWidth = maxLineWidth;
             string[] words = text.Split(' ');
             StringBuilder sb = new StringBuilder();
             float lineWidth = 0f;
-            float spaceWidth = spriteFont.MeasureString(" ").X;
+            float spaceWidth = spriteFont.MeasureString(" ").X * AdaptiveText(spriteFont, text, new Rectangle(0, 0, 490, 225));
+
+            if(AdaptiveText(spriteFont, text, new Rectangle(0, 0, 590, 200)) < 1)
+                relativeLineWidth = maxLineWidth / AdaptiveText(spriteFont, text, new Rectangle(0, 0, 490, 225));
 
             foreach (string word in words)
             {
                 Vector2 size = spriteFont.MeasureString(word);
 
-                if (lineWidth + size.X < maxLineWidth)
+                if (lineWidth + size.X < relativeLineWidth)
                 {
                     sb.Append(word + " ");
                     lineWidth += size.X + spaceWidth;

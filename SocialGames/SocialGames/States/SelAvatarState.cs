@@ -148,9 +148,9 @@ namespace SocialGames
             foreach (SelAvatarButton button in buttons)
                 button.Draw(gameTime, spriteBatch);
 
-            if (GameData.isStart && (GameData.story.Equals("")))
+            if (GameData.isStart && (GameData.nameFile.Equals("Gioco.xml")))
                 selStoryButton.Draw(gameTime, spriteBatch);
-            else if (GameData.isStart && !(GameData.story.Equals("")))
+            else if (GameData.isStart && !(GameData.nameFile.Equals("Gioco.xml")))
                 giocaButton.Draw(gameTime, spriteBatch);
         }
 

@@ -68,83 +68,75 @@ namespace SocialGames
                 {
                     switch (name)
                     {
-                        case "story1":
-                            GameData.story = "story1";
+                        case "agito":
+                            GameData.background = "Agito";
+                            GameData.nameFile = "Agito.xml";
                             GameData.timeSpan = Const.TIMER;
                             game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
                             break;
-                        case "story2":
-                            GameData.story = "story2";
+                        case "bagno":
+                            GameData.background = "Bagno";
+                            GameData.nameFile = "Usare il bagno.xml";
                             GameData.timeSpan = Const.TIMER;
                             game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
                             break;
-                        case "story3":
-                            GameData.story = "story3";
+                        case "camera":
+                            GameData.background = "Camera";
+                            GameData.nameFile = "Coprirsi la bocca.xml";
                             GameData.timeSpan = Const.TIMER;
                             game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
                             break;
-                        case "story4":
-                            GameData.story = "story4";
+                        case "classe":
+                            GameData.background = "Classe";
+                            GameData.nameFile = "Alzare la mano.xml";
                             GameData.timeSpan = Const.TIMER;
                             game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
                             break;
-                        case "story5":
-                            GameData.story = "story5";
+                        case "conversazione":
+                            GameData.background = "Conversazione";
+                            GameData.nameFile = "Conversazione.xml";
                             GameData.timeSpan = Const.TIMER;
                             game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
                             break;
-                        case "story6":
-                            GameData.story = "story6";
+                        case "fidanzamento":
+                            GameData.background = "Fidanzamento";
+                            GameData.nameFile = "Fidanzamento.xml";
                             GameData.timeSpan = Const.TIMER;
                             game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
                             break;
-                        case "story7":
-                            GameData.story = "story7";
+                        case "fidanzata":
+                            GameData.background = "Fidanzata";
+                            GameData.nameFile = "Fidanzamento.xml";
                             GameData.timeSpan = Const.TIMER;
                             game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
                             break;
-                        case "story8":
-                            GameData.story = "story8";
+                        case "fidanzato":
+                            GameData.background = "Fidanzato";
+                            GameData.nameFile = "Fidanzamento.xml";
                             GameData.timeSpan = Const.TIMER;
                             game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
                             break;
-                        case "story9":
-                            GameData.story = "story9";
+                        case "fila":
+                            GameData.background = "Fila";
+                            GameData.nameFile = "La fila.xml";
                             GameData.timeSpan = Const.TIMER;
                             game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
                             break;
-                        case "story10":
-                            GameData.story = "story10";
+                        case "rumori":
+                            GameData.background = "Rumori";
+                            GameData.nameFile = "Rumori forti.xml";
                             GameData.timeSpan = Const.TIMER;
                             game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
                             break;
-                        case "story11":
-                            GameData.story = "story11";
+                        case "spazio":
+                            GameData.background = "Spazio";
+                            GameData.nameFile = "Spazio personale.xml";
                             GameData.timeSpan = Const.TIMER;
                             game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
                             break;
-                        case "story12":
-                            GameData.story = "story12";
-                            GameData.timeSpan = Const.TIMER;
-                            game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
-                            break;
-                        case "story13":
-                            GameData.story = "story13";
-                            GameData.timeSpan = Const.TIMER;
-                            game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
-                            break;
-                        case "story14":
-                            GameData.story = "story14";
-                            GameData.timeSpan = Const.TIMER;
-                            game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
-                            break;
-                        case "story15":
-                            GameData.story = "story15";
-                            GameData.timeSpan = Const.TIMER;
-                            game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
-                            break;
-                        case "story16":
-                            GameData.story = "story16";
+                        case "indipendenza":
+                            GameData.background = "Indipendenza";
+                            GameData.nameFile = "Indipendenza.xml";
                             GameData.timeSpan = Const.TIMER;
                             game.ChangeState(new SelStoryState(game, graphicsDevice, contentManager));
                             break;

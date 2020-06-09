@@ -27,7 +27,7 @@ namespace SocialGames
         {
             this.game = game;
 
-            background = content.Load<Texture2D>(GameData.background);
+            background = content.Load<Texture2D>("StoriesBackground/" + GameData.background);
             story = content.Load<Texture2D>("GameState/story");
             buttonTexture = content.Load<Texture2D>("EndTimeState/buttonTexture");
             buttonHoverTexture = content.Load<Texture2D>("EndTimeState/buttonHoverTexture");
@@ -73,6 +73,8 @@ namespace SocialGames
             spriteBatch.Draw(background, backPos, Color.White);
             spriteBatch.Draw(story, promptPos, Color.White);
             exitButton.Draw(gameTime, spriteBatch);
+            spriteBatch.End();
+            spriteBatch.Begin();
             spriteBatch.DrawString(textFont, message, textPromptPos, Color.Black);
             spriteBatch.DrawString(textFont, title, titlePromptPos, Color.Black);
         }
