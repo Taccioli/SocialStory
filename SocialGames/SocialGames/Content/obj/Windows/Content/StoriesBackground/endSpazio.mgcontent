@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/StoriesBackground/endSpazio.png</SourceFile>
-  <SourceTime>2020-05-22T11:09:50.3777242+02:00</SourceTime>
-  <DestFile>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/bin/Windows/Content/StoriesBackground/endSpazio.xnb</DestFile>
-  <DestTime>2020-05-22T11:10:44.9976804+02:00</DestTime>
+  <SourceFile>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/StoriesBackground/endSpazio.png</SourceFile>
+  <SourceTime>2020-06-09T15:59:55.1556491+02:00</SourceTime>
+  <DestFile>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/bin/Windows/Content/StoriesBackground/endSpazio.xnb</DestFile>
+  <DestTime>2020-06-09T16:05:56.7193734+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-08T17:35:54+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

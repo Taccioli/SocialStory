@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStoryState/BagnoSel.png</SourceFile>
-  <SourceTime>2020-05-20T17:26:01.3818036+02:00</SourceTime>
-  <DestFile>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/bin/Windows/Content/SelStoryState/BagnoSel.xnb</DestFile>
-  <DestTime>2020-05-20T17:26:47.0875468+02:00</DestTime>
+  <SourceFile>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/BagnoSel.png</SourceFile>
+  <SourceTime>2020-05-16T20:25:09.4362748+02:00</SourceTime>
+  <DestFile>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/bin/Windows/Content/SelStoryState/BagnoSel.xnb</DestFile>
+  <DestTime>2020-06-09T16:05:50.4383273+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-08T17:35:54+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

@@ -122,6 +122,9 @@ namespace SocialGames
                             GameData.timeSpan = Const.TIMER;
                             game.ChangeState(new SettingsState(game, graphicsDevice, contentManager));
                             break;
+                        case "quit":
+                            game.Exit();
+                            break;
                         default:
                             break;
                     }

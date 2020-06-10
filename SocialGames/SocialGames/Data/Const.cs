@@ -17,7 +17,7 @@ namespace SocialGames
         public static Vector2 CenterScreen
             => new Vector2(GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width / 2f, 
                 GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height / 2f);
-        public const int TOPMARGINBTN = 200;
+        public const int TOPMARGINBTN = 100;
         public const int LEFTMARGINBTN = 850;
         public const int TOTALPAGES = 2;
         public const int LEFTMARGINSELAVATAR = 380;
