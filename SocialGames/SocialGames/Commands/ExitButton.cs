@@ -16,7 +16,7 @@ namespace SocialGames
         #region Fields
 
         private Texture2D texture, hoverTexture;
-        private MouseState currentMouse;
+        private MouseState currentMouse, previousMouse;
         private bool isHovering;
 
         #endregion
@@ -54,6 +54,7 @@ namespace SocialGames
 
         public override void Update(GameTime gameTime)
         {
+            previousMouse = currentMouse;
             currentMouse = Mouse.GetState();
 
             var mouseRectangle = new Rectangle(currentMouse.X, currentMouse.Y, 1, 1);
@@ -64,7 +65,7 @@ namespace SocialGames
             {
                 isHovering = true;
 
-                if (currentMouse.LeftButton == ButtonState.Pressed)
+                if (currentMouse.LeftButton == ButtonState.Released && previousMouse.LeftButton != currentMouse.LeftButton)
                 {
                     Click?.Invoke(this, new EventArgs());
                 }
