@@ -546,14 +546,14 @@ namespace SocialGames
             }
             if (!GameData.isCapital)
             {
-                GameData.firstPrompt = WrapText(textFont, GameData.firstPrompt, story.Width - 10);
-                GameData.secondPrompt = WrapText(textFont, GameData.secondPrompt, story.Width - 10);
-                GameData.afp.answer = WrapText(textFont, GameData.afp.answer, story.Width - 10);
-                GameData.bfp.answer = WrapText(textFont, GameData.bfp.answer, story.Width - 10);
-                GameData.cfp.answer = WrapText(textFont, GameData.cfp.answer, story.Width - 10);
-                GameData.asp.answer = WrapText(textFont, GameData.asp.answer, story.Width - 10);
-                GameData.bsp.answer = WrapText(textFont, GameData.bsp.answer, story.Width - 10);
-                GameData.csp.answer = WrapText(textFont, GameData.csp.answer, story.Width - 10);
+                GameData.firstPrompt = WrapText(textFont, GameData.firstPrompt, (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.firstPrompt, new Rectangle(0, 0, story.Width - 10, story.Height - 100))));
+                GameData.secondPrompt = WrapText(textFont, GameData.secondPrompt, (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.secondPrompt, new Rectangle(0, 0, story.Width - 10, story.Height - 100))));
+                GameData.afp.answer = WrapText(textFont, GameData.afp.answer, (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.afp.answer, new Rectangle(0, 0, story.Width - 10, story.Height - 100))));
+                GameData.bfp.answer = WrapText(textFont, GameData.bfp.answer, (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.bfp.answer, new Rectangle(0, 0, story.Width - 10, story.Height - 100))));
+                GameData.cfp.answer = WrapText(textFont, GameData.cfp.answer, (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.cfp.answer, new Rectangle(0, 0, story.Width - 10, story.Height - 100))));
+                GameData.asp.answer = WrapText(textFont, GameData.asp.answer, (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.asp.answer, new Rectangle(0, 0, story.Width - 10, story.Height - 100))));
+                GameData.bsp.answer = WrapText(textFont, GameData.bsp.answer, (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.bsp.answer, new Rectangle(0, 0, story.Width - 10, story.Height - 100))));
+                GameData.csp.answer = WrapText(textFont, GameData.csp.answer, (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.csp.answer, new Rectangle(0, 0, story.Width - 10, story.Height - 100))));
             }
             else
             {
@@ -566,14 +566,14 @@ namespace SocialGames
                 GameData.asp.phrase = GameData.asp.phrase.ToUpper();
                 GameData.bsp.phrase = GameData.bsp.phrase.ToUpper();
                 GameData.csp.phrase = GameData.csp.phrase.ToUpper();
-                GameData.firstPrompt = WrapText(textFont, GameData.firstPrompt.ToUpper(), story.Width - 10);
-                GameData.secondPrompt = WrapText(textFont, GameData.secondPrompt.ToUpper(), story.Width - 10);
-                GameData.afp.answer = WrapText(textFont, GameData.afp.answer.ToUpper(), story.Width - 10);
-                GameData.bfp.answer = WrapText(textFont, GameData.bfp.answer.ToUpper(), story.Width - 10);
-                GameData.cfp.answer = WrapText(textFont, GameData.cfp.answer.ToUpper(), story.Width - 10);
-                GameData.asp.answer = WrapText(textFont, GameData.asp.answer.ToUpper(), story.Width - 10);
-                GameData.bsp.answer = WrapText(textFont, GameData.bsp.answer.ToUpper(), story.Width - 10);
-                GameData.csp.answer = WrapText(textFont, GameData.csp.answer.ToUpper(), story.Width - 10);
+                GameData.firstPrompt = WrapText(textFont, GameData.firstPrompt.ToUpper(), (story.Width - 10) * (1/AdaptiveText(textFont, GameData.firstPrompt, new Rectangle(0, 0, story.Width - 10, story.Height - 100))));
+                GameData.secondPrompt = WrapText(textFont, GameData.secondPrompt.ToUpper(), (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.secondPrompt, new Rectangle(0, 0, story.Width - 10, story.Height - 100))));
+                GameData.afp.answer = WrapText(textFont, GameData.afp.answer.ToUpper(), (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.afp.answer, new Rectangle(0, 0, story.Width - 10, story.Height - 100))));
+                GameData.bfp.answer = WrapText(textFont, GameData.bfp.answer.ToUpper(), (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.bfp.answer, new Rectangle(0, 0, story.Width - 10, story.Height - 100))));
+                GameData.cfp.answer = WrapText(textFont, GameData.cfp.answer.ToUpper(), (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.cfp.answer, new Rectangle(0, 0, story.Width - 10, story.Height - 100))));
+                GameData.asp.answer = WrapText(textFont, GameData.asp.answer.ToUpper(), (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.asp.answer, new Rectangle(0, 0, story.Width - 10, story.Height - 100))));
+                GameData.bsp.answer = WrapText(textFont, GameData.bsp.answer.ToUpper(), (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.bsp.answer, new Rectangle(0, 0, story.Width - 10, story.Height - 100))));
+                GameData.csp.answer = WrapText(textFont, GameData.csp.answer.ToUpper(), (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.csp.answer, new Rectangle(0, 0, story.Width - 10, story.Height - 100))));
             }
         }
 
@@ -581,9 +581,9 @@ namespace SocialGames
         public float AdaptiveText(SpriteFont spriteFont, string text, Rectangle rectangle)
         {
             // Tengo in considerazione anche lo spazio che mi occuperanno le righe
-            float approximateNumberOfLine = spriteFont.MeasureString(text).X/rectangle.Width;
+            //float approximateNumberOfLine = spriteFont.MeasureString(text).X/(rectangle.Width);
             // Ottenuto con trial and error
-            Vector2 size = new Vector2(0,approximateNumberOfLine) + spriteFont.MeasureString(text);
+            Vector2 size = spriteFont.MeasureString(text);  //new Vector2(0,approximateNumberOfLine + 2) + spriteFont.MeasureString(text);
             float area = rectangle.Width * rectangle.Height;
             float fontArea = size.X * size.Y;
 

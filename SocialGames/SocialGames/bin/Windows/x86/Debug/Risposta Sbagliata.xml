@@ -16,7 +16,7 @@
 	<squest>... potrei:</squest>
 	<asp isCorrect='true'>Chiedere la risposta giusta</asp>
 	<bsp isCorrect='false'>Ignorare il mio errore</bsp>
-	<csp isCorrect='false'>Vergognarmi sempre del mio errore</csp>
+	<csp isCorrect='false'>Continuare a vergognarmi del mio errore</csp>
 
 	<oasp emotion='Happy'>Giusto! Se chiedo, l'insegnante sarà felice di aiutarmi a trovare la risposta giusta.</oasp>
 	<obsp emotion='Normal'>Se non chiedo aiuto all'insegnante, la prossima volta non saprò di nuovo la risposta e proverò di nuovo vergogna!</obsp>
