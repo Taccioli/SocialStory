@@ -2,7 +2,7 @@
 <story name='Coprirsi la bocca'>
 	
 	<title>Coprirsi la bocca</title>
-	<fprompt emotion='Ill'>Spesso succede che senta il bisogno di tossire o starnutire all'improvviso, è proprio fastidioso quando succede!</fprompt>
+	<fprompt emotion='Ill'>Spesso succede che senta il bisogno di tossire o starnutire all'improvviso, è una cosa proprio fastidiosa!</fprompt>
 	<fquest>E quando mi capita mi ricordo di:</fquest>
 	<afp isCorrect='true'>Coprire la bocca con una mano</afp>
 	<bfp isCorrect='false'>Fare molto rumore</bfp>

@@ -18,7 +18,7 @@
 	<bsp isCorrect='false'>Spingerlo</bsp>
 	<csp isCorrect='true'>Chiedere di rispettare i tuoi spazi</csp>
 
-	<oasp emotion='Angry'>Tutti a volte sbagliano e non rispettano lo spazio personale degli altri, non è così grave. Ma se non conoso questa persona o è insistente, posso anche urlare! É importante che rispetti il mio spazio personale!</oasp>
-	<obsp emotion='Angry'>Tutti a volte sbagliano e non rispettano lo spazio personale degli altri, non è così grave. Ma se non conosco questa persona o è insistente, posso anche spingerla via! É importante che rispetti il mio spazio personale!</obsp>
-	<ocsp emotion='Normal'>Esatto! Se una persona che conosco non rispetta il mio spazio personale devo farglielo capire chiedendo: "Puoi evitare di abbracciarmi?" o "Puoi evitare di toccarmi?": capirà che deve rispettare il mio spazio personale!</ocsp>
+	<oasp emotion='Angry'>Tutti a volte sbagliano e non rispettano lo spazio personale degli altri, non è così grave. Ma se non conosco questa persona o è insistente, posso anche urlare!</oasp>
+	<obsp emotion='Angry'>Tutti a volte sbagliano e non rispettano lo spazio personale degli altri, non è così grave. Ma se non conosco questa persona o è insistente, posso anche spingerla via!</obsp>
+	<ocsp emotion='Normal'>Esatto! Se una persona che conosco non rispetta il mio spazio personale devo farglielo capire chiedendo: "Puoi evitare di toccarmi?": capirà che deve rispettare il mio spazio personale!</ocsp>
 </story>

@@ -89,6 +89,8 @@
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/Maschio2.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/Maschio3.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/Park.png</File>
+    <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/quit.png</File>
+    <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/quit_hover.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/RightArrow.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/sel_gioco.png</File>
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/sel_gioco_hover.png</File>
@@ -182,6 +184,8 @@
     <File>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/StoriesBackground/Spazio.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

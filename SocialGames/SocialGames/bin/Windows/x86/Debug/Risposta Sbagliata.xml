@@ -8,9 +8,9 @@
 	<cfp isCorrect='false'>Smetto di lavorare</cfp>
 	
 	<!-- Emozioni disponibili: 'Normal','Happy','Angry','Crying' -->
-	<oafp emotion='Normal'>Capita a tutti di non sapere una risposta, non è una cosa grave!</oafp>
+	<oafp emotion='Angry'>Capita a tutti di non sapere una risposta, non è una cosa grave!</oafp>
 	<obfp emotion='Happy'>Bravo! È normale non sapere una risposta, l'importante è continuare l'esercizio!</obfp>
-	<ocfp emotion='Normal'>Capita a tutti di non sapere una risposta, non è una cosa grave!</ocfp>
+	<ocfp emotion='Crying'>Capita a tutti di non sapere una risposta, non è una cosa grave!</ocfp>
 
 	<sprompt>Una volta finito il lavoro...</sprompt>
 	<squest>... potrei:</squest>

@@ -36,7 +36,7 @@ namespace SocialGames
             backPos = new Vector2(0, 0);
             promptPos = Const.CenterScreen - new Vector2(story.Width / 2, story.Height / 2);
             exitButPos = promptPos + new Vector2(story.Width / 2 - buttonTexture.Width / 2, 260);
-            textPromptPos = promptPos + new Vector2(10, 70);
+            textPromptPos = promptPos + new Vector2(15, 75);
             titlePromptPos = promptPos + new Vector2(10, 10);
 
             if (GameData.rewardAmount <= 1)

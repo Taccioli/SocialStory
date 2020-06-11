@@ -10,7 +10,7 @@
 	
 	<oafp emotion='Normal'>Devo chiedere il permesso per giocare con altri bambini, altrimenti loro non saranno felici di giocare con me</oafp>
 	<obfp emotion='Happy'>Bravo! Bisogna sempre chiedere il permesso per giocare con altri bambini!</obfp>
-	<ocfp emotion='Happy'>Devo chiedere il permesso per giocare con altri bambini, altrimenti non potranno capire che voglio divertirmi con loro.</ocfp>
+	<ocfp emotion='Angry'>Devo chiedere il permesso per giocare con altri bambini, altrimenti non potranno capire che voglio divertirmi con loro.</ocfp>
 
 	<sprompt>Se dicono "Sì!" potrò giocare con loro e divertirmi! Ma se dicessero di no..</sprompt>
 	<squest>..Cosa potrei fare?</squest>

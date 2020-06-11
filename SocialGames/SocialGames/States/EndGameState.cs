@@ -39,7 +39,7 @@ namespace SocialGames
             promptPos = Const.CenterScreen - new Vector2(story.Width / 2, story.Height / 2);
             menuButPos = promptPos + new Vector2(-5, 210);
             changeStoryButPos = promptPos + new Vector2(story.Width - changeStoryButTex.Width + 10, 210);
-            textPromptPos = promptPos + new Vector2(10, 70);
+            textPromptPos = promptPos + new Vector2(15, 75);
 
             message = "Bravo! Hai completato questa storia! Vuoi scegliere " +
                         "un'altra storia da giocare o tornare al menù principale?";

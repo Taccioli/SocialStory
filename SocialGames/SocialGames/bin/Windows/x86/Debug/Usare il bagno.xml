@@ -18,7 +18,7 @@
 	<bsp isCorrect='false'>Non rispondere</bsp>
 	<csp isCorrect='false'>Aprire la porta</csp>
 
-	<oasp emotion='Happy'>Bravo! Se lo dici bene ad alta voce la persona fuori capirà che dovrà aspettare che tu abbia finito.</oasp>
+	<oasp emotion='Happy'>Bravo! Se dici bene "Occupato!" ad alta voce chi sta fuori capirà che dovrà aspettare che tu abbia finito!</oasp>
 	<obsp emotion='Normal'>Se non rispondi la persona fuori può pensare che non ci sia nessuno nel bagno e potrà provare ad entrare: usare il bagno è una cosa privata e non deve vederti uno sconosciuto!</obsp>
 	<ocsp emotion='Normal'>Se devi ancora utilizzare il bagno, non aprire la porta: usare il bagno è una cosa privata e non deve vederti uno sconosciuto!</ocsp>
 </story>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/SelStoryState/IndipendenzaSel.png</SourceFile>
-  <SourceTime>2020-05-20T17:26:01.398794+02:00</SourceTime>
-  <DestFile>D:/Desktop/Università/Grafica2D/SocialStory/SocialGames/SocialGames/Content/bin/Windows/SelStoryState/IndipendenzaSel.xnb</DestFile>
-  <DestTime>2020-06-09T13:19:51.5264697+02:00</DestTime>
+  <SourceFile>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/SelStoryState/IndipendenzaSel.png</SourceFile>
+  <SourceTime>2020-05-17T01:04:43.5981795+02:00</SourceTime>
+  <DestFile>C:/Users/simob/Desktop/SocialStory/SocialGames/SocialGames/Content/bin/Windows/SelStoryState/IndipendenzaSel.xnb</DestFile>
+  <DestTime>2020-06-10T19:29:55.3026559+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-08T17:35:54+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
