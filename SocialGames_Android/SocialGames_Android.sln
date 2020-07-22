@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialGames_Android", "SocialGames_Android\SocialGames_Android.csproj", "{C02DFFC4-2B46-40E3-9ABE-4062094AC4E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C02DFFC4-2B46-40E3-9ABE-4062094AC4E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C02DFFC4-2B46-40E3-9ABE-4062094AC4E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C02DFFC4-2B46-40E3-9ABE-4062094AC4E7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C02DFFC4-2B46-40E3-9ABE-4062094AC4E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C02DFFC4-2B46-40E3-9ABE-4062094AC4E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C02DFFC4-2B46-40E3-9ABE-4062094AC4E7}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B32C6E2D-D11A-4A56-AABA-6492CB1EDF61}
+	EndGlobalSection
+EndGlobal
