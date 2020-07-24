@@ -1,0 +1,24 @@
+<!-- sample story -->
+<story name='Conversazione'>
+	
+	<title>Conversazione</title>
+	<fprompt>Mi piace molto parlare, soprattutto con mamma, papà e i miei amici. Spesso però stanno già parlando tra di loro.</fprompt>
+	<fquest>Se volessi parlare anche io, dovrei:</fquest>
+	<afp isCorrect='false'>Interromperli</afp>
+	<bfp isCorrect='true'>Aspettare il mio turno</bfp>
+	<cfp isCorrect='false'>Dire quello che voglio</cfp>
+	
+	<oafp emotion='Normal'>Interrompere le persone è maleducazione, è importante che tutti abbiano la possibilità di parlare.</oafp>
+	<obfp emotion='Happy'>Bravo! Bisogna aspettare vicino a chi sta parlando affinché si possa parlare solo quando è il proprio turno.</obfp>
+	<ocfp emotion='Normal'>Interrompere le persone è maleducazione, è importante che tutti abbiano la possibilità di parlare.</ocfp>
+
+	<sprompt>A volte però la conversazione riguarda un argomento diverso da quello di cui vorrei parlare io. É così noioso quando succede.</sprompt>
+	<squest>Cosa potrei fare allora?</squest>
+	<asp isCorrect='true'>Aspettare che finisca la conversazione</asp>
+	<bsp isCorrect='false'>Dire quello che voglio</bsp>
+	<csp isCorrect='false'>Dire che la conversazione è noiosa</csp>
+
+	<oasp emotion='Happy'>Giusto! Cambiare argomento quando qualcuno parla può essere maleducazione, tutti a turno devono parlare di quello che preferiscono!</oasp>
+	<obsp emotion='Normal'>Cambiare argomento quando qualcuno parla può essere maleducazione, si deve ascoltare l'argomento degli altri e fare domande: tutti a turno devono parlare di quello che preferiscono!</obsp>
+	<ocsp emotion='Angry'>Per quelle persone potrebbe essere interessante! Si deve ascoltare l'argomento degli altri e fare domande: tutti a turno devono parlare di quello che preferiscono!</ocsp>
+</story>

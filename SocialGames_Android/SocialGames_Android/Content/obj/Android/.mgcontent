@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>Android</Platform>
+  <Config />
+  <SourceFiles>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/Button.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/CompletedBackground/Agito.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/CompletedBackground/Bagno.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/CompletedBackground/Camera.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/CompletedBackground/Classe.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/CompletedBackground/Conversazione.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/CompletedBackground/Fidanzata.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/CompletedBackground/Fidanzato.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/CompletedBackground/Fila.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/CompletedBackground/Indipendenza.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/CompletedBackground/Park.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/CompletedBackground/Rumori.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/CompletedBackground/Spazio.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/Desaturation.fx</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/EndGameState/ContinuaButton.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/EndGameState/ContinuaButtonHover.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/EndGameState/MenuButton.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/EndGameState/MenuButtonHover.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/EndGameState/StoriaCompletata.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/EndTimeState/buttonHoverTexture.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/EndTimeState/ButtonTexture.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/Femmina1.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/Femmina2.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/Femmina3.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Avatars/AngryBoy1.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Avatars/AngryBoy2.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Avatars/AngryBoy3.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Avatars/AngryGirl1.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Avatars/AngryGirl2.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Avatars/AngryGirl3.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Avatars/Boy1.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Avatars/Boy2.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Avatars/Boy3.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Avatars/CryingBoy1.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Avatars/CryingBoy2.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Avatars/CryingBoy3.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Avatars/CryingGirl1.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Avatars/CryingGirl2.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Avatars/CryingGirl3.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Avatars/Girl1.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Avatars/Girl2.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Avatars/Girl3.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Avatars/HappyBoy1.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Avatars/HappyBoy2.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Avatars/HappyBoy3.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Avatars/HappyGirl1.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Avatars/HappyGirl2.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Avatars/HappyGirl3.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Avatars/IllBoy1.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Avatars/IllBoy2.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Avatars/IllBoy3.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Avatars/IllGirl1.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Avatars/IllGirl2.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Avatars/IllGirl3.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/ButtonFont.spritefont</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/buttonHoverTexture.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/ButtonTexture.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/choiceHoverTexture.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/choiceTexture.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/CustomFont.spritefont</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/dialog.spritefont</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/prompt.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Rewards/0.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Rewards/1.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Rewards/2.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Rewards/3.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Rewards/4.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Rewards/5.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Rewards/6.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Rewards/7.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Rewards/8.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Rewards/9.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Rewards/Font.spritefont</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Rewards/LongReward.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Rewards/MAX.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Rewards/Reward.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/Rewards/ShortReward.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/story.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/GameState/TitleFont.spritefont</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/gioca.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/gioca_hover.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/home.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/LeftArrow.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/Maschio1.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/Maschio2.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/Maschio3.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/Park.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/quit.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/quit_hover.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/RightArrow.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/sel_avatar.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/sel_avatar_hover.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/sel_gioco.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/sel_gioco_hover.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/sel_storia.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/sel_storia_hover.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelBackground.jpg</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelFemmina1.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelFemmina1_selected.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelFemmina2.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelFemmina2_selected.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelFemmina3.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelFemmina3_selected.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelMaschio1.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelMaschio1_selected.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelMaschio2.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelMaschio2_selected.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelMaschio3.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelMaschio3_selected.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStory1.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStory1_selected.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStory2.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStory2_selected.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStoryState/Agito.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStoryState/agito_cartello.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStoryState/AgitoSel.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStoryState/alzareMano_cartello.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStoryState/Bagno.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStoryState/bagno_cartello.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStoryState/BagnoSel.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStoryState/Camera.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStoryState/camera_cartello.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStoryState/CameraSel.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStoryState/Classe.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStoryState/classe_cartello.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStoryState/ClasseSel.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStoryState/Conversazione.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStoryState/conversazione_cartello.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStoryState/ConversazioneSel.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStoryState/Fidanzamento.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStoryState/fidanzamento_cartello.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStoryState/FidanzamentoSel.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStoryState/Fidanzata.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStoryState/FidanzataSel.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStoryState/Fidanzato.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStoryState/FidanzatoSel.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStoryState/Fila.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStoryState/fila_cartello.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStoryState/FilaSel.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStoryState/Indipendenza.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStoryState/indipendenza_cartello.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStoryState/IndipendenzaSel.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStoryState/Park.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStoryState/park_cartello.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStoryState/ParkSel.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStoryState/Rumori.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStoryState/rumori_cartello.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStoryState/RumoriSel.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStoryState/Spazio.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStoryState/spazio_cartello.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SelStoryState/SpazioSel.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/settings.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/settings_hover.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SettingsState/Background.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SettingsState/Font.spritefont</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SettingsState/Indietro.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SettingsState/IndietroHover.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SettingsState/NonSelected10.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SettingsState/NonSelected20.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SettingsState/NonSelected30.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SettingsState/NonSelectedHover10.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SettingsState/NonSelectedHover20.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SettingsState/NonSelectedHover30.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SettingsState/OFF.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SettingsState/OFFHover.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SettingsState/ON.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SettingsState/ONHover.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SettingsState/Selected10.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SettingsState/Selected20.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SettingsState/Selected30.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/SettingsState/TitleFont.spritefont</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/START.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/start_hover.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/StoriesBackground/Agito.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/StoriesBackground/Bagno.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/StoriesBackground/Camera.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/StoriesBackground/Classe.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/StoriesBackground/Conversazione.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/StoriesBackground/endAgito.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/StoriesBackground/endBagno.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/StoriesBackground/endCamera.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/StoriesBackground/endClasse.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/StoriesBackground/endConversazione.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/StoriesBackground/endFidanzamento.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/StoriesBackground/endFidanzata.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/StoriesBackground/endFidanzato.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/StoriesBackground/endFila.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/StoriesBackground/endIndipendenza.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/StoriesBackground/endRumori.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/StoriesBackground/endSpazio.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/StoriesBackground/Fidanzamento.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/StoriesBackground/Fidanzata.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/StoriesBackground/Fidanzato.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/StoriesBackground/Fila.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/StoriesBackground/Indipendenza.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/StoriesBackground/Rumori.png</File>
+    <File>D:/Desktop/SocialGames_Android/SocialGames_Android/Content/StoriesBackground/Spazio.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>

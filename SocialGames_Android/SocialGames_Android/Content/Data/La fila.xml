@@ -1,0 +1,24 @@
+<!-- sample story -->
+<story name='La fila'>
+	
+	<title>La fila</title>
+	<fprompt>Quando c'è da fare la fila per qualcosa di divertente vorrei essere il primo, per essere il primo a divertirmi!</fprompt>
+	<fquest>Ma quando non lo sono, potrei:</fquest>
+	<afp isCorrect='false'>Mettermi per primo</afp>
+	<bfp isCorrect='true'>Aspettare il mio turno</bfp>
+	<cfp isCorrect='false'>Spingere per essere più veloce</cfp>
+
+	<oafp emotion='Normal'>Non è giusto essere sempre primi! Bisogna lasciare che anche gli altri stiano per primi qualche volta.</oafp>
+	<obfp emotion='Happy'>Bravo! Se aspetti il tuo turno in un attimo sarai a divertirti!</obfp>
+	<ocfp emotion='Angry'>Spingere non farà venire più velocemente il momento in cui mi divertirò. Bisogna lasciare che anche gli altri stiano per primi qualche volta.</ocfp>
+
+	<sprompt>Alcune volte però capita che qualche compagno o amico sia prepotente e si metta davanti alla fila o spinga.</sprompt>
+	<squest>In questo caso cosa potrei fare?</squest>
+	<asp isCorrect='true'>Parlare con lui</asp>
+	<bsp isCorrect='false'>Arrabbiarmi</bsp>
+	<csp isCorrect='false'>Spingerlo</csp>
+
+	<oasp emotion='Happy'>Esatto! Prova a dire gentilmente "La prossima volta però starò io per primo!" o a chiedere "Posso stare io davanti?".</oasp>
+	<obsp emotion='Angry'>Bisogna avere pazienza coi propri compagni: stare davanti in fila non è così importante!</obsp>
+	<ocsp emotion='Angry'>Bisogna avere pazienza coi propri compagni: stare davanti in fila non è così importante!</ocsp>
+</story>

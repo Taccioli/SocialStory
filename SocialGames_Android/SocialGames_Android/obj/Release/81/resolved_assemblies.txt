@@ -1,0 +1,10 @@
+D:\Desktop\Università\Grafica2D\android\SocialStory\SocialGames_Android\SocialGames_Android\obj\Release\81\android\assets\SocialGames_Android.dll
+D:\Desktop\Università\Grafica2D\android\SocialStory\SocialGames_Android\SocialGames_Android\obj\Release\81\android\assets\Java.Interop.dll
+D:\Desktop\Università\Grafica2D\android\SocialStory\SocialGames_Android\SocialGames_Android\obj\Release\81\android\assets\Mono.Android.dll
+D:\Desktop\Università\Grafica2D\android\SocialStory\SocialGames_Android\SocialGames_Android\obj\Release\81\android\assets\MonoGame.Framework.dll
+D:\Desktop\Università\Grafica2D\android\SocialStory\SocialGames_Android\SocialGames_Android\obj\Release\81\android\assets\mscorlib.dll
+D:\Desktop\Università\Grafica2D\android\SocialStory\SocialGames_Android\SocialGames_Android\obj\Release\81\android\assets\System.Core.dll
+D:\Desktop\Università\Grafica2D\android\SocialStory\SocialGames_Android\SocialGames_Android\obj\Release\81\android\assets\System.dll
+D:\Desktop\Università\Grafica2D\android\SocialStory\SocialGames_Android\SocialGames_Android\obj\Release\81\android\assets\System.Xml.dll
+D:\Desktop\Università\Grafica2D\android\SocialStory\SocialGames_Android\SocialGames_Android\obj\Release\81\android\assets\System.Runtime.Serialization.dll
+D:\Desktop\Università\Grafica2D\android\SocialStory\SocialGames_Android\SocialGames_Android\obj\Release\81\android\assets\Mono.Security.dll

@@ -1,0 +1,24 @@
+<!-- sample story -->
+<story name='Indipendenza'>
+	
+	<title>Indipendenza</title>
+	<fprompt emotion='Angry'>A volte gli adulti vogliono prendere delle decisioni al posto mio. Quando lo fanno mi fa arrabbiare molto perché vorrei decidere io per me!</fprompt>
+	<fquest>Ma quando succede potrei:</fquest>
+	<afp isCorrect='false'>Lamentarmi con loro</afp>
+	<bfp isCorrect='false'>Piangere</bfp>
+	<cfp isCorrect='true'>Parlare con loro</cfp>
+	
+	<oafp emotion='Crying'>Se mi lamenterò soltanto gli adulti non potranno capire perché sono così infastidito!</oafp>
+	<obfp emotion='Crying'>Piangere non aiuterà gli adulti a capire la mia rabbia, e io voglio che loro capiscano!</obfp>
+	<ocfp emotion='Happy'>Esatto! Chiedi "Perché devo fare questa cosa?": scoprirai che molte volte quello che vogliono è per il tuo bene!</ocfp>
+
+	<sprompt>Alcune volte però non voglio proprio fare quello che mi dicono di fare: voglio prendere le mie scelte!</sprompt>
+	<squest>In questo caso potrei:</squest>
+	<asp isCorrect='true'>Spiegare le mie ragioni</asp>
+	<bsp isCorrect='false'>Andarmene</bsp>
+	<csp isCorrect='false'>Arrabbiarmi con loro</csp>
+
+	<oasp emotion='Normal'>Giusto! Prova a spiegare gentilmente perché non vuoi fare quella cosa e spesso arriverete ad un compromesso!</oasp>
+	<obsp emotion='Angry'>Spesso gli adulti decidono per noi perché pensano che sia la cosa giusta: se me ne vado loro saranno tristi e io non voglio che lo siano.</obsp>
+	<ocsp emotion='Angry'>Spesso gli adulti decidono per noi perché pensano che sia la cosa giusta: se mi arrabbio loro saranno tristi e io non voglio che lo siano.</ocsp>
+</story>

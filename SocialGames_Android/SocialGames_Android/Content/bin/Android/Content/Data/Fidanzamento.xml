@@ -1,0 +1,25 @@
+<!-- sample story -->
+<story name='Fidanzamento'>
+	
+	<title>Fidanzamento</title>
+	<fprompt>Può capitare di provare dei sentimenti più forti per qualcuno che è di più di un amico o un'amica.</fprompt>
+	<fquest>Per farglielo capire posso:</fquest>
+	<afp isCorrect='false'>Prenderla/o in giro</afp>
+	<bfp isCorrect='true'>Parlargli/le</bfp>
+	<cfp isCorrect='false'>Evitarla/o</cfp>
+	
+	<!-- Emozioni disponibili: 'Normal','Happy','Angry','Crying' -->
+	<oafp emotion='Normal'>É giusto scherzare con chi ci piace, ma se li prendi in giro non potranno capire cosa provi!</oafp>
+	<obfp emotion='Happy'>Esatto! Prova a chiedere se vi potete vedere per merenda o anche se vogliono fidanzarsi con te.</obfp>
+	<ocfp emotion='Normal'>É normale essere nervosi di fronte alla persona che ci piace, ma se la eviti non può capire cosa provi!</ocfp>
+
+	<sprompt>Può capitare però che questa persona possa dire di no o che sia meglio rimanere amici. Questo mi rende triste e deluso perché mi sento rifiutato.</sprompt>
+	<squest>E in questo caso potrei:</squest>
+	<asp isCorrect='false'>Arrabbiarmi</asp>
+	<bsp isCorrect='true'>Accettare la sua scelta</bsp>
+	<csp isCorrect='false'>Dire cose cattive</csp>
+
+	<oasp emotion='Angry'>É normale sentirsi arrabbiati e delusi quando qualcuno ci dice di no, ma è giusto che scelgano anche loro. Si può provare a rimanere amici!</oasp>
+	<obsp emotion='Normal'>Bravo! Bisogna rispettare la scelta degli altri. Se ti fa piacere puoi chiedere "Possiamo almeno rimanere amici?", almeno potrete ancora parlare e vedervi!</obsp>
+	<ocsp emotion='Angry'>É normale sentirsi arrabbiati e delusi quando qualcuno ci dice di no, ma è giusto che scelgano anche loro. Si può provare a rimanere amici!</ocsp>
+</story>

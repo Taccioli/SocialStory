@@ -1,0 +1,24 @@
+<!-- sample story -->
+<story name=''>
+	
+	<title>Spazio personale</title>
+	<fprompt>Può capitare di voler toccare o abbracciare una persona che si conosce poco, che non è un nostro amico o genitore.</fprompt>
+	<fquest>Se sento questo bisogno devo:</fquest>
+	<afp isCorrect='false'>Toccare la persona</afp>
+	<bfp isCorrect='true'>Rispettare il suo spazio personale</bfp>
+	<cfp isCorrect='false'>Abbracciare la persona</cfp>
+	
+	<oafp emotion='Normal'>Lo spazio personale è come una bolla immaginaria intorno alle persone. Se mi avvicino troppo a loro non lo rispetterò e questo può spaventarle o imbarazzarle: è importante rispettarlo.</oafp>
+	<obfp emotion='Happy'>Bravo! Se conosco la persona che voglio abbracciare ma non so se lo spaventerebbe, prima di farlo posso chiedere: "Posso abbracciarti?". Se dirà di sì potrai abbracciarla!</obfp>
+	<ocfp emotion='Normal'>Lo spazio personale è come una bolla immaginaria intorno alle persone. Se mi avvicino troppo a loro non lo rispetterò e questo può spaventarle o imbarazzarle: è importante rispettarlo.</ocfp>
+
+	<sprompt>A volte invece succede che qualcuno mi abbracci o mi tocchi senza che io voglia: è così fastidioso quando succede!</sprompt>
+	<squest>In questi casi la prima cosa che faccio è:</squest>
+	<asp isCorrect='false'>Urlare</asp>
+	<bsp isCorrect='false'>Spingerlo</bsp>
+	<csp isCorrect='true'>Chiedere di rispettare i tuoi spazi</csp>
+
+	<oasp emotion='Angry'>Tutti a volte sbagliano e non rispettano lo spazio personale degli altri, non è così grave. Ma se non conosco questa persona o è insistente, posso anche urlare!</oasp>
+	<obsp emotion='Angry'>Tutti a volte sbagliano e non rispettano lo spazio personale degli altri, non è così grave. Ma se non conosco questa persona o è insistente, posso anche spingerla via!</obsp>
+	<ocsp emotion='Normal'>Esatto! Se una persona che conosco non rispetta il mio spazio personale devo farglielo capire chiedendo: "Puoi evitare di toccarmi?": capirà che deve rispettare il mio spazio personale!</ocsp>
+</story>

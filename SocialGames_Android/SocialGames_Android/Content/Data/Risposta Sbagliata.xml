@@ -1,0 +1,24 @@
+<story name='Risposta Sbagliata'>
+	
+	<title>Rispondere sbagliato</title>
+	<fprompt emotion='Confused'>A volte a scuola capita che mentre svolgo un esercizio non sappia la risposta giusta ad una domanda e provo vergogna.</fprompt>
+	<fquest>Che cosa posso fare?</fquest>
+	<afp isCorrect='false'>Strappo il foglio</afp>
+	<bfp isCorrect='true'>Continuo il compito</bfp>
+	<cfp isCorrect='false'>Smetto di lavorare</cfp>
+	
+	<!-- Emozioni disponibili: 'Normal','Happy','Angry','Crying' -->
+	<oafp emotion='Angry'>Capita a tutti di non sapere una risposta, non è una cosa grave!</oafp>
+	<obfp emotion='Happy'>Bravo! È normale non sapere una risposta, l'importante è continuare l'esercizio!</obfp>
+	<ocfp emotion='Crying'>Capita a tutti di non sapere una risposta, non è una cosa grave!</ocfp>
+
+	<sprompt>Una volta finito il lavoro...</sprompt>
+	<squest>... potrei:</squest>
+	<asp isCorrect='true'>Chiedere la risposta giusta</asp>
+	<bsp isCorrect='false'>Ignorare il mio errore</bsp>
+	<csp isCorrect='false'>Continuare a vergognarmi del mio errore</csp>
+
+	<oasp emotion='Happy'>Giusto! Se chiedo, l'insegnante sarà felice di aiutarmi a trovare la risposta giusta.</oasp>
+	<obsp emotion='Normal'>Se non chiedo aiuto all'insegnante, la prossima volta non saprò di nuovo la risposta e proverò di nuovo vergogna!</obsp>
+	<ocsp emotion='Crying'>È normale non sapere una risposta, puoi sempre chiedere un aiuto all'insegnante!</ocsp>
+</story>

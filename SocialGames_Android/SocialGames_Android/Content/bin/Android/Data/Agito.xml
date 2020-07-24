@@ -1,0 +1,33 @@
+<!-- sample story -->
+<story name='Agito'>
+	<!-- title = Titolo della storia -->
+	<!-- fprompt = Primo prompt -->
+	<!-- Xfp = Risposta X al first prompt -->
+	<!-- Xfp = Risposta X al first prompt -->
+	
+	<title>Quando mi agito</title>
+	<fprompt emotion='Angry'>A volte succede qualcosa di spiacevole e mi agito. Vorrei urlare e attaccare le persone intorno a me.</fprompt>
+	<fquest>Cosa posso fare in questi casi?</fquest>
+	<afp isCorrect='false'>Urlare</afp>
+	<bfp isCorrect='true'>Fare una piccola passeggiata</bfp>
+	<cfp isCorrect='true'>Fare un lungo respiro</cfp>
+	
+	<!-- Emozioni disponibili: 'Normal','Happy','Angry','Crying' -->
+	<oafp emotion='Angry'>Se urlo le persone non possono capire cosa mi abbia dato fastidio e non possono aiutarmi</oafp>
+	<obfp emotion='Normal'>Bravo! Quando sono agitato posso andare a fare due passi , fare un lungo respiro o bere un pochino di acqua per calmarmi.</obfp>
+	<ocfp emotion='Normal'>Bravo! Quando sono agitato posso andare a fare due passi , fare un lungo respiro o bere un pochino di acqua per calmarmi.</ocfp>
+
+	<!-- sprompt = Secondo prompt -->
+	<!-- Xfp = Risposta X al first prompt -->
+	<!-- oXfp = Cosa mostrare dopo che è stata data la risposta X -->
+
+	<sprompt>Ho provato a calmarmi ma comunque le persone vicine a me non capiscono che cosa mi abbia dato fastidio.</sprompt>
+	<squest>Come posso farmi capire?</squest>
+	<asp isCorrect='false'>Me ne vado via</asp>
+	<bsp isCorrect='false'>Lancio qualcosa</bsp>
+	<csp isCorrect='true'>Spiego a voce cosa provo</csp>
+
+	<oasp emotion='Normal'>Se me ne vado via gli altri non potranno capire cosa mi abbia dato fastidio, ed è importante che lo capiscano!</oasp>
+	<obsp emotion='Angry'>Arrabbiarmi o lanciare gli oggetti non si fa! Le altre persone non potranno capire cosa mi abbia dato fastidio e si arrabbieranno.</obsp>
+	<ocsp emotion='Happy'>Esatto! Bisogna dire "Scusa, sono arrabbiato" e spiegare perché usando le parole, affinché tutti capiscano e possano aiutarti.</ocsp>
+</story>

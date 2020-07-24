@@ -1,0 +1,24 @@
+<story name=''>
+	
+	<title>Rumori forti</title>
+	<fprompt emotion='Angry'>Può capitare che un compagno possa urlare o fare molto rumore. È così fastidioso!</fprompt>
+	<fquest>Ma se succede, posso:</fquest>
+	<afp isCorrect='false'>Arrabbiarmi con lui</afp>
+	<bfp isCorrect='false'>Fare rumore anche io</bfp>
+	<cfp isCorrect='true'>Chiedere di fare silenzio</cfp>
+	
+	<!-- Emozioni disponibili: 'Normal','Happy','Angry','Crying' -->
+	<oafp emotion='Angry'>Può capitare a tutti di essere rumorosi, bisogna essere comunque gentili!</oafp>
+	<obfp emotion='Angry'>Il tuo compagno che fa rumore non capirà che ti sta dando fastidio, e inoltre disturberei anche io!</obfp>
+	<ocfp emotion='Happy'>Bravo! Se chiedi gentilmente "Puoi fare più piano?" il tuo compagno capirà che sta disturbando.</ocfp>
+
+	<sprompt>A volte però anche se chiedo gentilmente di fare meno rumore non smette comunque di farne...</sprompt>
+	<squest>... allora posso:</squest>
+	<asp isCorrect='true'>Calmarmi e ignorarlo</asp>
+	<bsp isCorrect='false'>Spingere il mio compagno</bsp>
+	<csp isCorrect='true'>Allontanarmi</csp>
+
+	<oasp emotion='Happy'>Bravo! Puoi anche cercare di capire perché urla ed aiutarlo se avesse bisogno di aiuto.</oasp>
+	<obsp emotion='Angry'>Bisogna essere pazienti anche quando qualcuno ci fa innervosire, così loro saranno gentili con me!</obsp>
+	<ocsp emotion='Happy'>Bravo! Puoi anche cercare di capire perché urla ed aiutarlo se avesse bisogno di aiuto.</ocsp>
+</story>

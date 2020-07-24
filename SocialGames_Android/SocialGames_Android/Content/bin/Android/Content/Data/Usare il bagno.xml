@@ -1,0 +1,24 @@
+<!-- sample story -->
+<story name='Usare il bagno'>
+	
+	<title>Usare il bagno</title>
+	<fprompt>A volte capita di dover usare il bagno anche se non si è a casa. Usare il bagno è una cosa privata!</fprompt>
+	<fquest>Infatti appena entrato devo ricordarmi di:</fquest>
+	<afp isCorrect='false'>Sbottonare i pantaloni</afp>
+	<bfp isCorrect='true'>Chiudere la porta</bfp>
+	<cfp isCorrect='false'>Giocare con l'acqua</cfp>
+
+	<oafp emotion='Normal'>Usare il bagno è una cosa privata! Se qualcuno mi vedesse sarebbe molto imbarazzato e dispiaciuto.</oafp>
+	<obfp emotion='Happy'>Giusto! Se sai come usarla puoi anche chiudere la porta a chiave per essere sicuro che gli estranei non possano entrare.</obfp>
+	<ocfp emotion='Normal'>Ci possono essere anche altre persone che aspettano per usare il bagno: è meglio essere a casa per giocare con l'acqua!</ocfp>
+
+	<sprompt>Una volta che sono dentro e ho chiuso la porta, potrebbe capitare che qualcuno arrivato dopo bussi alla porta.</sprompt>
+	<squest>Se capitasse dovrei:</squest>
+	<asp isCorrect='true'>Rispondere: "Occupato!"</asp>
+	<bsp isCorrect='false'>Non rispondere</bsp>
+	<csp isCorrect='false'>Aprire la porta</csp>
+
+	<oasp emotion='Happy'>Bravo! Se dici bene "Occupato!" ad alta voce chi sta fuori capirà che dovrà aspettare che tu abbia finito!</oasp>
+	<obsp emotion='Normal'>Se non rispondi la persona fuori può pensare che non ci sia nessuno nel bagno e potrà provare ad entrare: usare il bagno è una cosa privata e non deve vederti uno sconosciuto!</obsp>
+	<ocsp emotion='Normal'>Se devi ancora utilizzare il bagno, non aprire la porta: usare il bagno è una cosa privata e non deve vederti uno sconosciuto!</ocsp>
+</story>

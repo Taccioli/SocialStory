@@ -1,0 +1,2 @@
+android.app.Application
+SocialGames_Android.SocialGames_Android

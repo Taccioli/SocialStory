@@ -1,0 +1,25 @@
+<!-- sample story -->
+<story name='Coprirsi la bocca'>
+	
+	<title>Coprirsi la bocca</title>
+	<fprompt emotion='Ill'>Spesso succede che senta il bisogno di tossire o starnutire all'improvviso, è una cosa proprio fastidiosa!</fprompt>
+	<fquest>E quando mi capita mi ricordo di:</fquest>
+	<afp isCorrect='true'>Coprire la bocca con una mano</afp>
+	<bfp isCorrect='false'>Fare molto rumore</bfp>
+	<cfp isCorrect='true'>Coprire la bocca con il braccio</cfp>
+	
+	<!-- Emozioni disponibili: 'Normal','Happy','Angry','Crying' -->
+	<oafp emotion='Happy'>Bravo! É molto importante coprire la bocca e il naso con le mani o con il braccio: se non lo faccio potrei attaccare le malattie agli altri!</oafp>
+	<obfp emotion='Angry'>A volte può capitare di fare molto rumore e non c'è da vergognarsi: l'importante è non farlo vicino a qualcuno!</obfp>
+	<ocfp emotion='Happy'>Bravo! É molto importante coprire la bocca e il naso con le mani o con il braccio: se non lo faccio potrei attaccare le malattie agli altri!</ocfp>
+
+	<sprompt>Se mi copro la bocca con una mano o se mi sono soffiato il naso con un fazzolettino..</sprompt>
+	<squest>.. è importante che poi: </squest>
+	<asp isCorrect='false'>Tocchi una persona vicino a me</asp>
+	<bsp isCorrect='true'>Mi lavo le mani</bsp>
+	<csp isCorrect='false'>Tocchi qualcosa vicino a me</csp>
+
+	<oasp emotion='Ill'>Se si starnutisce o tossisce sulle mani, queste possono avere su di esse virus e batteri, che attaccano le malattie ad altre persone: mi devo ricordare di non toccare niente!</oasp>
+	<obsp emotion='Happy'>Esatto! Lavarsi bene le mani con acqua e sapone uccide batteri e virus che possono attaccare le malattie agli altri!</obsp>
+	<ocsp emotion='Ill'>Se si starnutisce o tossisce sulle mani, queste possono avere su di esse virus e batteri, che attaccano le malattie ad altre persone: mi devo ricordare di non toccare niente!</ocsp>
+</story>
