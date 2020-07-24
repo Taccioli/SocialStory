@@ -1,6 +1,7 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Input.Touch;
 
 namespace SocialGames_Android
 {
@@ -12,15 +13,27 @@ namespace SocialGames_Android
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+        private State currentState;
+        private State nextState;
+
+        private Effect effect;
+        
+
+        // Build a default font for the game
+        public SpriteFont DialogFont { get; private set; }
+
+        // Gestione keyboard
+        public KeyboardState KeyState { get; private set; }
+        public KeyboardState PreviousKeyState { get; private set; }
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
 
             graphics.IsFullScreen = true;
-            graphics.PreferredBackBufferWidth = 800;
-            graphics.PreferredBackBufferHeight = 480;
             graphics.SupportedOrientations = DisplayOrientation.LandscapeLeft | DisplayOrientation.LandscapeRight;
+            graphics.ApplyChanges();
         }
 
         /// <summary>
@@ -34,6 +47,11 @@ namespace SocialGames_Android
             // TODO: Add your initialization logic here
 
             base.Initialize();
+
+            Const.scaleMatrix = Matrix.CreateScale(
+                        GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width / 1920f,
+                        GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height / 1080f,
+                        1f);
         }
 
         /// <summary>
@@ -44,7 +62,10 @@ namespace SocialGames_Android
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
+            currentState = new MenuState(this, graphics.GraphicsDevice, Content);
+            GameData.timer = new Timer(600, this, graphics.GraphicsDevice, Content);
 
+            effect = Content.Load<Effect>("Desaturation");
             // TODO: use this.Content to load your game content here
         }
 
@@ -64,10 +85,22 @@ namespace SocialGames_Android
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
-                Exit();
+            GameData.timeSpan -= gameTime.ElapsedGameTime;
+
+            // Update input states
+            PreviousKeyState = KeyState;
+            KeyState = Keyboard.GetState();
 
             // TODO: Add your update logic here
+            if (nextState != null)
+            {
+                currentState = nextState;
+                nextState = null;
+            }
+            currentState.Update(gameTime);
+            currentState.PostUpdate(gameTime);
+
+            GameData.timer.Update(gameTime);
 
             base.Update(gameTime);
         }
@@ -78,11 +111,27 @@ namespace SocialGames_Android
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
+            if (GameData.isSaturated)
+                spriteBatch.Begin(effect: effect, transformMatrix: Const.scaleMatrix);
+            else
+                spriteBatch.Begin(transformMatrix: Const.scaleMatrix);
+
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            // TODO: Add your drawing code here
-
+            currentState.Draw(gameTime, spriteBatch);
             base.Draw(gameTime);
+
+            spriteBatch.End();
+        }
+
+        public void Quit()
+        {
+            this.Exit();
+        }
+
+        public void ChangeState(State state)
+        {
+            nextState = state;
         }
     }
 }

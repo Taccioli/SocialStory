@@ -9,7 +9,6 @@ using Microsoft.Xna.Framework.Graphics;
 using System.Xml;
 using Microsoft.Xna.Framework.Input;
 using System.Drawing;
-using System.Windows.Media;
 
 namespace SocialGames_Android
 {
@@ -84,8 +83,8 @@ namespace SocialGames_Android
             buttonHoverTexture = content.Load<Texture2D>("GameState/buttonHoverTexture");
             homeButText = content.Load<Texture2D>("home");
             textFont = content.Load<SpriteFont>("GameState/CustomFont");
-            buttonFont = content.Load<SpriteFont>("GameState/buttonFont");
-            titleFont = content.Load<SpriteFont>("GameState/titleFont");
+            buttonFont = content.Load<SpriteFont>("GameState/ButtonFont");
+            titleFont = content.Load<SpriteFont>("GameState/TitleFont");
             prompt = content.Load<Texture2D>("GameState/prompt");
             story = content.Load<Texture2D>("GameState/story");
             #endregion
@@ -126,14 +125,6 @@ namespace SocialGames_Android
             butHoCapPos = storyPos + new Vector2(story.Width / 2 - buttonTexture.Width / 2, 280);
             homeButPos = new Vector2(Const.MARGINHOMEBTN, Const.MARGINHOMEBTN);
             avatarPos = new Vector2(0, 0); // Viene gestita la sua posizione nel metodo Update()
-            #endregion
-
-            #region Inizializzazione altri elementi
-
-            reward = new Reward(content);
-            reward.UpdateReward(0);
-            isPromptActive = true;
-            
             #endregion
 
             #region first Buttons
@@ -223,6 +214,17 @@ namespace SocialGames_Android
                         capitoButton,
                         homeButton
                      };
+            #endregion
+
+            #region Inizializzazione altri elementi
+
+            reward = new Reward(content);
+            reward.UpdateReward(0);
+            isPromptActive = true;
+
+            foreach (PlayButton button in secondButtons)
+                button.isActive = false;
+
             #endregion
         }
 
@@ -340,6 +342,8 @@ namespace SocialGames_Android
                     state = PrimoPrompt;
                     foreach (PlayButton button in firstButtons)
                         button.isActive = true;
+                    foreach (PlayButton button in secondButtons)
+                        button.isActive = false;
                 }
             }
             else if (state == SecondaRisposta)
@@ -351,6 +355,8 @@ namespace SocialGames_Android
                     state = SecondoPrompt;
                     foreach (PlayButton button in secondButtons)
                         button.isActive = true;
+                    foreach (PlayButton button in firstButtons)
+                        button.isActive = false;
                 }
             }
             correctAnswer = false;
@@ -365,13 +371,13 @@ namespace SocialGames_Android
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(background, backPos, Color.White);
-            spriteBatch.Draw(avatar, avatarPos, Color.White);
-            spriteBatch.Draw(story, storyPos, Color.White);
+            spriteBatch.Draw(background, backPos, Microsoft.Xna.Framework.Color.White);
+            spriteBatch.Draw(avatar, avatarPos, Microsoft.Xna.Framework.Color.White);
+            spriteBatch.Draw(story, storyPos, Microsoft.Xna.Framework.Color.White);
             
             if (isPromptActive)
             {
-                spriteBatch.Draw(prompt, promptPos, Color.White);
+                spriteBatch.Draw(prompt, promptPos, Microsoft.Xna.Framework.Color.White);
                 foreach (var component in buttons)
                     component.Draw(gameTime, spriteBatch);
             }
@@ -382,13 +388,13 @@ namespace SocialGames_Android
             homeButton.Draw(gameTime, spriteBatch);
 
             spriteBatch.End();
-            spriteBatch.Begin();
+            spriteBatch.Begin(transformMatrix: Const.scaleMatrix);
 
-            spriteBatch.DrawString(textFont, GameData.title, titleTextPos, Color.Black);
-            spriteBatch.DrawString(textFont, promptString, storyTextPos, Color.Black,
-                            0.0f, new Vector2(0, 0), AdaptiveText(textFont, promptString, new Rectangle(0, 0, story.Width - 10, story.Height - 100)), new SpriteEffects(), 0.0f);
+            spriteBatch.DrawString(textFont, GameData.title, titleTextPos, Microsoft.Xna.Framework.Color.Black);
+            spriteBatch.DrawString(textFont, promptString, storyTextPos, Microsoft.Xna.Framework.Color.Black,
+                            0.0f, new Vector2(0, 0), AdaptiveText(textFont, promptString, new Microsoft.Xna.Framework.Rectangle(0, 0, story.Width - 10, story.Height - 100)), new SpriteEffects(), 0.0f);
             if (isPromptActive)
-                spriteBatch.DrawString(textFont, questString, questTextPos, Color.Black);
+                spriteBatch.DrawString(textFont, questString, questTextPos, Microsoft.Xna.Framework.Color.Black);
         }
 
         public override void Update(GameTime gameTime)
@@ -439,7 +445,7 @@ namespace SocialGames_Android
         void Read(string nameOfFile)
         {
             //XmlTextReader reader = new XmlTextReader("Gioco.xml");
-            XmlTextReader reader = new XmlTextReader(nameOfFile);
+            XmlTextReader reader = new XmlTextReader(TitleContainer.OpenStream(@"Content/Data/"+nameOfFile));
 
             while (reader.Read())
             {
@@ -546,14 +552,14 @@ namespace SocialGames_Android
             }
             if (!GameData.isCapital)
             {
-                GameData.firstPrompt = WrapText(textFont, GameData.firstPrompt, (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.firstPrompt, new Rectangle(0, 0, story.Width - 10, story.Height - 100))));
-                GameData.secondPrompt = WrapText(textFont, GameData.secondPrompt, (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.secondPrompt, new Rectangle(0, 0, story.Width - 10, story.Height - 100))));
-                GameData.afp.answer = WrapText(textFont, GameData.afp.answer, (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.afp.answer, new Rectangle(0, 0, story.Width - 10, story.Height - 100))));
-                GameData.bfp.answer = WrapText(textFont, GameData.bfp.answer, (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.bfp.answer, new Rectangle(0, 0, story.Width - 10, story.Height - 100))));
-                GameData.cfp.answer = WrapText(textFont, GameData.cfp.answer, (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.cfp.answer, new Rectangle(0, 0, story.Width - 10, story.Height - 100))));
-                GameData.asp.answer = WrapText(textFont, GameData.asp.answer, (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.asp.answer, new Rectangle(0, 0, story.Width - 10, story.Height - 100))));
-                GameData.bsp.answer = WrapText(textFont, GameData.bsp.answer, (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.bsp.answer, new Rectangle(0, 0, story.Width - 10, story.Height - 100))));
-                GameData.csp.answer = WrapText(textFont, GameData.csp.answer, (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.csp.answer, new Rectangle(0, 0, story.Width - 10, story.Height - 100))));
+                GameData.firstPrompt = WrapText(textFont, GameData.firstPrompt, (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.firstPrompt, new Microsoft.Xna.Framework.Rectangle(0, 0, story.Width - 10, story.Height - 100))));
+                GameData.secondPrompt = WrapText(textFont, GameData.secondPrompt, (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.secondPrompt, new Microsoft.Xna.Framework.Rectangle(0, 0, story.Width - 10, story.Height - 100))));
+                GameData.afp.answer = WrapText(textFont, GameData.afp.answer, (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.afp.answer, new Microsoft.Xna.Framework.Rectangle(0, 0, story.Width - 10, story.Height - 100))));
+                GameData.bfp.answer = WrapText(textFont, GameData.bfp.answer, (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.bfp.answer, new Microsoft.Xna.Framework.Rectangle(0, 0, story.Width - 10, story.Height - 100))));
+                GameData.cfp.answer = WrapText(textFont, GameData.cfp.answer, (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.cfp.answer, new Microsoft.Xna.Framework.Rectangle(0, 0, story.Width - 10, story.Height - 100))));
+                GameData.asp.answer = WrapText(textFont, GameData.asp.answer, (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.asp.answer, new Microsoft.Xna.Framework.Rectangle(0, 0, story.Width - 10, story.Height - 100))));
+                GameData.bsp.answer = WrapText(textFont, GameData.bsp.answer, (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.bsp.answer, new Microsoft.Xna.Framework.Rectangle(0, 0, story.Width - 10, story.Height - 100))));
+                GameData.csp.answer = WrapText(textFont, GameData.csp.answer, (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.csp.answer, new Microsoft.Xna.Framework.Rectangle(0, 0, story.Width - 10, story.Height - 100))));
             }
             else
             {
@@ -566,19 +572,19 @@ namespace SocialGames_Android
                 GameData.asp.phrase = GameData.asp.phrase.ToUpper();
                 GameData.bsp.phrase = GameData.bsp.phrase.ToUpper();
                 GameData.csp.phrase = GameData.csp.phrase.ToUpper();
-                GameData.firstPrompt = WrapText(textFont, GameData.firstPrompt.ToUpper(), (story.Width - 10) * (1/AdaptiveText(textFont, GameData.firstPrompt, new Rectangle(0, 0, story.Width - 10, story.Height - 100))));
-                GameData.secondPrompt = WrapText(textFont, GameData.secondPrompt.ToUpper(), (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.secondPrompt, new Rectangle(0, 0, story.Width - 10, story.Height - 100))));
-                GameData.afp.answer = WrapText(textFont, GameData.afp.answer.ToUpper(), (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.afp.answer, new Rectangle(0, 0, story.Width - 10, story.Height - 100))));
-                GameData.bfp.answer = WrapText(textFont, GameData.bfp.answer.ToUpper(), (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.bfp.answer, new Rectangle(0, 0, story.Width - 10, story.Height - 100))));
-                GameData.cfp.answer = WrapText(textFont, GameData.cfp.answer.ToUpper(), (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.cfp.answer, new Rectangle(0, 0, story.Width - 10, story.Height - 100))));
-                GameData.asp.answer = WrapText(textFont, GameData.asp.answer.ToUpper(), (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.asp.answer, new Rectangle(0, 0, story.Width - 10, story.Height - 100))));
-                GameData.bsp.answer = WrapText(textFont, GameData.bsp.answer.ToUpper(), (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.bsp.answer, new Rectangle(0, 0, story.Width - 10, story.Height - 100))));
-                GameData.csp.answer = WrapText(textFont, GameData.csp.answer.ToUpper(), (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.csp.answer, new Rectangle(0, 0, story.Width - 10, story.Height - 100))));
+                GameData.firstPrompt = WrapText(textFont, GameData.firstPrompt.ToUpper(), (story.Width - 10) * (1/AdaptiveText(textFont, GameData.firstPrompt, new Microsoft.Xna.Framework.Rectangle(0, 0, story.Width - 10, story.Height - 100))));
+                GameData.secondPrompt = WrapText(textFont, GameData.secondPrompt.ToUpper(), (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.secondPrompt, new Microsoft.Xna.Framework.Rectangle(0, 0, story.Width - 10, story.Height - 100))));
+                GameData.afp.answer = WrapText(textFont, GameData.afp.answer.ToUpper(), (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.afp.answer, new Microsoft.Xna.Framework.Rectangle(0, 0, story.Width - 10, story.Height - 100))));
+                GameData.bfp.answer = WrapText(textFont, GameData.bfp.answer.ToUpper(), (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.bfp.answer, new Microsoft.Xna.Framework.Rectangle(0, 0, story.Width - 10, story.Height - 100))));
+                GameData.cfp.answer = WrapText(textFont, GameData.cfp.answer.ToUpper(), (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.cfp.answer, new Microsoft.Xna.Framework.Rectangle(0, 0, story.Width - 10, story.Height - 100))));
+                GameData.asp.answer = WrapText(textFont, GameData.asp.answer.ToUpper(), (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.asp.answer, new Microsoft.Xna.Framework.Rectangle(0, 0, story.Width - 10, story.Height - 100))));
+                GameData.bsp.answer = WrapText(textFont, GameData.bsp.answer.ToUpper(), (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.bsp.answer, new Microsoft.Xna.Framework.Rectangle(0, 0, story.Width - 10, story.Height - 100))));
+                GameData.csp.answer = WrapText(textFont, GameData.csp.answer.ToUpper(), (story.Width - 10) * (1 / AdaptiveText(textFont, GameData.csp.answer, new Microsoft.Xna.Framework.Rectangle(0, 0, story.Width - 10, story.Height - 100))));
             }
         }
 
         // La funzione mi regola la dimensione della scritta di modo che non ecceda la dimensione del rettangolo
-        public float AdaptiveText(SpriteFont spriteFont, string text, Rectangle rectangle)
+        public float AdaptiveText(SpriteFont spriteFont, string text, Microsoft.Xna.Framework.Rectangle rectangle)
         {
             // Tengo in considerazione anche lo spazio che mi occuperanno le righe
             //float approximateNumberOfLine = spriteFont.MeasureString(text).X/(rectangle.Width);
@@ -602,10 +608,10 @@ namespace SocialGames_Android
             string[] words = text.Split(' ');
             StringBuilder sb = new StringBuilder();
             float lineWidth = 0f;
-            float spaceWidth = spriteFont.MeasureString(" ").X * AdaptiveText(spriteFont, text, new Rectangle(0, 0, 490, 225));
+            float spaceWidth = spriteFont.MeasureString(" ").X * AdaptiveText(spriteFont, text, new Microsoft.Xna.Framework.Rectangle(0, 0, 490, 225));
 
-            if(AdaptiveText(spriteFont, text, new Rectangle(0, 0, 590, 200)) < 1)
-                relativeLineWidth = maxLineWidth / AdaptiveText(spriteFont, text, new Rectangle(0, 0, 490, 225));
+            if(AdaptiveText(spriteFont, text, new Microsoft.Xna.Framework.Rectangle(0, 0, 590, 200)) < 1)
+                relativeLineWidth = maxLineWidth / AdaptiveText(spriteFont, text, new Microsoft.Xna.Framework.Rectangle(0, 0, 490, 225));
 
             foreach (string word in words)
             {

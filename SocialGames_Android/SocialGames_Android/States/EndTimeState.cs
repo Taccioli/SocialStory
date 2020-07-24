@@ -74,7 +74,7 @@ namespace SocialGames_Android
             spriteBatch.Draw(story, promptPos, Color.White);
             exitButton.Draw(gameTime, spriteBatch);
             spriteBatch.End();
-            spriteBatch.Begin();
+            spriteBatch.Begin(transformMatrix: Const.scaleMatrix);
             spriteBatch.DrawString(textFont, message, textPromptPos, Color.Black);
             spriteBatch.DrawString(textFont, title, titlePromptPos, Color.Black);
         }

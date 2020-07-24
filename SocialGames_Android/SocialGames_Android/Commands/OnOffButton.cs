@@ -13,6 +13,7 @@ using Android.Widget;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Input.Touch;
 
 namespace SocialGames_Android
 {
@@ -21,8 +22,8 @@ namespace SocialGames_Android
         #region Fields
 
         private Texture2D onTexture, offTexture, onHover, offHover, selectedTexture, selectedHover;
-        private MouseState currentMouse, previousMouse;
-        private bool isHovering;
+        private TouchCollection currentMouse, previousMouse;
+        private bool isHovering, wasHovering;
         #endregion
 
         #region Properties
@@ -47,7 +48,7 @@ namespace SocialGames_Android
             this.offTexture = textureOFF;
             this.onHover = textureONHover;
             this.offHover = textureOFFHover;
-            if (variable)
+            if(variable)
             {
                 selectedTexture = onTexture;
                 selectedHover = onHover;
@@ -67,33 +68,38 @@ namespace SocialGames_Android
                 spriteBatch.Draw(selectedTexture, Rectangle, Color.White);
         }
 
+        private bool IsHovering()
+        {
+            if (TouchManager(Rectangle))
+            {
+                return true;
+            }
+            return false;
+        }
+
         public override void Update(GameTime gameTime)
         {
+            isHovering = IsHovering();
             previousMouse = currentMouse;
-            currentMouse = Mouse.GetState();
-            isHovering = false;
+            currentMouse = TouchPanel.GetState();
 
-            var mouseRectangle = new Rectangle(currentMouse.X, currentMouse.Y, 1, 1);
-            if (mouseRectangle.Intersects(Rectangle))
+            if (wasHovering && previousMouse.Count == 1 && currentMouse.Count == 0)
             {
-                isHovering = true;
-
-                if (currentMouse.LeftButton == ButtonState.Released && previousMouse.LeftButton == ButtonState.Pressed)
+                if (selectedTexture == onTexture)
                 {
-                    if (selectedTexture == onTexture)
-                    {
-                        selectedTexture = offTexture;
-                        selectedHover = offHover;
-                    }
-                    else
-                    {
-                        selectedTexture = onTexture;
-                        selectedHover = onHover;
-                    }
-
-                    Click?.Invoke(this, new EventArgs());
+                    selectedTexture = offTexture;
+                    selectedHover = offHover;
                 }
+                else
+                {
+                    selectedTexture = onTexture;
+                    selectedHover = onHover;
+                }
+
+                Click?.Invoke(this, new EventArgs());
             }
+
+            wasHovering = isHovering;
         }
     }
 }

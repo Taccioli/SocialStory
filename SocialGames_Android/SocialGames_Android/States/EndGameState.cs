@@ -30,9 +30,9 @@ namespace SocialGames_Android
             background = content.Load<Texture2D>("CompletedBackground/" + GameData.background);
             story = content.Load<Texture2D>("EndGameState/StoriaCompletata");
             menuButTex = content.Load<Texture2D>("EndGameState/MenuButton");
-            menuButHoverTex = content.Load<Texture2D>("EndgameState/MenuButtonHover");
+            menuButHoverTex = content.Load<Texture2D>("EndGameState/MenuButtonHover");
             changeStoryButTex = content.Load<Texture2D>("EndGameState/ContinuaButton");
-            changeStoryButHoverTex = content.Load<Texture2D>("EndgameState/ContinuaButtonHover");
+            changeStoryButHoverTex = content.Load<Texture2D>("EndGameState/ContinuaButtonHover");
             textFont = content.Load<SpriteFont>("GameState/CustomFont");
 
             backPos = new Vector2(0, 0);
@@ -80,7 +80,7 @@ namespace SocialGames_Android
             changeStoryButton.Draw(gameTime, spriteBatch);
 
             spriteBatch.End();
-            spriteBatch.Begin();
+            spriteBatch.Begin(transformMatrix: Const.scaleMatrix);
 
             spriteBatch.DrawString(textFont, message, textPromptPos, Color.Black);
         }

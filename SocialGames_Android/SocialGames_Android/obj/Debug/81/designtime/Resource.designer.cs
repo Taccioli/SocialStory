@@ -15,7 +15,7 @@ namespace SocialGames_Android
 {
 	
 	
-	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "1.0.0.0")]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "1.0.0.0")]
 	public partial class Resource
 	{
 		
@@ -28,27 +28,14 @@ namespace SocialGames_Android
 		{
 		}
 		
-		public partial class Attribute
-		{
-			
-			static Attribute()
-			{
-				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
-			}
-			
-			private Attribute()
-			{
-			}
-		}
-		
 		public partial class Drawable
 		{
 			
-			// aapt resource value: 0x7F010000
-			public const int Icon = 2130771968;
+			// aapt resource value: 0x7F010002
+			public const int Icon = 2130771970;
 			
-			// aapt resource value: 0x7F010001
-			public const int Splash = 2130771969;
+			// aapt resource value: 0x7F010003
+			public const int Splash = 2130771971;
 			
 			static Drawable()
 			{
@@ -63,11 +50,11 @@ namespace SocialGames_Android
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7F020000
-			public const int ApplicationName = 2130837504;
+			// aapt resource value: 0x7F020003
+			public const int ApplicationName = 2130837507;
 			
-			// aapt resource value: 0x7F020001
-			public const int Hello = 2130837505;
+			// aapt resource value: 0x7F020002
+			public const int Hello = 2130837506;
 			
 			static String()
 			{
@@ -82,8 +69,8 @@ namespace SocialGames_Android
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7F030000
-			public const int Theme_Splash = 2130903040;
+			// aapt resource value: 0x7F030002
+			public const int Theme_Splash = 2130903042;
 			
 			static Style()
 			{

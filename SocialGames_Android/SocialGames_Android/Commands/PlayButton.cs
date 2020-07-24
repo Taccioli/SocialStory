@@ -13,6 +13,7 @@ using Android.Widget;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Input.Touch;
 
 namespace SocialGames_Android
 {
@@ -20,10 +21,9 @@ namespace SocialGames_Android
     {
         #region Fields
 
-        private MouseState currentMouse;
+        private TouchCollection currentMouse;
         private SpriteFont font;
-        private bool isHovering;
-        private MouseState previousMouse;
+        private bool isHovering, wasHovering;
         private Texture2D texture;
         private Texture2D hoverTexture;
         private bool textInside;
@@ -54,7 +54,7 @@ namespace SocialGames_Android
         #region Methods
 
         // Per buttons con il testo //
-        public PlayButton(Texture2D texture, Texture2D hoverTexture, SpriteFont font, ContentManager content, bool textInside, bool isActive)
+        public PlayButton(Texture2D texture, Texture2D hoverTexture, SpriteFont font, Microsoft.Xna.Framework.Content.ContentManager content, bool textInside, bool isActive)
         {
             this.texture = texture;
             this.hoverTexture = hoverTexture;
@@ -99,30 +99,34 @@ namespace SocialGames_Android
             }
         }
 
+        private bool IsHovering()
+        {
+            if (TouchManager(Rectangle))
+            {
+                return true;
+            }
+            return false;
+        }
+
         public override void Update(GameTime gameTime)
         {
-            previousMouse = currentMouse;
-            currentMouse = Mouse.GetState();
+            isHovering = IsHovering();
+            currentMouse = TouchPanel.GetState();
 
-            var mouseRectangle = new Rectangle(currentMouse.X, currentMouse.Y, 1, 1);
-
-            isHovering = false;
-
-            if (mouseRectangle.Intersects(Rectangle) && isActive)
+            if (wasHovering)
             {
-                isHovering = true;
-
-                if (currentMouse.LeftButton == ButtonState.Released && previousMouse.LeftButton == ButtonState.Pressed)
+                if (currentMouse.Count == 0 && isActive)
                 {
                     Click?.Invoke(this, new EventArgs());
                 }
             }
+            wasHovering = isHovering;
         }
 
         static public void DrawString(SpriteBatch spriteBatch, SpriteFont font, string strToDraw, Rectangle boundaries)
         {
             spriteBatch.End();
-            spriteBatch.Begin();
+            spriteBatch.Begin(transformMatrix: Const.scaleMatrix);
             Vector2 size = font.MeasureString(strToDraw);
 
 
@@ -153,9 +157,9 @@ namespace SocialGames_Android
             spriteBatch.End();
 
             if (GameData.isSaturated)
-                spriteBatch.Begin(effect: PlayButton.effect);
+                spriteBatch.Begin(effect: PlayButton.effect, transformMatrix: Const.scaleMatrix);
             else
-                spriteBatch.Begin();
+                spriteBatch.Begin(transformMatrix: Const.scaleMatrix);
         }
         #endregion
     }

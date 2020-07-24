@@ -11,7 +11,7 @@ namespace SocialGames_Android
         , Theme = "@style/Theme.Splash"
         , AlwaysRetainTaskState = true
         , LaunchMode = Android.Content.PM.LaunchMode.SingleInstance
-        , ScreenOrientation = ScreenOrientation.FullUser
+        , ScreenOrientation = ScreenOrientation.Landscape
         , ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.Keyboard | ConfigChanges.KeyboardHidden | ConfigChanges.ScreenSize | ConfigChanges.ScreenLayout)]
     public class Activity1 : Microsoft.Xna.Framework.AndroidGameActivity
     {
@@ -21,6 +21,26 @@ namespace SocialGames_Android
             var g = new Game1();
             SetContentView((View)g.Services.GetService(typeof(View)));
             g.Run();
+
+            View vw = (View)g.Services.GetService(typeof(View));
+            vw.SystemUiVisibility = (StatusBarVisibility)SystemUiFlags.HideNavigation | (StatusBarVisibility)SystemUiFlags.ImmersiveSticky;
+            vw.SetOnSystemUiVisibilityChangeListener(new MyUiVisibilityChangeListener(vw));
+        }
+
+        private class MyUiVisibilityChangeListener : Java.Lang.Object, View.IOnSystemUiVisibilityChangeListener
+        {
+            View targetView;
+            public MyUiVisibilityChangeListener(View v)
+            {
+                targetView = v;
+            }
+            public void OnSystemUiVisibilityChange(StatusBarVisibility v)
+            {
+                if (targetView.SystemUiVisibility != ((StatusBarVisibility)SystemUiFlags.HideNavigation | (StatusBarVisibility)SystemUiFlags.Immersive))
+                {
+                    targetView.SystemUiVisibility = (StatusBarVisibility)SystemUiFlags.HideNavigation | (StatusBarVisibility)SystemUiFlags.ImmersiveSticky;
+                }
+            }
         }
     }
 }

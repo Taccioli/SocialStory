@@ -187,7 +187,7 @@ namespace SocialGames_Android
 
             spriteBatch.End();
 
-            spriteBatch.Begin();
+            spriteBatch.Begin(transformMatrix: Const.scaleMatrix);
 
             //spriteBatch.DrawString(font, settings, settingsPos, Color.Black);
             spriteBatch.DrawString(font, capitalLabel, capitalPos, Color.Black);

@@ -13,6 +13,7 @@ using Android.Widget;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Input.Touch;
 
 namespace SocialGames_Android
 {
@@ -21,8 +22,9 @@ namespace SocialGames_Android
         #region Fields
 
         private Texture2D texture, hoverTexture, selectedTexture;
-        private MouseState currentMouse;
-        private bool isHovering;
+        private TouchCollection currentMouse;
+        private bool isHovering, wasHovering;
+        private Rectangle button;
 
         #endregion
 
@@ -32,7 +34,7 @@ namespace SocialGames_Android
         public bool isSelected { get; set; }
         public bool Clicked { get; private set; }
         public Vector2 Position { get; set; }
-
+        
         public Rectangle Rectangle
         {
             get
@@ -48,6 +50,16 @@ namespace SocialGames_Android
             this.texture = texture;
             this.hoverTexture = hoverTexture;
             this.selectedTexture = selectedTexture;
+            button = Rectangle;
+        }
+
+        private bool IsHovering()
+        {
+            if (TouchManager(Rectangle))
+            {
+                return true;
+            }
+            return false;
         }
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
@@ -62,21 +74,14 @@ namespace SocialGames_Android
 
         public override void Update(GameTime gameTime)
         {
-            currentMouse = Mouse.GetState();
+            isHovering = IsHovering();
+            currentMouse = TouchPanel.GetState();
 
-            var mouseRectangle = new Rectangle(currentMouse.X, currentMouse.Y, 1, 1);
-
-            isHovering = false;
-
-            if (mouseRectangle.Intersects(Rectangle))
+            if (wasHovering && currentMouse.Count==0 && !isSelected)
             {
-                isHovering = true;
-
-                if (currentMouse.LeftButton == ButtonState.Pressed && !isSelected)
-                {
-                    Click?.Invoke(this, new EventArgs());
-                }
+                Click?.Invoke(this, new EventArgs());
             }
+            wasHovering = isHovering;
         }
     }
 }

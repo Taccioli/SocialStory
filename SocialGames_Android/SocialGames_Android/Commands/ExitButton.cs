@@ -13,6 +13,7 @@ using Android.Widget;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Input.Touch;
 
 namespace SocialGames_Android
 {
@@ -21,8 +22,8 @@ namespace SocialGames_Android
         #region Fields
 
         private Texture2D texture, hoverTexture;
-        private MouseState currentMouse, previousMouse;
-        private bool isHovering;
+        private TouchCollection currentMouse;
+        private bool isHovering, wasHovering;
 
         #endregion
 
@@ -44,7 +45,6 @@ namespace SocialGames_Android
 
         public ExitButton(Texture2D texture, Texture2D hoverTexture)
         {
-            currentMouse = new MouseState();
             this.texture = texture;
             this.hoverTexture = hoverTexture;
         }
@@ -57,24 +57,24 @@ namespace SocialGames_Android
                 spriteBatch.Draw(hoverTexture, Rectangle, Color.White);
         }
 
+        private bool IsHovering()
+        {
+            if (TouchManager(Rectangle))
+            {
+                return true;
+            }
+            return false;
+        }
+
         public override void Update(GameTime gameTime)
         {
-            previousMouse = currentMouse;
-            currentMouse = Mouse.GetState();
+            isHovering = IsHovering();
+            currentMouse = TouchPanel.GetState();
 
-            var mouseRectangle = new Rectangle(currentMouse.X, currentMouse.Y, 1, 1);
-
-            isHovering = false;
-
-            if (mouseRectangle.Intersects(Rectangle))
-            {
-                isHovering = true;
-
-                if (currentMouse.LeftButton == ButtonState.Released && previousMouse.LeftButton != currentMouse.LeftButton)
-                {
+            if(wasHovering && currentMouse.Count == 0)
                     Click?.Invoke(this, new EventArgs());
-                }
-            }
+
+            wasHovering = isHovering;
         }
     }
 }

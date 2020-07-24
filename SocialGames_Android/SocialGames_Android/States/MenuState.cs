@@ -20,7 +20,7 @@ namespace SocialGames_Android
         {
             background = content.Load<Texture2D>("Park");
             // Texture2D avatar = content.Load<Texture2D>("myAvatar");
-            Texture2D start = content.Load<Texture2D>("start");
+            Texture2D start = content.Load<Texture2D>("START");
             Texture2D selGame = content.Load<Texture2D>("sel_gioco");
             Texture2D settings = content.Load<Texture2D>("settings");
             Texture2D selAvatar = content.Load<Texture2D>("sel_avatar");

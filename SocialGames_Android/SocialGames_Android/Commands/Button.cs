@@ -14,6 +14,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Input.Touch;
 
 namespace SocialGames_Android
 {
@@ -26,18 +27,17 @@ namespace SocialGames_Android
         private Texture2D texture, texture_hover;
         private Color penColour;
         private bool clicked;
-        private MouseState currentMouseInput, previousMouseInput;
+        private TouchCollection currentMouseInput;
         private Vector2 position;
+        private bool wasHovering;
+
         public event EventHandler click;
 
         public bool Clicked { get; private set; }
 
         public bool IsHovering()
         {
-            if (currentMouseInput.Position.X < position.X + texture.Width &&
-                currentMouseInput.Position.X > position.X &&
-                currentMouseInput.Position.Y < position.Y + texture.Height &&
-                currentMouseInput.Position.Y > position.Y)
+            if (TouchManager(new Rectangle((int)position.X, (int)position.Y, texture.Width, texture.Height)))
             {
                 return true;
             }
@@ -72,26 +72,29 @@ namespace SocialGames_Android
 
         public override void Update(GameTime gameTime)
         {
-            previousMouseInput = currentMouseInput;
-            currentMouseInput = Mouse.GetState();
+            currentMouseInput = TouchPanel.GetState();
 
-            if (IsHovering() && previousMouseInput.LeftButton == ButtonState.Released && currentMouseInput.LeftButton == ButtonState.Pressed)
+            if (wasHovering)
             {
-                switch (name)
+                if (currentMouseInput[0].State == TouchLocationState.Released)
                 {
-                    case "start":
-                        game.ChangeState(new GameState(game, graphicsDevice, contentManager));
-                        break;
-                    case "selgame":
-                        game.ChangeState(new GameState(game, graphicsDevice, contentManager));
-                        break;
-                    case "createavatar":
-                        game.ChangeState(new GameState(game, graphicsDevice, contentManager));
-                        break;
-                    default:
-                        break;
+                    switch (name)
+                    {
+                        case "start":
+                            game.ChangeState(new GameState(game, graphicsDevice, contentManager));
+                            break;
+                        case "selgame":
+                            game.ChangeState(new GameState(game, graphicsDevice, contentManager));
+                            break;
+                        case "createavatar":
+                            game.ChangeState(new GameState(game, graphicsDevice, contentManager));
+                            break;
+                        default:
+                            break;
+                    }
                 }
             }
+            wasHovering = IsHovering();
         }
     }
 }

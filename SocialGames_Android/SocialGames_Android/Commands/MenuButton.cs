@@ -14,6 +14,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Input.Touch;
 
 namespace SocialGames_Android
 {
@@ -25,9 +26,12 @@ namespace SocialGames_Android
         private ContentManager contentManager;
         private string name;
         private Texture2D texture, texture_hover;
-        private MouseState currentMouseInput, previousMouseInput;
+        private TouchCollection currentMouseInput;
         private Vector2 position;
+        private bool wasHovering;
+        private Rectangle button;
         public event EventHandler click;
+        private bool isHovering;
         #endregion
 
         public MenuButton(Game1 game, GraphicsDevice graphicsDevice, ContentManager contentManager, string name, Texture2D texture, Texture2D texture_hover, int positionX, int positionY)
@@ -40,14 +44,12 @@ namespace SocialGames_Android
             this.texture_hover = texture_hover;
             position.X = positionX;
             position.Y = positionY;
+            button = new Rectangle((int)position.X, (int)position.Y, texture.Width, texture.Height);
         }
 
         private bool IsHovering()
         {
-            if (currentMouseInput.Position.X < position.X + texture.Width &&
-                currentMouseInput.Position.X > position.X &&
-                currentMouseInput.Position.Y < position.Y + texture.Height &&
-                currentMouseInput.Position.Y > position.Y)
+            if (TouchManager(button))
             {
                 return true;
             }
@@ -59,7 +61,7 @@ namespace SocialGames_Android
             Color colour = Color.White;
             Texture2D current_texture = texture;
 
-            if (IsHovering())
+            if (isHovering)
             {
                 //colour = Color.Gray;
                 current_texture = texture_hover;
@@ -70,12 +72,12 @@ namespace SocialGames_Android
 
         public override void Update(GameTime gameTime)
         {
-            previousMouseInput = currentMouseInput;
-            currentMouseInput = Microsoft.Xna.Framework.Input.Mouse.GetState();
+            isHovering = IsHovering();
+            currentMouseInput = TouchPanel.GetState();
 
-            if (IsHovering() && previousMouseInput.LeftButton == ButtonState.Released && currentMouseInput.LeftButton == ButtonState.Pressed)
+            if (wasHovering)
             {
-                if (GameData.timeSpan < TimeSpan.Zero)
+                if (currentMouseInput.Count == 0)
                 {
                     switch (name)
                     {
@@ -137,6 +139,7 @@ namespace SocialGames_Android
                     }
                 }
             }
+            wasHovering = isHovering;
         }
     }
 }

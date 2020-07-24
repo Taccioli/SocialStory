@@ -1,5 +1,4 @@
-IsIncrementalBuild=false
-AndroidUseAapt2=True
+AndroidUseAapt2=False
 UseSharedRuntime=True
 UseFastDeployment=false
 EnableMultidex=False
@@ -19,10 +18,3 @@ FastDeploymentType=Assemblies
 TargetFramework=v8.1
 ClassParser=
 CodegenTarget=
-AndroidDexTool=d8
-AndroidLinkTool=
-AndroidEnableProfiledAot=
-AndroidInstallAfterBuild=True
-AndroidSessionId=60f42690-a607-45ee-9f20-788ac4cdbbb4
-BuildConfiguration=Debug
-TemplateName=
