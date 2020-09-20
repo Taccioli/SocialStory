@@ -18,27 +18,27 @@ Nel caso in cui si cliccasse su “IMPOSTAZIONI” si aprirebbe il relativo menu
 -	La possibilità di mostrare le scritte del gioco in caratteri maiuscoli o minuscoli, per facilitare la lettura a chi non fosse in grado di leggere le scritte in caratteri minuscoli
 -	La possibilità di utilizzare colori più tenui in tutte le schermate, perché alcune persone affette da disturbo dello spettro autistico possono avere problemi a visualizzare colori troppo accesi
 
-![Fig2](images/Fig1.png?raw=true "Fig2")
+![Fig2](images/Fig2.png?raw=true "Fig2")
 *Figura 2 - Menù impostazioni*
 
 Nel caso in cui si cliccasse il tasto “START” e non fossero ancora stati scelti storia e avatar, si verrebbe reindirizzati alla selezione dell’avatar (Fig.3) e successivamente alla selezione del gioco (Fig.4), prima di avviare la storia. Questi due menu sono raggiungibili anche cliccando direttamente i tasti “SCEGLI IL GIOCO” e “SELEZIONA AVATAR” nel menu principale. In tal caso, cliccando sul tasto “START” dopo le selezioni, il giocatore verrebbe reindirizzato subito all’esperienza di gioco.
 
-![Fig3](images/Fig1.png?raw=true "Fig3")
+![Fig3](images/Fig3.png?raw=true "Fig3")
 *Figura 3 - Menù selezione avatar*
 
-![Fig4](images/Fig1.png?raw=true "Fig4")
+![Fig4](images/Fig4.png?raw=true "Fig4")
 *Figura 4 - Menù selezione storia da giocare*
 
 Una volta avviata la storia si aprirà una schermata di gioco (Fig.5), in cui a sinistra possiamo notare il personaggio e, davanti a questo, un riquadro in cui viene riportato il titolo e narrata una parte della vicenda. A destra abbiamo la domanda su che azione dovrebbe compiere il giocatore e sotto le risposte (le possibili azioni) che questo può dare. In alto a destra è mostrato il numero di risposte corrette date nella sessione di gioco.
 
-![Fig5](images/Fig1.png?raw=true "Fig5")
+![Fig5](images/Fig5.png?raw=true "Fig5")
 *Figura 5 - Schermata di gioco*
 
 A seguito della risposta data dal giocatore l’emozione mostrata dal personaggio cambierà, e in caso venga data una risposta corretta il personaggio mostrerà una espressione felice.
 
 Inoltre, indipendentemente dalla correttezza della risposta, viene mostrato un piccolo suggerimento (Fig.6) spesso scritto in prima persona, dato al giocatore a rinforzo della risposta corretta oppure, nel caso avesse sbagliato, che possa portarlo a correggersi.
 
-![Fig6](images/Fig1.png?raw=true "Fig6")
+![Fig6](images/Fig6.png?raw=true "Fig6")
 *Figura 5 - Schermata di gioco*
 
 Se il giocatore dà la risposta corretta gli verrà poi mostrata la seconda parte della storia, in alternativa gli verrà mostrata nuovamente la prima parte.
