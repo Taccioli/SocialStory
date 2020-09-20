@@ -39,7 +39,7 @@ A seguito della risposta data dal giocatore l’emozione mostrata dal personaggi
 Inoltre, indipendentemente dalla correttezza della risposta, viene mostrato un piccolo suggerimento (Fig.6) spesso scritto in prima persona, dato al giocatore a rinforzo della risposta corretta oppure, nel caso avesse sbagliato, che possa portarlo a correggersi.
 
 ![Fig6](images/Fig6.png?raw=true "Fig6")
-*Figura 5 - Schermata di gioco*
+*Figura 6 - Suggerimento dato al giocatore*
 
 Se il giocatore dà la risposta corretta gli verrà poi mostrata la seconda parte della storia, in alternativa gli verrà mostrata nuovamente la prima parte.
 
