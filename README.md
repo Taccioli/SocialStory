@@ -2,12 +2,12 @@
 ## Introduzione all’applicazione
 SocialGames è una applicazione sviluppata con l’obiettivo di digitalizzare e rendere più interattivo l’insegnamento attraverso le storie sociali.
 
-Le storie sociali sono un metodo di insegnamento utilizzato principalmente per insegnare a persone affette da disturbo dello spettro autistico come comportarsi in determinate situazioni più o meno comuni, attraverso l’utilizzo di brevi storie in cui il protagonista spiega le emozioni che si possono provare in una determinata situazione e come poterle gestire per avere un comportamento socialmente accettabile. Queste storie vengono lette o fatte leggere numerose volte affinché la persona possa memorizzare come comportarsi.
+Le storie sociali sono utilizzate principalmente per insegnare a persone affette da disturbo dello spettro autistico come comportarsi in situazioni più o meno comuni, attraverso la lettura di brevi storie in cui il protagonista spiega le emozioni che si possono provare in un determinato momento e come poterle gestire per avere un comportamento socialmente accettabile. Queste storie vengono lette o fatte leggere numerose volte affinché la persona possa memorizzare come comportarsi.
 
 L’applicazione riporta al suo interno dodici di queste brevi storie, aggiungendo inoltre un elemento interattivo: è infatti possibile “partecipare” alla storia scegliendo le azioni che sembrano più opportune e venire premiati se si sceglie la risposta esatta.
 
 ## Funzionamento
-Il funzionamento dell’applicazione è semplice: all’apertura si apre un menù (Fig.1) in cui è possibile avviare una partita, selezionare una storia o un avatar con cui giocare o modificare le impostazioni del gioco.
+Il funzionamento dell’applicazione è semplice: all’avvio si apre un menù (Fig.1) in cui è possibile iniziare una partita, selezionare una storia o un avatar con cui giocare o modificare le varie impostazioni del gioco, alcune delle quali implementate per rendere più accessibile il gioco a persone con disturbi più gravi o in più tenera età.
 
 ![Fig1](images/Fig1.png?raw=true "Fig1")
 *Figura 1 - Menù Generale*
@@ -52,38 +52,38 @@ L’aspetto del gioco è tuttavia rimasto invariato per mantenerne la semplicit�
 
 ## Aspetti tecnici
 ### Struttura del codice
-Il codice è stato scritto per implementare una macchina a stati, utilizzata per gestire tutte le schermate di cui è composto il gioco. È infatti presente una classe State, utilizzata come classe astratta base contenente i metodi di Draw(), Update() e PostUpdate() necessari al funzionamento della macchina a stati.
+Il codice è stato scritto per implementare una macchina a stati, utilizzata per gestire tutte le schermate di cui è composto il gioco. È infatti presente una classe State, utilizzata come classe astratta base contenente i metodi Draw, Update e PostUpdate necessari al funzionamento della macchina a stati.
 
 ### Game1
-Nella classe Game1 abbiamo la gestione della macchina a stati: viene inizializzato il primo stato (MenuState) nel metodo LoadContent(), in Update() viene aggiornato lo stato della macchina e successivamente richiamato il metodo Update() di questo ed infine nel metodo Draw() viene richiamato l’omonimo metodo dello stato attuale. Nel metodo Draw() è anche gestita l’applicazione del filtro per rendere i colori più tenui.
+Nella classe Game1 abbiamo la gestione della macchina a stati: viene inizializzato il primo stato (MenuState) nel metodo LoadContent, nel metodo Update viene aggiornato lo stato della macchina e successivamente richiamato il metodo Update di questo ed infine nel metodo Draw viene richiamato l’omonimo metodo dello stato attuale. Nel metodo Draw è anche gestita l’applicazione del filtro per rendere i colori più tenui.
 
 ### States
 Nella cartella States sono contenute la classe State citata precedentemente e le sette classi che compongono i vari stati del gioco:
 
 -	EndGameState, che gestisce la schermata che compare al termine di una partita
 -	EndTimeState, che gestisce la schermata che compare allo scadere del tempo limite di gioco
--	GameState, che gestisce 
+-	GameState, che gestisce il momento di gioco
 -	MenuState, che è il menù iniziale
 -	SelAvatarState, che gestisce il menù di selezione dell’avatar
 -	SelStoryState, che gestisce il menù di selezione della storia da giocare
 -	SettingsState, da cui è possibile cambiare le impostazioni
 
 ### MenuState
-Questo stato si riferisce al menu che viene visualizzato all’avvio del gioco. Ciascun bottone presente nella schermata è associato ad un oggetto della classe MenuButton, all’interno della quale sono contenuti i metodi Draw() e Update() (utilizzati nel Draw() e nell’Update() dello stato), i quali gestiscono, rispettivamente, la visualizzazione sullo schermo del bottone stesso e il passaggio allo state a cui fa riferimento.
+Questo stato si riferisce al menu che viene visualizzato all’avvio del gioco. Ciascun bottone presente nella schermata è associato ad un oggetto della classe MenuButton, all’interno della quale sono contenuti i metodi Draw e Update (utilizzati nei metodi Draw e Update dello stato), i quali gestiscono, rispettivamente, la visualizzazione sullo schermo del bottone stesso e il passaggio allo state a cui fa riferimento.
 
 ### GameState
-Quando viene chiamato questo stato, viene preso dalla memoria il file formato .xml corrispondente alla storia precedentemente selezionata e viene letto (metodo Read()) nelle sue parti per gestire i vari dialoghi e risposte, oltre alle emozioni che dovrà mostrare l’avatar. Successivamente sono state implementati due metodi (AdaptiveText() e WrapText()) che hanno gestito sia il wrapping del testo di modo che potesse essere contenuto dentro un riquadro, sia un possibile ridimensionamento dei caratteri se la stringa da scrivere dentro il rettangolo fosse troppo lunga.
+Quando viene chiamato questo stato, viene preso dalla memoria il file formato .xml corrispondente alla storia precedentemente selezionata e viene letto (metodo Read) nelle sue parti per gestire i vari dialoghi e risposte, oltre alle emozioni che dovrà mostrare l’avatar. Successivamente sono state implementati due metodi (AdaptiveText e WrapText) che hanno gestito sia il wrapping del testo di modo che potesse essere contenuto dentro un riquadro, sia un possibile ridimensionamento dei caratteri se la stringa da scrivere dentro il rettangolo fosse troppo lunga.
 
-Per rendere più veloce il metodo Draw() si è deciso di evitare degli switch case all’interno di questo.
+Per rendere più veloce il metodo Draw si è deciso di evitare degli switch case all’interno di questo.
 
 ### SettingsState
 In questo stato è possibile impostare dopo quanto il gioco obbligherà il giocatore a chiudere l’applicazione (andando a modificare la variabile GameData.timer.remainingDelay), se le scritte mostrate durante il gioco debbano essere maiuscole o meno (modificando la variabile GameData.isCapital) e se i colori debbano essere tenui o meno (GameData.isSaturated).
 
 ### SelAvatarState
-All’interno di questo stato è possibile scegliere l’avatar che andrà a “rappresentare” il giocatore nell’esperienza di gioco. Ciascun avatar fa riferimento ad un oggetto della classe SelAvatarButton, all’interno della quale sono implementati i metodi SelAvatarButton.Draw() e SelAvatarButton.Update(). In quest’ultimo, grazie ad uno switch, viene riconosciuto l’avatar selezionato dall’utente ed in base a questo viene modificata la variabile GameData.avatar con il nome corrispondente (Boy1, Girl1…) e la variabile GameData.isMale con true o false.
+All’interno di questo stato è possibile scegliere l’avatar che andrà a “rappresentare” il giocatore nell’esperienza di gioco. Ciascun avatar fa riferimento ad un oggetto della classe SelAvatarButton, all’interno della quale sono implementati i metodi SelAvatarButton.Draw e SelAvatarButton.Update. In quest’ultimo, grazie ad uno switch, viene riconosciuto l’avatar selezionato dall’utente ed in base a questo viene modificata la variabile GameData.avatar con il nome corrispondente (Boy1, Girl1…) e la variabile GameData.isMale con true o false.
 
 ### SelStoryState
-Questo è lo stato nel quale l’utente ha la possibilità di selezionare la storia da giocare. Ciascuna storia selezionabile è rappresentata da un’istanza della classe SelStoryButton, nella quale, equivalentemente a SelAvatarButton, è implementato all’interno del metodo SelStoryButton.Update() uno switch utile a modificare, in base alla selezione dell’utente, le variabili GameData.background e GameData.nameFile. Queste memorizzano, rispettivamente, l’immagine utilizzata come sfondo nell’esperienza di gioco e il nome del file xml a cui la storia selezionata fa riferimento.
+Questo è lo stato nel quale l’utente ha la possibilità di selezionare la storia da giocare. Ciascuna storia selezionabile è rappresentata da un’istanza della classe SelStoryButton, nella quale, equivalentemente a SelAvatarButton, è implementato all’interno del metodo SelStoryButton.Update uno switch utile a modificare, in base alla selezione dell’utente, le variabili GameData.background e GameData.nameFile. Queste memorizzano, rispettivamente, l’immagine utilizzata come sfondo nell’esperienza di gioco e il nome del file xml a cui la storia selezionata fa riferimento.
 
 ### Commands
 Nella cartella Commands si può trovare la classe astratta Component, utilizzata come classe base per tutte le classi atte a gestire i pulsanti del gioco.
@@ -111,7 +111,7 @@ In questa implementazione dell’applicazione, se un pulsante viene premuto, e p
 ### Riadattamento dimensioni
 Essendo gli schermi dei tablet molto diversi tra loro in proporzioni e risoluzione, è stato necessario gestire questa diversità implementando un’interfaccia grafica che permettesse di mantenere la funzionalità e l’aspetto di tutte le componenti mostrate sullo schermo.
 
-Per fare ciò, si è deciso di utilizzare un’interfaccia “base” con risoluzione 1920x1080 pixel e successivamente creare una matrice di scalamento che, data la risoluzione dello schermo del dispositivo su cui gira il gioco, permette di effettuare un’operazione di trasformazione dell’immagine mostrata attraverso il parametro transformMatrix nel metodo Draw() chiamato nella classe Game1.
+Per fare ciò, si è deciso di utilizzare un’interfaccia “base” con risoluzione 1920x1080 pixel e successivamente creare una matrice di scalamento che, data la risoluzione dello schermo del dispositivo su cui gira il gioco, permette di effettuare un’operazione di trasformazione dell’immagine mostrata attraverso il parametro transformMatrix nel metodo Draw chiamato nella classe Game1.
 
 
 
